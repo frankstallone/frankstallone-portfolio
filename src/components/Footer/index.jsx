@@ -1,11 +1,10 @@
-import { h } from 'preact';
-import Styles from './styles.module.scss';
+import { h } from "preact";
 
 function Footer() {
   return (
-    <footer className={Styles.footer}>
-      &copy; {new Date().getFullYear()} Jeanine White
-      <small className={Styles.byline}>🚀 Built by Astro</small>
+    <footer className="text-gray-100 text-center">
+      &copy; {new Date().getFullYear()} Frank Stallone
+      <small className="block">🚀 Built by Astro</small>
     </footer>
   );
 }

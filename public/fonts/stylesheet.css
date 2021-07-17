@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Elena';
+    src: url('Elena-Bold.woff2') format('woff2'),
+        url('Elena-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Elena';
+    src: url('Elena-Regular.woff2') format('woff2'),
+        url('Elena-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Elena';
+    src: url('Elena-BoldItalic.woff2') format('woff2'),
+        url('Elena-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Elena Regular';
+    src: url('Elena-RegularItalic.woff2') format('woff2'),
+        url('Elena-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

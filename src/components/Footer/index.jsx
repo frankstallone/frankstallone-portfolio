@@ -2,9 +2,11 @@ import { h } from "preact";
 
 function Footer() {
   return (
-    <footer className="text-gray-100 text-center">
-      &copy; {new Date().getFullYear()} Frank Stallone
-      <small className="block">🚀 Built by Astro</small>
+    <footer className="text-center text-amber-amber11">
+      &copy; {new Date().getFullYear()} Frank Stallone III
+      <small className="block text-amber-amber10">
+        🚀 Happily built by Astro
+      </small>
     </footer>
   );
 }

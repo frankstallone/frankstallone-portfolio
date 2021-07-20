@@ -6,7 +6,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      serif: ["ui-serif", "Elena", "Georgia", "serif"],
+      display: ["Futura Now Headline", "sans-serif"],
+      sans: ["Futura Now Var", "sans-serif"],
     },
     extend: {
       colors: {

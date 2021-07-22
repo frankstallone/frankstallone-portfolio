@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ["Futura Now Headline", "sans-serif"],
-      sans: ["Futura Now Var", "sans-serif"],
+      future: ["Futura Now Var", "sans-serif"],
     },
     extend: {
       colors: {

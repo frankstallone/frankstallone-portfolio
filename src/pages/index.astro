@@ -8,14 +8,22 @@ import Footer from '../components/Footer/index.jsx';
     <MainHead title="Frank Stallone Portfolio" />
   </head>
   <body class="h-screen overflow-x-hidden">
-  <div class="bg-amber-amber2 min-h-screen mb-20 sm:mb-96 py-4">
-    <div class="mx-auto max-w-7xl w-full relative sm:flex items-center">
+  <header CLASS="bg-amber-amber2 p-4 flex">
+    <h1 class="flex-grow"><a href="/">Frank Stallone</a></h1>
+    <ul class="list-none flex flex-row-reverse space-x-4 space-x-reverse max-w-7xl">
+      <li><a href="https://changelog.stallone.dev">Changelog</a></li>
+      <li><a href="https://linkedin.com/in/frankstallone">LinkedIn</a></li>
+      <li><a href="https://twitter.com/frankstallone">Twitter</a></li>
+    </ul>
+  </header>
+  <div class="bg-amber-amber2 sm:min-h-screen mb-20 sm:mb-96">
+    <div class="mx-auto max-w-7xl w-full relative flex justify-center items-center">
       <figure>
         <img src="/assets/me.jpg" class="sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl" alt="Photograph of me, Frank Stallone III">
       </figure>
-      <header class="absolute bottom-0 sm:relative sm:bottom-auto">
+      <heading class="absolute bottom-0 sm:relative sm:bottom-auto">
         <h2 class="bg-black/50 text-amber-amber2 backdrop-blur-sm xl:leading-tight sm:bg-black/75 p-6 sm:-ml-96 sm:mt-96 sm:mr-10 sm:p-10 text-xl sm:text-3xl md:-ml-52 md:p-16 lg:text-4xl xl:text-5xl xl:p-20 font-display font-black">👋🏼 Hiya! I love technology, mindfulness and creating compelling user experiences.</h2>
-      </header>
+      </heading>
     </div>
   </div>
    <main class="mx-auto max-w-7xl w-full mb-20 px-4 z-10 relative">

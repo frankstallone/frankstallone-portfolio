@@ -2,6 +2,7 @@
 // Component Imports
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.jsx';
+import Header from '../components/Header/index.astro';
 ---
 <html lang="en">
   <head>
@@ -9,14 +10,7 @@ import Footer from '../components/Footer/index.jsx';
   </head>
   <body class="h-screen overflow-x-hidden relative">
   <svg aria-hidden="true" focusable="false" class="absolute z-0 top-[-1500px] sm:top-[-1000px] transform right-1/2 translate-x-1/2 text-amber-amber4 w-[2000px] h-[2000px]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256c0 141.4-114.6 256-256 256s-256-114.6-256-256s114.6-256 256-256S512 114.6 512 256z"></path></svg>
-  <header class="mx-auto py-4 flex z-10 relative max-w-7xl">
-    <h1 class="flex-grow ml-4"><a href="/">Frank Stallone</a></h1>
-    <ul class="list-none flex flex-row-reverse space-x-4 space-x-reverse max-w-7xl mr-4">
-      <li><a href="https://changelog.stallone.dev">Changelog</a></li>
-      <li><a href="https://linkedin.com/in/frankstallone">LinkedIn</a></li>
-      <li><a href="https://twitter.com/frankstallone">Twitter</a></li>
-    </ul>
-  </header>
+  <Header />
   <div class="sm:min-h-screen mb-20 sm:mb-96">
     <div class="mx-auto max-w-7xl w-full relative flex justify-center items-center">
       <figure>

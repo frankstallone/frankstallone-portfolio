@@ -1,8 +1,13 @@
 ---
 import PortfolioLayout from '../layouts/PortfolioLayout.astro'
+const theme = {
+    primary: "#031633",
+    secondary: "#8ec4f6",
+    link: "#8ec4f6",
+};
 ---
 
-<PortfolioLayout title="Builders Trust Capital" theme="#031633">
+<PortfolioLayout title="Builders Trust Capital" theme={theme}>
     <div class="sm:min-h-screen mb-20 sm:mb-2 md:mb-36 lg:mb-64 xl:mb-96">
         <div class="mx-auto max-w-7xl w-full relative flex justify-center items-center">
             <h2>Builders Trust Capital</h2>

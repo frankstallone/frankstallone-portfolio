@@ -1,21 +1,29 @@
 ---
 export interface Props {
     title: string;
-    theme?:string;
+    theme?: {
+      primary?: string;
+      secondary?: string;
+      link?: string;
+      hover?: string;
+    };
 }
 const {title, theme} = Astro.props;
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.jsx';
 import Header from '../components/Header/index.astro';
+
+// SVG Color
+const svgColor = theme.primary ? "[" + theme.primary + "]" : 'amber-amber4';
+const svgClasses = "absolute z-0 top-[-1500px] sm:top-[-850px] transform right-1/2 translate-x-1/2 w-[2000px] h-[2000px] text-" + svgColor; 
 ---
-<html>
+<html lang="en">
   <head>
-    <title>{title} : Portfolio</title>
-    <MainHead />
+    <MainHead title={title} />
   </head>
   <body class="h-screen overflow-x-hidden relative">
-    <svg aria-hidden="true" focusable="false" class="absolute z-0 top-[-1500px] sm:top-[-850px] transform right-1/2 translate-x-1/2 text-[#031633] w-[2000px] h-[2000px]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256c0 141.4-114.6 256-256 256s-256-114.6-256-256s114.6-256 256-256S512 114.6 512 256z"></path></svg>
-    <Header />
+    <svg aria-hidden="true" focusable="false" class={svgClasses} role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256c0 141.4-114.6 256-256 256s-256-114.6-256-256s114.6-256 256-256S512 114.6 512 256z"></path></svg>
+    <Header theme={theme} />
     <!-- slot: your page content will be injected here. -->
     <slot />
     <Footer />

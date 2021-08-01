@@ -1,21 +1,25 @@
 ---
+type Variant = "btc" | "roll";
+
 export interface Props {
     title: string;
-    theme?: {
-      primary?: string;
-      secondary?: string;
-      link?: string;
-      hover?: string;
-    };
+    variant: Variant;
 }
-const {title, theme} = Astro.props;
+const {title, variant} = Astro.props;
+
+const VARIANT_MAPS: Record<Variant, string> = {
+    btc: "text-btc-900",
+    roll: "text-btc-200",
+}
+
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.jsx';
 import Header from '../components/Header/index.astro';
 
 // SVG Color
-const svgColor = theme.primary ? "[" + theme.primary + "]" : 'amber-amber4';
-const svgClasses = "absolute z-0 top-[-1500px] sm:top-[-850px] transform right-1/2 translate-x-1/2 w-[2000px] h-[2000px] text-" + svgColor; 
+const svgColor = VARIANT_MAPS[variant];
+const svgClasses = "absolute z-0 top-[-1500px] sm:top-[-850px] transform right-1/2 translate-x-1/2 w-[2000px] h-[2000px] " + svgColor; 
+
 ---
 <html lang="en">
   <head>
@@ -23,7 +27,7 @@ const svgClasses = "absolute z-0 top-[-1500px] sm:top-[-850px] transform right-1
   </head>
   <body class="h-screen overflow-x-hidden relative">
     <svg aria-hidden="true" focusable="false" class={svgClasses} role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256c0 141.4-114.6 256-256 256s-256-114.6-256-256s114.6-256 256-256S512 114.6 512 256z"></path></svg>
-    <Header theme={theme} />
+    <Header />
     <!-- slot: your page content will be injected here. -->
     <slot />
     <Footer />

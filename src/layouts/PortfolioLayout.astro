@@ -1,33 +1,30 @@
 ---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer/index.jsx';
+import Header from '../components/Header/index.astro';
+const {title, variant} = Astro.props;
+
 type Variant = "btc" | "roll";
 
 export interface Props {
     title: string;
     variant: Variant;
 }
-const {title, variant} = Astro.props;
 
 const VARIANT_MAPS: Record<Variant, string> = {
-    btc: "text-btc-900",
-    roll: "text-btc-200",
+    btc: "text-btc-500",
+    roll: "text-btc-500",
 }
 
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.jsx';
-import Header from '../components/Header/index.astro';
-
-// SVG Color
-const svgColor = VARIANT_MAPS[variant];
-const svgClasses = "absolute z-0 top-[-1500px] sm:top-[-850px] transform right-1/2 translate-x-1/2 w-[2000px] h-[2000px] " + svgColor; 
-
+const svgClasses = `absolute z-0 top-[-2000px] lg:top-[-1500px] transform right-1/2 translate-x-1/2 w-[4000px] h-[4000px] fill-current ${VARIANT_MAPS[variant]}`; 
 ---
 <html lang="en">
   <head>
     <MainHead title={title} />
   </head>
   <body class="h-screen overflow-x-hidden relative">
-    <svg aria-hidden="true" focusable="false" class={svgClasses} role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 256c0 141.4-114.6 256-256 256s-256-114.6-256-256s114.6-256 256-256S512 114.6 512 256z"></path></svg>
-    <Header />
+    <svg viewBox="0 0 3334 1180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class={svgClasses} role="img"><path d="M.568 479.167H0V0h3333.33v479.167h-.568c-23.224 256.374-760.866 700-1666.1 700-905.233 0-1642.88-443.626-1666.1-700z"/></svg>
+    <Header variant={variant} />
     <!-- slot: your page content will be injected here. -->
     <slot />
     <Footer />

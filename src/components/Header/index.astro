@@ -1,8 +1,43 @@
+---
+const { variant = "default" } = Astro.props;
+
+type Variant = "default" | "btc" | "roll";
+
+export interface Props {
+  variant?: Variant;
+}
+
+export interface VariantAttributes {
+  primary: string;
+  link: string;
+  hover: string;
+}
+
+const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
+    default: {
+      primary: "text-amber-amber12", 
+      link: "text-amber-amber12", 
+      hover: "hover:text-amber-amber12", 
+    },
+    btc: {
+      primary: "text-btc-500",
+      link: "text-btc-300",
+      hover: "hover:text-btc-100",
+    },
+    roll: {
+      primary: "text-btc-500",
+      link: "text-btc-500",
+      hover: "hover:text-btc-500",
+    },
+}
+
+const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover}`;
+---
   <header class="mx-auto py-4 flex z-10 relative max-w-7xl">
-    <h1 class="flex-grow ml-4"><a class="text-amber-amber12" href="/">Frank Stallone</a></h1>
+    <h1 class="flex-grow ml-4"><a class={linkClasses} href="/">Frank Stallone</a></h1>
     <ul class="list-none flex flex-row-reverse space-x-4 space-x-reverse max-w-7xl mr-4">
-      <li><a class="text-amber-amber12" href="https://changelog.stallone.dev">Changelog</a></li>
-      <li><a class="text-amber-amber12" href="https://linkedin.com/in/frankstallone">LinkedIn</a></li>
-      <li><a class="text-amber-amber12" href="https://twitter.com/frankstallone">Twitter</a></li>
+      <li><a class={linkClasses} href="https://changelog.stallone.dev">Changelog</a></li>
+      <li><a class={linkClasses} href="https://linkedin.com/in/frankstallone">LinkedIn</a></li>
+      <li><a class={linkClasses} href="https://twitter.com/frankstallone">Twitter</a></li>
     </ul>
   </header>

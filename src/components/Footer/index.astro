@@ -1,0 +1,17 @@
+---
+import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
+const { variant = "default" } = Astro.props;
+
+export interface Props {
+    variant: Variant;
+}
+
+const year = new Date().getFullYear();
+---
+
+<footer class={`flex flex-col text-center ${VARIANT_MAPS[variant].textClass} relative z-10`}>
+  &copy; {year} Frank Stallone III
+  <small class={`block ${VARIANT_MAPS[variant].textClass}`}>
+    🚀 Happily built by Astro
+  </small>
+</footer>

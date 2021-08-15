@@ -1,30 +1,14 @@
 ---
 import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.jsx';
+import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
+import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
 const {title, variant} = Astro.props;
 
-type Variant = "btc" | "roll";
 
 export interface Props {
     title: string;
     variant: Variant;
-}
-
-export interface VariantColors {
-  textClass: string;
-  themeColor: string;
-}
-
-const VARIANT_MAPS: Record<Variant, VariantColors> = {
-    btc: {
-      textClass: "text-btc-500",
-      themeColor: "#2c5c9d"
-    },
-    roll: {
-      textClass: "text-roll-600",
-      themeColor: "#2e66d8"
-    }
 }
 
 const svgClasses = `absolute z-0 top-[-2000px] lg:top-[-1500px] transform right-1/2 translate-x-1/2 w-[4000px] h-[4000px] fill-current ${VARIANT_MAPS[variant].textClass}`; 
@@ -41,6 +25,6 @@ const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
     <Header variant={variant} />
     <!-- slot: your page content will be injected here. -->
     <slot />
-    <Footer />
+    <Footer variant={variant} />
   </body>
 </html>

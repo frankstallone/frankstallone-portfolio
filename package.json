@@ -7,7 +7,7 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.18.1",
+    "astro": "^0.18.13",
     "tailwindcss": "^2.2.7"
   },
   "dependencies": {

@@ -16,20 +16,15 @@ const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
     <MainHead title="Frank Stallone Portfolio" />
     <meta name="theme-color" content={metaThemeColor}>
   </head>
-  <body class="h-screen overflow-x-hidden relative">
-  <svg viewBox="0 0 3334 1180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="absolute z-0 top-[-2000px] lg:top-[-1500px] transform right-1/2 translate-x-1/2 text-amber-amber4 w-[4000px] h-[4000px] fill-current overflow-hidden" role="img"><path d="M.568 479.167H0V0h3333.33v479.167h-.568c-23.224 256.374-760.866 700-1666.1 700-905.233 0-1642.88-443.626-1666.1-700z"/></svg>
+  <body class="min-h-screen overflow-x-hidden relative">
   <Header />
-  <div class="sm:min-h-screen mb-20 sm:mb-2 md:mb-36 lg:mb-64 xl:mb-96">
-    <div class="mx-auto max-w-7xl w-full relative flex justify-center items-center">
-      <figure>
-        <img src="/assets/me.jpg" class="sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl" alt="Photograph of me, Frank Stallone III">
-      </figure>
-      <heading class="absolute bottom-0 sm:relative sm:bottom-auto">
-        <h2 class="bg-black/50 text-amber-amber2 backdrop-blur-sm sm:leading-snug sm:bg-black/75 p-6 sm:-ml-96 sm:mt-96 sm:mr-10 sm:p-10 text-xl sm:text-3xl md:-ml-52 md:p-16 lg:text-4xl xl:text-5xl xl:p-20 font-display font-bold">👋🏼 Hiya! I love technology, mindfulness and creating compelling user experiences.</h2>
-      </heading>
-    </div>
-  </div>
-   <main class="mx-auto max-w-7xl w-full mb-20 px-4 z-10 relative">
+  <figure class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4">
+    <img src="/assets/me.jpg" class="xs:square lg:col-start-2" alt="Photograph of me, Frank Stallone III">
+    <figcaption class="lg:col-span-2 h-full flex place-items-center">
+      <h2 class="text-amber-amber12 sm:leading-snug p-8 text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-bold">👋🏼 Hiya! I love technology, mindfulness and creating compelling user experiences.</h2>
+    </figcaption>
+  </figure>
+   <!-- <main class="mx-auto max-w-7xl w-full mb-20 px-4 z-10 relative">
     <h2 class="sr-only">Featured work</h2>
     <ul class="grid sm:grid-cols-2 sm:grid-rows-1 gap-4 sm:gap-24">
       <li class="flex flex-col sm:-mt-48">
@@ -49,7 +44,7 @@ const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
         <p>Collaborated with business, design team and backend developers using data from research and user usage I helped clean up the information architecture, came up with UX optimizations to be proactive for the user and simplify hierarchy with methodologies like progressive disclosure. From there I refined the UI creating new design patterns, created a dynamic design token solution and integrated with the team in our component library built with React. Learn, educate, refine, rinse and repeat with an amazing team.</p>
       </li>
     </ul>
-   </main>
+   </main> -->
     <Footer />
   </body>
 </html>

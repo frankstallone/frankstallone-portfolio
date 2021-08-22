@@ -17,9 +17,9 @@ const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
     <meta name="theme-color" content={metaThemeColor}>
   </head>
   <body class="h-screen overflow-x-hidden relative">
-  <svg viewBox="0 0 3334 1180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="absolute z-0 top-[-2000px] lg:top-[-1500px] transform right-1/2 translate-x-1/2 text-amber-amber4 w-[4000px] h-[4000px] fill-current overflow-hidden" role="img"><path d="M.568 479.167H0V0h3333.33v479.167h-.568c-23.224 256.374-760.866 700-1666.1 700-905.233 0-1642.88-443.626-1666.1-700z"/></svg>
+  <!-- <svg viewBox="0 0 3334 1180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="absolute z-0 top-[-2000px] lg:top-[-1500px] transform right-1/2 translate-x-1/2 text-amber-amber4 w-[4000px] h-[4000px] fill-current overflow-hidden" role="img"><path d="M.568 479.167H0V0h3333.33v479.167h-.568c-23.224 256.374-760.866 700-1666.1 700-905.233 0-1642.88-443.626-1666.1-700z"/></svg> -->
   <Header />
-  <div class="sm:min-h-screen mb-20 sm:mb-2 md:mb-36 lg:mb-64 xl:mb-96">
+  <div class="sm:min-h-screen bg-amber-amber4 relative">
     <div class="mx-auto max-w-7xl w-full relative flex justify-center items-center">
       <figure>
         <img src="/assets/me.jpg" class="sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl" alt="Photograph of me, Frank Stallone III">
@@ -29,6 +29,7 @@ const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
       </heading>
     </div>
   </div>
+  <div class="spacer layered-peaks mb-20 sm:mb-2 md:mb-36 lg:mb-64 xl:mb-96" aria-hidden="true"></div>
    <main class="mx-auto max-w-7xl w-full mb-20 px-4 z-10 relative">
     <h2 class="sr-only">Featured work</h2>
     <ul class="grid sm:grid-cols-2 sm:grid-rows-1 gap-4 sm:gap-24">

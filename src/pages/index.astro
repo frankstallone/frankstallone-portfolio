@@ -18,12 +18,19 @@ const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
   </head>
   <body class="min-h-screen overflow-x-hidden relative">
   <Header />
-  <figure class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4">
+  <figure class="grid gap-4 p-4 place-items-center xs:grid-cols-2 lg:grid-cols-4">
     <img src="/assets/me.jpg" class="xs:square lg:col-start-2" alt="Photograph of me, Frank Stallone III">
     <figcaption class="lg:col-span-2 h-full flex place-items-center">
-      <h2 class="text-amber-amber12 sm:leading-snug p-8 text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-display font-bold">👋🏼 Hiya! I love technology, mindfulness and creating compelling user experiences.</h2>
+      <h2 class="text-amber-amber12 sm:leading-snug p-8 text-xl md:text-4xl xl:text-5xl font-display font-bold">👋🏼 Hiya! I love technology, mindfulness and creating compelling user experiences.</h2>
     </figcaption>
   </figure>
+  <h2 class="sr-only">Featured work</h2>
+  <main class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4">
+    <a href="/btc" class="xs:square"><img src="/assets/squared/BTC-squared@2x.png" alt="Screenshot logo and branding for Builders Trust Capital circa 2020"></a>
+    <a href="/btc" class="xs:square"><img src="/assets/squared/roll-inverted-squared@2x.png" alt="Screenshot of Roll by ADP chat final design circa 2018"></a>
+    <a href="/btc" class="xs:square"><img src="/assets/squared/prezzo.it@2x.png" alt="Screenshot of Prezzo.it home page wireframe"></a>
+    <a href="/btc" class="xs:square"><img src="/assets/squared/njc-squared@2x.png" alt="Screenshot of logo and branding for Noah James Curtis Stone Supply"></a>
+  </main>
    <!-- <main class="mx-auto max-w-7xl w-full mb-20 px-4 z-10 relative">
     <h2 class="sr-only">Featured work</h2>
     <ul class="grid sm:grid-cols-2 sm:grid-rows-1 gap-4 sm:gap-24">

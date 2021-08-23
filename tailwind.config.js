@@ -7,9 +7,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      display: ["Futura Now Headline", "sans-serif"],
-      future: ["Futura Now Var", "sans-serif"],
-      now: ["Futura Now Text", "sans-serif"],
+      sans: ["Facundo", "sans-serif"],
     },
     screens: {
       xs: "540px",

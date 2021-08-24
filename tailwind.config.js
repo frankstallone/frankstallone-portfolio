@@ -1,6 +1,6 @@
 // https://www.radix-ui.com/docs/colors/palette-composition/the-scales
 const defautTheme = require("tailwindcss/defaultTheme");
-const { amber, red } = require("@radix-ui/colors");
+const { amber, red, indigo } = require("@radix-ui/colors");
 module.exports = {
   mode: "jit",
   purge: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
@@ -15,6 +15,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        indigo: indigo,
         amber: amber,
         red: red,
         btc: {

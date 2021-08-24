@@ -31,13 +31,13 @@ const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
     },
 }
 
-const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover}`;
+const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover} font-bold tracking-widest`;
 ---
   <header class="mx-auto py-4 flex z-10 relative max-w-7xl">
-    <h1 class="flex-grow ml-4 font-semibold"><a class={linkClasses} href="/">Frank Stallone</a></h1>
+    <h1 class="flex-grow ml-4"><a class={linkClasses} href="/">FRANK STALLONE</a></h1>
     <ul class="list-none flex flex-row-reverse space-x-4 space-x-reverse max-w-7xl mr-4">
-      <li><a class={linkClasses} href="https://changelog.stallone.dev">Changelog</a></li>
-      <li><a class={linkClasses} href="https://linkedin.com/in/frankstallone">LinkedIn</a></li>
-      <li><a class={linkClasses} href="https://twitter.com/frankstallone">Twitter</a></li>
+      <li><a class={linkClasses} href="https://changelog.stallone.dev">CHANGELOG</a></li>
+      <li><a class={linkClasses} href="https://linkedin.com/in/frankstallone">LINKEDIN</a></li>
+      <li><a class={linkClasses} href="https://twitter.com/frankstallone">TWITTER</a></li>
     </ul>
   </header>

@@ -16,41 +16,56 @@ const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
     <MainHead title="Frank Stallone Portfolio" />
     <meta name="theme-color" content={metaThemeColor}>
   </head>
-  <body class="h-screen overflow-x-hidden relative">
-  <!-- <svg viewBox="0 0 3334 1180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="absolute z-0 top-[-2000px] lg:top-[-1500px] transform right-1/2 translate-x-1/2 text-amber-amber4 w-[4000px] h-[4000px] fill-current overflow-hidden" role="img"><path d="M.568 479.167H0V0h3333.33v479.167h-.568c-23.224 256.374-760.866 700-1666.1 700-905.233 0-1642.88-443.626-1666.1-700z"/></svg> -->
+  <body class="min-h-screen overflow-x-hidden relative">
   <Header />
-  <div class="sm:min-h-screen bg-amber-amber4 relative">
-    <div class="mx-auto max-w-7xl w-full relative flex justify-center items-center">
-      <figure>
-        <img src="/assets/me.jpg" class="sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl" alt="Photograph of me, Frank Stallone III">
-      </figure>
-      <heading class="absolute bottom-0 sm:relative sm:bottom-auto">
-        <h2 class="bg-black/50 text-amber-amber2 backdrop-blur-sm sm:leading-snug sm:bg-black/75 p-6 sm:-ml-96 sm:mt-96 sm:mr-10 sm:p-10 text-xl sm:text-3xl md:-ml-52 md:p-16 lg:text-4xl xl:text-5xl xl:p-20 font-display font-bold">👋🏼 Hiya! I love technology, mindfulness and creating compelling user experiences.</h2>
-      </heading>
-    </div>
-  </div>
-  <div class="spacer layered-peaks mb-20 sm:mb-2 md:mb-36 lg:mb-64 xl:mb-96" aria-hidden="true"></div>
-   <main class="mx-auto max-w-7xl w-full mb-20 px-4 z-10 relative">
+  <figure class="grid gap-4 p-4 place-items-center  lg:grid-cols-4">
+  <div class="text-indigo-indigo12 font-black tracking-wider rotate-90 break-words hidden lg:block lg:text-4xl lg:leading-5 xl:text-5xl xl:leading-6">TECHNOLOGY MINDFULNESS CREATING</div>
+    <img src="/assets/me.jpg" class="xs:square lg:col-start-2" alt="Photograph of me, Frank Stallone III">
+    <figcaption class="lg:col-span-2 h-full flex place-items-center">
+      <h2 class="text-amber-amber12 sm:leading-snug p-8 text-xl md:text-4xl xl:text-5xl">👋🏼 Hiya! I love <span class="tracking-wider font-black text-red-red11">TECHNOLOGY</span>, <span class="tracking-wider font-black text-red-red11">MINDFULNESS</span>, <span class="italic mr-2">and</span> <span class="tracking-wider font-black text-red-red11">CREATING</span> compelling user experiences.</h2>
+      <!-- <h2 class="text-amber-amber12 sm:leading-snug p-8 text-xl md:text-4xl xl:text-5xl font-semibold">👋🏼 Hiya! I love technology, mindfulness and creating compelling user experiences.</h2> -->
+    </figcaption>
+  </figure>
+  <h2 class="sr-only">Featured work</h2>
+  <main class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4">
+    <a href="/btc" class="xs:square"><img src="/assets/squared/btc-squared-01@2x.png" alt="Photo of initial sketches of the chosen logo for Builders Trust Capital showing the intentions for the three pilars"></a>
+    <a href="/btc" class="xs:square"><img src="/assets/squared/btc-squared-02@2x.png" alt="Screenshot of the home page design for Builders Trust Capital"></a>
+    <a href="/btc" class="xs:square"><img src="/assets/squared/btc-squared-03@2x.png" alt="Screenshot of the presentation for the new Builders Trust Capital logo in context on a sign and business cards"></a>
+    <a href="/btc" class="xs:square"><img src="/assets/squared/btc-squared-04@2x.png" alt="Logo presentation of the Builders Trust Capital mark and logo type"></a>
+  </main>
+  <main class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4">
+    <a href="/roll" class="xs:square"><img src="/assets/squared/roll-squared-01@2x.png" alt="Mock up of the original logo design for Roll by ADP"></a>
+    <a href="/roll" class="xs:square"><img src="/assets/squared/roll-squared-02@2x.png" alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP"></a>
+    <a href="/roll" class="xs:square"><img src="/assets/squared/roll-squared-03@2x.png" alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients"></a>
+    <a href="/roll" class="xs:square"><img src="/assets/squared/roll-squared-04@2x.png" alt="Screenshots of the mobile app that would eventually be used circa 2018"></a>
+  </main>
+  <main class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4">
+    <a href="/njc" class="xs:square"><img src="/assets/squared/njc-squared-01@2x.png" alt="The logo mark for Noah James Curtis Stone Supply &amp; Tree Service"></a>
+    <a href="/njc" class="xs:square"><img src="/assets/squared/njc-squared-02@2x.png" alt="The typeface and colors chosen for the branding of Noah James Curtis Stone Supply &amp; Tree Service"></a>
+    <a href="/njc" class="xs:square"><img src="/assets/squared/njc-squared-03@2x.png" alt="Screenshot of the grid used for one of the Noah James Curtis Stone Supply logos with type"></a>
+    <a href="/njc" class="xs:square"><img src="/assets/squared/njc-squared-04@2x.png" alt="One of the variations of the NJC Stone Supply &amp; Tree Service with logo mark and type logo"></a>
+  </main>
+   <!-- <main class="mx-auto max-w-7xl w-full mb-20 px-4 z-10 relative">
     <h2 class="sr-only">Featured work</h2>
     <ul class="grid sm:grid-cols-2 sm:grid-rows-1 gap-4 sm:gap-24">
       <li class="flex flex-col sm:-mt-48">
         <a href="/btc" class="text-btc-800 hover:text-btc-700">
           <img src="/assets/BTC.png" alt="Screenshot logo and branding for Builders Trust Capital circa 2020"/>
-          <h2 class="text-4xl font-display font-black my-4">Builders Trust Capital</h2>
+          <h2 class="text-4xl font-black my-4">Builders Trust Capital</h2>
         </a>
-        <p class="text-xl text-btc-700 leading-relaxed font-future pb-4">Rebranded from Ashmore Partners, logo, branding, style guide, UX engineer and generally brought this team's success to another level for their clients.</p>
+        <p class="text-xl text-btc-700 leading-relaxed pb-4">Rebranded from Ashmore Partners, logo, branding, style guide, UX engineer and generally brought this team's success to another level for their clients.</p>
         <p>Through discovery sessions, customer and client interviews, industry research with a small team we rebranded Ashmore Partners to Builders Trust Capital. This shift signified the next step in the journey of the partnersa and company. They wanted to show their clients and investors that they were in this for the long haul. From print to digital their new branding has been met with warmth from all parties. </p>
       </li>
       <li class="flex flex-col mt-12 sm:mt-48">
         <a href="/roll" class="text-roll-1000 hover:text-roll-900">
           <img src="/assets/roll-by-adp-views-2.0.png" alt="Screenshot of Roll by ADP chat final design circa 2018"/>
-          <h2 class="text-4xl font-display font-black my-4">Roll by ADP</h2>
+          <h2 class="text-4xl font-black my-4">Roll by ADP</h2>
         </a>
-        <p class="text-xl text-roll-900 leading-relaxed font-future pb-4">Prototyped and built chat bot conversation, timeline and people user interfaces that allowed business owners, and HCM practitioners to accomplish their daily activities faster and with confidence.</p>
+        <p class="text-xl text-roll-900 leading-relaxed pb-4">Prototyped and built chat bot conversation, timeline and people user interfaces that allowed business owners, and HCM practitioners to accomplish their daily activities faster and with confidence.</p>
         <p>Collaborated with business, design team and backend developers using data from research and user usage I helped clean up the information architecture, came up with UX optimizations to be proactive for the user and simplify hierarchy with methodologies like progressive disclosure. From there I refined the UI creating new design patterns, created a dynamic design token solution and integrated with the team in our component library built with React. Learn, educate, refine, rinse and repeat with an amazing team.</p>
       </li>
     </ul>
-   </main>
+   </main> -->
     <Footer />
   </body>
 </html>

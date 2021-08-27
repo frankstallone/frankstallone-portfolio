@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-ThinIt.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-ExtraLightIt.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-RegularIt.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-SemiBoldIt.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-BoldIt.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Facundo";
+  src: url("/fonts/facundo/Facundo-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}

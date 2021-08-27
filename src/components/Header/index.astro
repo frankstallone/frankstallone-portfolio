@@ -33,16 +33,13 @@ const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
     },
 }
 
-const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover}`;
-const headerClasses = `${VARIANT_MAPS[variant].background} py-4 z-10 relative`;
+const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover} font-bold tracking-widest`;
 ---
-  <header class={headerClasses}>
-    <div class="max-w-7xl mx-auto flex">
-      <h1 class="flex-grow ml-4"><a class={linkClasses} href="/">Frank Stallone</a></h1>
-      <ul class="list-none flex flex-row-reverse space-x-4 space-x-reverse max-w-7xl mr-4">
-        <li><a class={linkClasses} href="https://changelog.stallone.dev">Changelog</a></li>
-        <li><a class={linkClasses} href="https://linkedin.com/in/frankstallone">LinkedIn</a></li>
-        <li><a class={linkClasses} href="https://twitter.com/frankstallone">Twitter</a></li>
-      </ul>
-    </div>
+  <header class="mx-auto py-4 flex z-10 relative max-w-7xl">
+    <h1 class="flex-grow ml-4"><a class={linkClasses} href="/">FRANK STALLONE</a></h1>
+    <ul class="list-none flex flex-row-reverse space-x-4 space-x-reverse max-w-7xl mr-4">
+      <li><a class={linkClasses} href="https://changelog.stallone.dev">CHANGELOG</a></li>
+      <li><a class={linkClasses} href="https://linkedin.com/in/frankstallone">LINKEDIN</a></li>
+      <li><a class={linkClasses} href="https://twitter.com/frankstallone">TWITTER</a></li>
+    </ul>
   </header>

@@ -14,6 +14,9 @@ module.exports = {
       ...defautTheme.screens,
     },
     extend: {
+      minHeight: {
+        80: "80vh",
+      },
       colors: {
         indigo: indigo,
         amber: amber,

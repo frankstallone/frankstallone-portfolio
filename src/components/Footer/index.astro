@@ -9,9 +9,9 @@ export interface Props {
 const year = new Date().getFullYear();
 ---
 
-<footer class={`flex flex-col text-center ${VARIANT_MAPS[variant].textClass} relative z-10`}>
+<footer class={`flex flex-col text-center pb-4 ${VARIANT_MAPS[variant].primary}`}>
   &copy; {year} Frank Stallone III
-  <small class={`block ${VARIANT_MAPS[variant].textClass}`}>
+  <small class={`block ${VARIANT_MAPS[variant].primary}`}>
     🚀 Happily built by Astro
   </small>
 </footer>

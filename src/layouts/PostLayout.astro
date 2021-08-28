@@ -2,11 +2,20 @@
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
+import { Variant } from '../utils/variants.ts'
 const { content } = Astro.props;
+
+export interface Props {
+  content: {
+    title: string;
+    desc: string;
+    variant?: Variant;
+  }
+}
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
-    <MainHead title={content.title} desc={content.desc} />
+    <MainHead title={content.title} desc={content.desc} variant={content.variant} />
   </head>
 
   <body class="min-h-screen overflow-x-hidden relative max-w-3xl mx-auto">

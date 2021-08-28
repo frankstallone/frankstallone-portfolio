@@ -2,26 +2,19 @@
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
-import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
-const {title, variant} = Astro.props;
-
+import { Variant } from '../utils/variants.ts'
+const { title, variant } = Astro.props;
 
 export interface Props {
     title: string;
     variant: Variant;
 }
-
-const svgClasses = `absolute z-0 top-[-2000px] lg:top-[-1500px] transform right-1/2 translate-x-1/2 w-[4000px] h-[4000px] fill-current ${VARIANT_MAPS[variant].textClass}`; 
-const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
-
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
-    <MainHead title={title} />
-    <meta name="theme-color" content={metaThemeColor}>
+    <MainHead title={title} variant={variant} />
   </head>
   <body class="min-h-screen overflow-x-hidden relative">
-    <svg viewBox="0 0 3334 1180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class={svgClasses} role="img"><path d="M.568 479.167H0V0h3333.33v479.167h-.568c-23.224 256.374-760.866 700-1666.1 700-905.233 0-1642.88-443.626-1666.1-700z"/></svg>
     <Header variant={variant} />
     <!-- slot: your page content will be injected here. -->
     <slot />

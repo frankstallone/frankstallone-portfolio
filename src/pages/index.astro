@@ -3,18 +3,10 @@
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
-import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
-const { variant = "default" } = Astro.props;
-
-export interface Props {
-    variant: Variant;
-}
-const metaThemeColor = `${VARIANT_MAPS[variant].themeColor}`;
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
     <MainHead title="Frank Stallone Portfolio" desc="The portfolio, blog and chronicles of misadventures for Frank Stallone III" />
-    <meta name="theme-color" content={metaThemeColor}>
   </head>
   <body class="min-h-screen overflow-x-hidden relative mx-auto max-w-7xl">
   <Header />

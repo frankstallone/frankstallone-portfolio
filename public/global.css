@@ -21,4 +21,12 @@
   .post p {
     @apply mb-4;
   }
+  .post a,
+  .post a:visited {
+    @apply text-amber-amber12;
+  }
+  .post a:hover,
+  .post a:focus {
+    @apply text-red-red11;
+  }
 }

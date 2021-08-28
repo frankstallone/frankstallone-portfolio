@@ -7,3 +7,18 @@
     aspect-ratio: 1 / 1;
   }
 }
+
+@layer utilities {
+  .post {
+    @apply px-4;
+  }
+  .post h1 {
+    @apply text-4xl font-bold my-8;
+  }
+  .post h2 {
+    @apply text-3xl font-semibold mb-4;
+  }
+  .post p {
+    @apply mb-4;
+  }
+}

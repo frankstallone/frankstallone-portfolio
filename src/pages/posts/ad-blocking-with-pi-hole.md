@@ -5,6 +5,8 @@ title: "🙅‍♂️ Whole network ad blocking"
 desc: "Advertisers are nosey, keep them out of your business."
 ---
 
+![Photograph of Time Square in NYC by Wojtek Witkowski via Unsplash](/assets/posts/ad-blocking-with-pi-hole/wojtek-witkowski-h7rOzTmGxWE-unsplash.jpg)
+
 Article after article I read about how insidious online advertisers are. We are being tracked everywhere we go on the Internet, and off to a certain extent. I don't mind paying for services. I have been a YouTube Premium member for years. It brings me value. I pay for it. I have said I would pay for Facebook not to track every little thing I do. It's creepy, nobody likes it.
 
 There are a slew of ad-blocking extensions for every browser out there. Some are good, some not. Watching an episode of Linus's Tech Tips the other day, "[Block EVERY Online Ad with THIS](https://www.youtube.com/watch?v=KBXTnrD_Zs4)" I became inspired. I had a couple retired Raspberry Pi 2's previously running [Rasplex](https://www.rasplex.com/) in the basement.

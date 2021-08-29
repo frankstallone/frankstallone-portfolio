@@ -8,12 +8,18 @@
   }
 }
 
+/* Blog posts */
 @layer utilities {
-  .post {
-    @apply px-4;
+  .post h1 {
+    @apply text-bronze-bronze12;
+  }
+  .post h2,
+  .post h3,
+  .post h4 {
+    @apply text-golden-gold11;
   }
   .post h1 {
-    @apply text-4xl font-bold my-8;
+    @apply text-4xl font-bold mt-8 mb-0 text-center;
   }
   .post h2 {
     @apply text-3xl font-semibold mb-4;
@@ -21,12 +27,16 @@
   .post p {
     @apply mb-4;
   }
+  .post p img {
+    /* Margin's collapse! */
+    @apply mb-8;
+  }
   .post a,
   .post a:visited {
-    @apply text-amber-amber12;
+    @apply text-golden-gold12 border-b border-golden-gold12;
   }
   .post a:hover,
   .post a:focus {
-    @apply text-red-red11;
+    @apply text-golden-gold11 border-0;
   }
 }

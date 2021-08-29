@@ -9,21 +9,28 @@ export interface Props {
   content: {
     title: string;
     desc: string;
+    date:string;
     variant?: Variant;
   }
 }
+const dateTime = new Date(content.date).toISOString();
+const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
     <MainHead title={content.title} desc={content.desc} variant={content.variant} />
   </head>
-
-  <body class="min-h-screen overflow-x-hidden relative max-w-3xl mx-auto">
-    <Header />
-    <article class="post">
+  <body class="min-h-screen overflow-x-hidden relative">
+    <div class="max-w-7xl mx-auto">
+      <Header variant={content.variant} />
+    </div>
+    <article class="post px-4 mb-12 text-bronze-bronze12 max-w-3xl mx-auto leading-relaxed">
       <h1>{content.title}</h1>
+      <p class="text-center">
+        <time datetime={dateTime} class="font-bold text-golden-gold9 text-sm">{humanReadableDate}</time>
+      </p>
       <slot />
     </article>
-    <Footer />
+    <Footer variant={content.variant} />
   </body>
 </html>

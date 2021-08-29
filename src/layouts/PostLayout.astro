@@ -21,9 +21,7 @@ const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, {
     <MainHead title={content.title} desc={content.desc} variant={content.variant} />
   </head>
   <body class="min-h-screen overflow-x-hidden relative">
-    <div class="max-w-7xl mx-auto">
-      <Header variant={content.variant} />
-    </div>
+    <Header variant={content.variant} />
     <article class="post px-4 mb-12 text-bronze-bronze12 max-w-3xl mx-auto leading-relaxed">
       <h1>{content.title}</h1>
       <p class="text-center">

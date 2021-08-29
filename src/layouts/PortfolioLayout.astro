@@ -2,13 +2,14 @@
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
-import { Variant } from '../utils/variants.ts'
-const { title, variant } = Astro.props;
+import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
+const { title, variant = 'default' } = Astro.props;
 
 export interface Props {
     title: string;
     variant: Variant;
 }
+const textColor = VARIANT_MAPS[variant].primary;
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
@@ -17,7 +18,9 @@ export interface Props {
   <body class="min-h-screen overflow-x-hidden relative">
     <Header variant={variant} />
     <!-- slot: your page content will be injected here. -->
-    <slot />
+    <article class={`px-4 mb-12 ${textColor} max-w-7xl mx-auto leading-relaxed`}>
+      <slot />
+    </article>
     <Footer variant={variant} />
   </body>
 </html>

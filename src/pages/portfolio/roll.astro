@@ -1,0 +1,26 @@
+---
+import PortfolioLayout from '../../layouts/PortfolioLayout.astro'
+import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
+---
+
+<PortfolioLayout title="Roll by ADP" variant="roll">
+    <h3 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Roll by ADP</h3>
+    <h4 class={`pb-4 text-xl xl:text-2xl font-semibold ${VARIANT_MAPS["roll"].h2}`}>UX, UI, Design System</h4>
+    <p class="pb-8 md:w-1/2 lg:w-1/3 font-semibold">Over seven years of collaborating with product, design and engineering teams. Diving into the minutia to provide meaningful and relevant experiences for our users.</p>
+    <article class="grid gap-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 pb-4">
+        <img src="/assets/squared/roll-squared-01@2x.png" alt="Mock up of the original logo design for Roll by ADP" class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2">
+        <img src="/assets/squared/roll-squared-02@2x.png" alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2">
+        <img src="/assets/squared/roll-squared-03@2x.png" alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients" class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3">
+        <img src="/assets/squared/roll-squared-04@2x.png" alt="Screenshots of the mobile app that would eventually be used circa 2018" class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2">
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-50 h-full w-full lg:col-start-3"></div>
+        <div aria-hidden="true" class="square hidden md:block bg-roll-100 rounded-lg h-full w-full lg:col-start-4"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"></div>
+        <div aria-hidden="true" class="square hidden lg:block bg-roll-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"></div>
+    </article>
+</PortfolioLayout>

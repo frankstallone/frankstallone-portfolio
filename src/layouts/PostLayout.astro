@@ -14,7 +14,7 @@ export interface Props {
   }
 }
 const dateTime = new Date(content.date).toISOString();
-const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" }).toUpperCase();
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
@@ -25,7 +25,7 @@ const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, {
     <article class="post px-4 mb-12 text-bronze-bronze12 max-w-3xl mx-auto leading-relaxed">
       <h1>{content.title}</h1>
       <p class="text-center">
-        <time datetime={dateTime} class="font-bold text-golden-gold9 text-sm">{humanReadableDate}</time>
+        <time datetime={dateTime} class="font-extralight text-golden-gold9">{humanReadableDate}</time>
       </p>
       <slot />
     </article>

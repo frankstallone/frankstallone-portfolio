@@ -1,34 +1,10 @@
 ---
 const { variant = "default" } = Astro.props;
 
-import { Variant } from "../../utils/variants.ts"
+import { Variant, VARIANT_MAPS } from "../../utils/variants.ts"
 
 export interface Props {
   variant?: Variant;
-}
-
-export interface VariantAttributes {
-  primary: string;
-  link: string;
-  hover: string;
-}
-
-const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
-    default: {
-      primary: "text-amber-amber12", 
-      link: "text-amber-amber12", 
-      hover: "hover:text-red-red11", 
-    },
-    btc: {
-      primary: "text-btc-500",
-      link: "text-btc-200",
-      hover: "hover:text-btc-100",
-    },
-    roll: {
-      primary: "text-btc-500",
-      link: "text-btc-1000",
-      hover: "hover:text-btc-700",
-    },
 }
 
 const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover} font-bold text-xs tracking-wider xs:tracking-widest`;

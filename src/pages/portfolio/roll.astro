@@ -7,7 +7,7 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
     <h2 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Roll by ADP</h2>
     <h3 class={`pb-4 text-xl xl:text-2xl font-semibold ${VARIANT_MAPS["roll"].h2}`}>UX, UI, Design System</h3>
     <p class="pb-8 md:w-1/2 lg:w-1/3 font-semibold">Over seven years of collaborating with product, design and engineering teams. Diving into the minutia to provide meaningful and relevant experiences for our users.</p>
-    <section class="grid gap-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 pb-4">
+    <section class="grid gap-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 pb-10">
         <img src="/assets/squared/roll-squared-01@2x.png" alt="Mock up of the original logo design for Roll by ADP" class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2">
         <img src="/assets/squared/roll-squared-02@2x.png" alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2">
         <img src="/assets/squared/roll-squared-03@2x.png" alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients" class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3">
@@ -25,9 +25,12 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
     </section>
     <h2 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Case Study</h2>
     <h3 class={`pb-4 text-xl xl:text-2xl font-semibold ${VARIANT_MAPS["roll"].h2}`}>Payroll Run</h3>
-    <p class="pb-4 md:w-1/2 lg:w-1/3 font-semibold">Small business owners need to run payroll confidently and fast on the go and in office.</p>
+    <div class="pb-10 grid gap-4 xs:grid-cols-2 lg:grid-cols-3">
+        <p class="font-semibold">Small business owners need to run payroll confidently and fast on the go and in office.</p>
+        <p>There are a lot of attributes to consider per employee. How do we give business owners just what they need without congative overload?</p>
+    </div>
     <h4 class="hidden">Skills displayed</h4>
-    <div class="sm:space-x-4 space-y-2 sm:space-y-0 mb-8">
+    <div class="sm:space-x-4 space-y-2 sm:space-y-0 mb-10">
         <span class="text-xs font-extralight bg-roll-1000 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Product thinking</span>
         <span class="text-xs font-extralight bg-roll-900 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Interaction design</span>
         <span class="text-xs font-extralight bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Visual design</span>
@@ -35,25 +38,74 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
         <span class="text-xs font-extralight bg-roll-600 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Intentionality</span>
         <span class="text-xs font-extralight bg-roll-500 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Self-awareness</span>
     </div>
-    <section class="grid gap-4 place-items-center xs:grid-cols-2">
+    <section class="grid gap-4 place-items-center xs:grid-cols-3 xs:grid-rows-3">
         <div>
-            <p>There is a lot of features to consider per employee. How do we give business owners just what they need without congative overload?</p>
+            <p>Use color, font size, font weight, placement and progressive disclosure leaning on existing / established UX, UI, iconography and interaction patterns.</p>
         </div>
-        <div>
-            <img src="/assets/roll/payroll-run-v2.62@2x.png" alt="">
+        <div class="relative xs:col-span-2 xs:row-span-3 w-full h-full">
+            <svg viewBox="0 0 101 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="xs:absolute fill-current text-roll-100 w-full h-full">
+                <g id="blob">
+                    <g id="blob-shape">
+                        <path d="M30.712,65.356c-5.712,-20.356 -30.712,-19.356 -30.712,-37.356c0,-15.454 12.546,-28 28,-28c10.932,0 71,5 72,50c0.933,41.99 -51.15,80 -69.288,15.356Z"/>
+                        <path d="M30.712,65.356c-5.712,-20.356 -30.712,-19.356 -30.712,-37.356c0,-15.454 12.546,-28 28,-28c10.932,0 71,5 72,50c0.933,41.99 -51.15,80 -69.288,15.356Zm4.814,-1.351c-3.237,-11.537 -11.686,-17.247 -19.58,-22.398c-5.487,-3.581 -10.946,-6.516 -10.946,-13.607c-0,-12.694 10.306,-23 23,-23c5.202,0 22.092,1.198 37.802,7.741c14.809,6.167 28.751,17.187 29.199,37.37c0.305,13.719 -5.624,26.971 -14.109,35.576c-5.289,5.364 -11.564,8.946 -17.955,9.29c-10.935,0.59 -21.091,-8.446 -27.411,-30.972l-0,-0Z"/>
+                    </g>
+                </g>
+                <g id="placement" class="text-roll-400">
+                    <circle id="bottom-right" cx="77.5" cy="77.5" r="22.5"/>
+                    <path d="M77.5,55c12.418,0 22.5,10.082 22.5,22.5c0,12.418 -10.082,22.5 -22.5,22.5c-12.418,0 -22.5,-10.082 -22.5,-22.5c0,-12.418 10.082,-22.5 22.5,-22.5Zm0,5c9.659,0 17.5,7.841 17.5,17.5c0,9.659 -7.841,17.5 -17.5,17.5c-9.659,-0 -17.5,-7.841 -17.5,-17.5c0,-9.659 7.841,-17.5 17.5,-17.5Z"/>
+                    <circle id="bottom-left" cx="22.5" cy="77.5" r="22.5"/>
+                    <path d="M22.5,55c12.418,0 22.5,10.082 22.5,22.5c0,12.418 -10.082,22.5 -22.5,22.5c-12.418,0 -22.5,-10.082 -22.5,-22.5c0,-12.418 10.082,-22.5 22.5,-22.5Zm0,5c9.659,0 17.5,7.841 17.5,17.5c-0,9.659 -7.841,17.5 -17.5,17.5c-9.659,-0 -17.5,-7.841 -17.5,-17.5c-0,-9.659 7.841,-17.5 17.5,-17.5Z"/>
+                    <circle id="top-left" cx="22.5" cy="22.5" r="22.5"/>
+                    <path d="M22.5,0c12.418,0 22.5,10.082 22.5,22.5c0,12.418 -10.082,22.5 -22.5,22.5c-12.418,0 -22.5,-10.082 -22.5,-22.5c0,-12.418 10.082,-22.5 22.5,-22.5Zm0,5c9.659,-0 17.5,7.841 17.5,17.5c-0,9.659 -7.841,17.5 -17.5,17.5c-9.659,-0 -17.5,-7.841 -17.5,-17.5c-0,-9.659 7.841,-17.5 17.5,-17.5Z"/>
+                    <path id="arrow" d="M61.789,23.394c-0.339,-0.169 -0.553,-0.515 -0.553,-0.894c0,-0.379 0.214,-0.725 0.553,-0.894c6.126,-3.064 26.191,-13.096 31.764,-15.882c0.31,-0.155 0.678,-0.139 0.973,0.043c0.295,0.183 0.474,0.504 0.474,0.851c0,5.856 0,25.908 0,31.764c-0,0.347 -0.179,0.668 -0.474,0.851c-0.295,0.182 -0.663,0.198 -0.973,0.043c-5.573,-2.786 -25.638,-12.818 -31.764,-15.882Z"/>
+                    <path d="M61.789,23.394c-0.339,-0.169 -0.553,-0.515 -0.553,-0.894c0,-0.379 0.214,-0.725 0.553,-0.894c6.126,-3.064 26.191,-13.096 31.764,-15.882c0.31,-0.155 0.678,-0.139 0.973,0.043c0.295,0.183 0.474,0.504 0.474,0.851c0,5.856 0,25.908 0,31.764c-0,0.347 -0.179,0.668 -0.474,0.851c-0.295,0.182 -0.663,0.198 -0.973,0.043c-5.573,-2.786 -25.638,-12.818 -31.764,-15.882Zm9.391,-0.894l18.82,9.41l0,-18.82l-18.82,9.41Z"/>
+                </g>
+            </svg>
+            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="absolute bottom-0 right-0 fill-current text-roll-800 w-36 h-36">
+                <g id="placement">
+                    <circle id="bottom-right" cx="77.5" cy="77.5" r="22.5"/>
+                    <path d="M77.5,55c12.418,0 22.5,10.082 22.5,22.5c0,12.418 -10.082,22.5 -22.5,22.5c-12.418,0 -22.5,-10.082 -22.5,-22.5c0,-12.418 10.082,-22.5 22.5,-22.5Zm0,5c9.659,0 17.5,7.841 17.5,17.5c0,9.659 -7.841,17.5 -17.5,17.5c-9.659,-0 -17.5,-7.841 -17.5,-17.5c0,-9.659 7.841,-17.5 17.5,-17.5Z"/>
+                    <circle id="bottom-left" cx="22.5" cy="77.5" r="22.5"/>
+                    <path d="M22.5,55c12.418,0 22.5,10.082 22.5,22.5c0,12.418 -10.082,22.5 -22.5,22.5c-12.418,0 -22.5,-10.082 -22.5,-22.5c0,-12.418 10.082,-22.5 22.5,-22.5Zm0,5c9.659,0 17.5,7.841 17.5,17.5c-0,9.659 -7.841,17.5 -17.5,17.5c-9.659,-0 -17.5,-7.841 -17.5,-17.5c-0,-9.659 7.841,-17.5 17.5,-17.5Z"/>
+                    <circle id="top-left" cx="22.5" cy="22.5" r="22.5"/>
+                    <path d="M22.5,0c12.418,0 22.5,10.082 22.5,22.5c0,12.418 -10.082,22.5 -22.5,22.5c-12.418,0 -22.5,-10.082 -22.5,-22.5c0,-12.418 10.082,-22.5 22.5,-22.5Zm0,5c9.659,-0 17.5,7.841 17.5,17.5c-0,9.659 -7.841,17.5 -17.5,17.5c-9.659,-0 -17.5,-7.841 -17.5,-17.5c-0,-9.659 7.841,-17.5 17.5,-17.5Z"/>
+                    <path id="arrow" d="M61.789,23.394c-0.339,-0.169 -0.553,-0.515 -0.553,-0.894c0,-0.379 0.214,-0.725 0.553,-0.894c6.126,-3.064 26.191,-13.096 31.764,-15.882c0.31,-0.155 0.678,-0.139 0.973,0.043c0.295,0.183 0.474,0.504 0.474,0.851c0,5.856 0,25.908 0,31.764c-0,0.347 -0.179,0.668 -0.474,0.851c-0.295,0.182 -0.663,0.198 -0.973,0.043c-5.573,-2.786 -25.638,-12.818 -31.764,-15.882Z"/>
+                    <path d="M61.789,23.394c-0.339,-0.169 -0.553,-0.515 -0.553,-0.894c0,-0.379 0.214,-0.725 0.553,-0.894c6.126,-3.064 26.191,-13.096 31.764,-15.882c0.31,-0.155 0.678,-0.139 0.973,0.043c0.295,0.183 0.474,0.504 0.474,0.851c0,5.856 0,25.908 0,31.764c-0,0.347 -0.179,0.668 -0.474,0.851c-0.295,0.182 -0.663,0.198 -0.973,0.043c-5.573,-2.786 -25.638,-12.818 -31.764,-15.882Zm9.391,-0.894l18.82,9.41l0,-18.82l-18.82,9.41Z"/>
+                </g>
+            </svg>
+            <svg viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="absolute top-0 left-0 fill-current text-roll-900 w-60 h-60">
+                <g id="weight">
+                    <rect id="top-border" x="0" y="0" width="200" height="6"/>
+                    <g id="letters">
+                        <path id="bold" class="text-roll-500" d="M40.768,26.099c3.31,-0 5.355,0.973 7.594,2.92l5.062,-9.638c-4.283,-3.018 -8.08,-4.381 -14.116,-4.381c-11.099,0 -19.082,6.912 -19.082,18.79l-0,1.947l-9.347,0l0,10.904l9.347,0l-0,38.359l12.753,0l0,-38.359l15.091,0l-0,-10.904l-15.091,0l0,-1.85c0,-5.16 3.408,-7.788 7.789,-7.788Z"/>
+                        <path id="regular" class="text-roll-600" d="M115.736,30.265c2.925,-0 5.349,0.919 7.187,2.339l2.591,-4.763c-2.842,-1.922 -5.599,-2.841 -9.861,-2.841c-8.44,0 -14.206,5.599 -14.206,14.457l-0,3.259l-8.023,-0l0,5.348l8.106,0l0,36.936l5.85,0l-0,-36.936l13.955,0l0,-5.348l-13.955,-0l-0,-3.259c-0,-6.184 3.342,-9.192 8.356,-9.192Z"/>
+                        <path id="thin" class="text-roll-700" d="M182.018,36.253c3.203,0 5.014,1.393 6.197,2.577l0.906,-1.184c-1.114,-1.184 -3.273,-2.646 -7.243,-2.646c-4.944,0 -9.47,3.76 -9.47,10.097l-0,4.666l-6.894,0l-0,1.254l6.894,-0l-0,33.983l1.323,0l-0,-33.983l13.301,-0l-0,-1.254l-13.301,0l-0,-4.666c-0,-5.849 4.178,-8.844 8.287,-8.844Z"/>
+                    </g>
+                    <rect id="bottom-border" x="0" y="94" width="200" height="6"/>
+                </g>
+            </svg>
+            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="absolute top-32 right-12 fill-current h-24 w-24">
+                <g id="hierarchy-rectangles">
+                    <path id="top" class="text-roll-300" d="M100,1c0,-0.265 -0.105,-0.52 -0.293,-0.707c-0.187,-0.188 -0.442,-0.293 -0.707,-0.293c-9.781,-0 -88.219,-0 -98,-0c-0.265,-0 -0.52,0.105 -0.707,0.293c-0.188,0.187 -0.293,0.442 -0.293,0.707c-0,3.414 -0,14.586 -0,18c-0,0.265 0.105,0.52 0.293,0.707c0.187,0.188 0.442,0.293 0.707,0.293c9.781,0 88.219,0 98,0c0.265,0 0.52,-0.105 0.707,-0.293c0.188,-0.187 0.293,-0.442 0.293,-0.707c0,-3.414 0,-14.586 -0,-18Z"/>
+                    <path id="middle" class="text-roll-600" d="M100,41c0,-0.265 -0.105,-0.52 -0.293,-0.707c-0.187,-0.188 -0.442,-0.293 -0.707,-0.293c-9.781,0 -88.219,0 -98,0c-0.265,-0 -0.52,0.105 -0.707,0.293c-0.188,0.187 -0.293,0.442 -0.293,0.707c-0,3.414 -0,14.586 -0,18c-0,0.265 0.105,0.52 0.293,0.707c0.187,0.188 0.442,0.293 0.707,0.293c9.781,0 88.219,0 98,-0c0.265,0 0.52,-0.105 0.707,-0.293c0.188,-0.187 0.293,-0.442 0.293,-0.707c0,-3.414 0,-14.586 -0,-18Z"/>
+                    <path id="bottom" class="text-roll-900" d="M100,81c0,-0.265 -0.105,-0.52 -0.293,-0.707c-0.187,-0.188 -0.442,-0.293 -0.707,-0.293c-9.781,0 -88.219,0 -98,0c-0.265,-0 -0.52,0.105 -0.707,0.293c-0.188,0.187 -0.293,0.442 -0.293,0.707c-0,3.414 -0,14.586 -0,18c-0,0.265 0.105,0.52 0.293,0.707c0.187,0.188 0.442,0.293 0.707,0.293c9.781,0 88.219,0 98,0c0.265,0 0.52,-0.105 0.707,-0.293c0.188,-0.187 0.293,-0.442 0.293,-0.707c0,-3.414 0,-14.586 -0,-18Z"/>
+                </g>
+            </svg>
+            <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="absolute bottom-24 left-24 fill-current h-24 w-24 text-roll-600">
+                <g id="accordion">
+                    <g id="main-panel">
+                        <path id="top-panel" d="M100,4.992c-0,-2.757 -2.235,-4.992 -4.992,-4.992c-17.063,0 -72.953,0 -90.016,0c-2.757,0 -4.992,2.235 -4.992,4.992c0,7.72 0,21.675 0,21.675l100,-0l-0,-21.675Zm-20.293,13.134c-0.39,0.391 -1.024,0.391 -1.414,0c-1.715,-1.714 -6.132,-6.132 -8.586,-8.586c-0.286,-0.286 -0.371,-0.716 -0.217,-1.089c0.155,-0.374 0.52,-0.618 0.924,-0.618c4.232,0 12.94,0 17.172,0c0.404,0 0.769,0.244 0.924,0.618c0.154,0.373 0.069,0.803 -0.217,1.089c-2.454,2.454 -6.871,6.872 -8.586,8.586Z"/>
+                    </g>
+                    <g id="more-panel">
+                        <path id="bottom-panel" d="M100,21l-100,-0l0,73.97c0,1.334 0.53,2.613 1.473,3.557c0.944,0.943 2.223,1.473 3.557,1.473c17.095,0 72.845,0 89.94,0c1.334,0 2.613,-0.53 3.557,-1.473c0.943,-0.944 1.473,-2.223 1.473,-3.557c-0,-17.399 -0,-73.97 -0,-73.97Zm-5,5l0,68.97c-0,0.008 -0.003,0.016 -0.009,0.021c-0.005,0.006 -0.013,0.009 -0.021,0.009l-89.94,-0c-0.008,0 -0.016,-0.003 -0.021,-0.009c-0.006,-0.005 -0.009,-0.013 -0.009,-0.021c0,0 0,-68.97 0,-68.97l90,-0Z"/>
+                    </g>
+                </g>
+            </svg>
         </div>
     </section>
     <section class="grid gap-4 place-items-center xs:grid-cols-2">
         <div>
-            <p>Use color, font size, font weight, placement and progressive disclosure leaning on existing / established UX, UI and interaction patterns.</p>
-        </div>
-        <div>
-            <img src="/assets/roll/payroll-run-v2.62@2x.png" alt="">
-        </div>
-    </section>
-    <section class="grid gap-4 place-items-center xs:grid-cols-2">
-        <div>
-            <p>Establish a heirarchy for the features highlighting the needs of the business owner. Features to see for every employee and those that can be a tap away.</p>
+            <p>Establish a heirarchy for the features highlighting the needs of the business owner. Features to see for every employee immediately and those that can be a tap away.</p>
         </div>
         <div>
             <img src="/assets/roll/payroll-run-v2.62@2x.png" alt="">
@@ -77,7 +129,7 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
     </section>
     <section class="grid gap-4 place-items-center xs:grid-cols-2">
         <div>
-            <p>Explore existing design patterns to see if any apply or can be modified to be used in this space.</p>
+            <p>Explore existing design patterns to see if any apply or can be modified to be used in this space. Look for oppertunities to infer from what we already know. For instance we know a business owner gave an employee a raise mid week. We will show two inputs for that employee with hours for the mid-cycle change in rate.</p>
         </div>
         <div>
             <img src="/assets/roll/payroll-run-v2.62@2x.png" alt="">

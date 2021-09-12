@@ -19,6 +19,18 @@ module.exports = {
       indigo: indigo,
       amber: amber,
       red: red,
+      orange: {
+        100: "#fffbec",
+        200: "#fadaa2",
+        300: "#eeba77",
+        400: "#e3974c",
+        500: "#cf712e",
+        600: "#a95c29",
+        700: "#954018",
+        800: "#7f290c",
+        900: "#5e1e06",
+        1000: "#2d1103",
+      },
       btc: {
         50: "#f5faff",
         100: "#d2ebff",

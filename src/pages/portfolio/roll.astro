@@ -5,9 +5,13 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
 
 <PortfolioLayout title="Roll by ADP" variant="roll">
     <div class="min-h-80 mb-20 lg:mb-40">
-        <h2 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Roll by ADP</h2>
+        <h2 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Roll</h2>
         <h3 class={`pb-4 text-xl xl:text-2xl font-semibold ${VARIANT_MAPS["roll"].h2}`}>UX, UI, Design System</h3>
-        <p class="pb-8 md:w-1/2 lg:w-1/3 font-semibold">Over seven years of collaborating with product, design and engineering teams. Diving into the minutia to provide meaningful and relevant experiences for our users.</p>
+        <div class="pb-8 grid gap-4 xs:grid-cols-2 lg:grid-cols-3">
+            <p class="font-semibold text-lg">I've been working for over seven years collaborating with product, design and engineering teams. Diving into the minutia to provide meaningful and relevant experiences for our users.</p>
+            <p class="text-lg">Roll by ADP's goal was to rethink how business run payroll &amp; <abbr title="Human Capital Management">HCM</abbr>. We're not simply slapping a new coat of paint on the existing enterprise &mdash; no, that's just what they would expect us to do &hellip;</p>
+            <p class="text-lg">With an event engine at it's heart and a sophisticated suite of <abbr title="Machine Learning">ML</abbr> algorithms running our chat bot, our journey is blazing the trail of conversational UX/UI.</p>
+        </div>
         <section class="grid gap-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 mb-20">
             <img src="/assets/squared/roll-squared-01@2x.png" alt="Mock up of the original logo design for Roll by ADP" class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2">
             <img src="/assets/squared/roll-squared-02@2x.png" alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2">
@@ -28,8 +32,9 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
     <h2 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Case Study</h2>
     <h3 class={`pb-4 text-xl xl:text-2xl font-semibold ${VARIANT_MAPS["roll"].h2}`}>Payroll Run</h3>
     <div class="pb-10 grid gap-4 xs:grid-cols-2 lg:grid-cols-3">
-        <p class="font-semibold">Small business owners need to run payroll confidently and fast on the go and in office.</p>
-        <p>There are a lot of attributes to consider per employee. How do we give business owners just what they need without congative overload?</p>
+        <p class="text-lg">With an event engine at it's heart and a sophisticated suite of <abbr title="Machine Learning">ML</abbr> algorithms running our chat bot, our journey is blazing the trail of conversational UX/UI. <span class="font-semibold">In this case study we'll be answering how small business owners can quickly run payroll in the office or on the go.</span></p>
+        <p class="text-lg">The primary devices are Apple and Android phones but this design will also be displayed on the desktop.  There are a sea of attributes to mix and match. Did an employee have overtime or sick days? Did we (finally) give Vivian a raise mid pay cycle?</p>
+        <p class="text-lg">I know there is no component in our design system that can facilitate the dynamic ask of the task. I am excited to see what we come up with. Also, Vivian deserves the raise &mdash; she's put up with us for long enough. 😜</p>
     </div>
     <h4 class="hidden">Skills displayed</h4>
     <div class="sm:space-x-4 space-y-2 sm:space-y-0 mb-20 lg:mb-40">
@@ -42,8 +47,8 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
     </div>
     <section class="grid gap-12 place-content-center place-items-center mb-20 lg:mb-40 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
         <div class="md:row-span-3">
-            <p class="lg:text-xl font-semibold pb-4">Meet with SVP, product and engineering to establish a heirarchy for the features highlighting the needs of the business owner. Features to see for every employee immediately and those that can be a tap away.</p>
-            <p class="lg:text-lg">Use color, font size, font weight, placement and progressive disclosure leaning on existing / established UX, UI, iconography and interaction patterns.</p>
+            <p class="lg:text-xl font-semibold pb-4">The Avengers assemble. From a SVP, product team to our architect and backend developers we're sitting among 50+ years of payroll and <abbr title="Human Capital Management">HCM</abbr> knowledge. Everyone's voice is heard because they all bring unique perspectives to the table.</p>
+            <p class="lg:text-lg">The context is set, we begin with discovery. I start by asking questions about the vast array of attributes any one employee can have associated to them and the type of business structures that use these attributes. We scope the <abbr title="Minimum Viable Product">MVP</abbr> to be hourly employees whose managers will be submitting their hours.</p>
         </div>
         <div class="xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
             <svg viewBox="0 0 723 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -109,8 +114,8 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
             <img src="/assets/roll/whiteboard-sketches-800px.jpg" alt="Sketches post whiteboard session fleshing out panel and accordion variants">
         </div>
         <div class="row-start-1 md:row-span-3">
-            <p class="lg:text-xl font-semibold pb-4">Whiteboard how we use the above design signals to arrange the visual hierarchy of attributes on a panel. More discussion leads to continued whiteboarding layout for accordion secondary panel with deemphasized attributes.</p>
-            <p class="lg:text-lg">We also explore existing design patterns and look for oppertunities to infer from what we already know. For instance if we know a business owner gave an employee a raise mid week we will show two inputs for that employee with hours for the mid-cycle change in rate.</p>
+            <p class="lg:text-xl font-semibold pb-4">From there I'm at the whiteboard as attribute names are being thrown at me like Mario collecting coins at warp speed in Super Mario Brothers.</p>
+            <p class="lg:text-lg">It's obvious these all don't need to be on the screen at the same time. Aside, I'm elated whenever someone from another department comes to conclusions that are in alignment with best practices. Gives me goose bumps. We want managers to quickly scroll through a list of employees without cognative overload, or with minimal friction to completing payroll.</p>
         </div>
     </section>
     <section class="grid gap-12 place-content-center place-items-center mb-20 lg:mb-40 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">

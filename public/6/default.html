@@ -1,0 +1,570 @@
+<html>
+<head>
+	<title>Advanced News Scroll Java Applet</title>
+<META  name="description" content="">
+<META  name="keywords" content="">
+</head>
+<body bgcolor="#FFFFFF" topMargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<center>
+<table border=0 width="600">
+<tr><td bgcolor="#ffffff" height="40" align="center"><a href="http://www.appletcollection.com/advnewsscroll.html"><font face="Arial" color="#777777" size="2"><b>A. News Scroll Java Applet</b></font></a><img src="spacer.gif" width=20 height=1 alt="" border="0"><a href="http://www.appletcollection.com/popular.html"><font face="Arial" color="#777777" size="2"><b>Popular Applets Collection</b></font></a><img src="spacer.gif" width=20 height=1 alt="" border="0"><a href="http://www.appletcollection.com/"><font face="Arial" color="#777777" size="2"><b>Java Applets Home</b></font></a></td></tr>
+<tr>
+	<td>
+<font face="Arial" size="+2"><b>Advanced News Scroll Java Applet</b></font>&nbsp;&nbsp;&nbsp;<br><font face="Arial" size="1">Commerical Version 2.0</font>
+<img src="black.gif" width=600 height=3 alt="" border="0">
+<br><br>
+<center>
+
+
+<applet code="advnewsscroll.class" width="170" height="205">
+<param name="info" value="Applet by Gokhan Dagli,www.appletcollection.com">
+<param name="regcode" value="">
+
+<param name="input_text" value="from_parameters">
+<param name="text_file" value="">
+
+<param name="scroll_mode" value="scroll">
+
+<param name="bgimage" value="text4.jpg">
+<param name="image_xposition" value="0">
+<param name="image_yposition" value="0">
+
+<param name="bgcolor" value="000000">
+
+<param name="title_color" value="ffcc00">
+<param name="text_color" value="dddddd">
+<param name="highlight_title_color" value="80a0d0">
+<param name="highlight_text_color" value="50b5f0">
+
+<param name="title_align" value="left">
+<param name="text_align" value="left">
+
+<param name="title_font_type" value="Helvetica">
+<param name="title_font_size" value="12">
+<param name="title_font_style" value="1">
+
+<param name="text_font_type" value="Helvetica">
+<param name="text_font_size" value="11">
+<param name="text_font_style" value="0">
+
+<param name="title_underline" value="no">
+<param name="text_underline" value="no">
+
+<param name="scroll_delay" value="30">
+<param name="pause" value="3000">
+
+<param name="border_thickness" value="1">
+<param name="border_color" value="000000">
+
+<param name="left_margin" value="10">
+<param name="top_margin" value="10">
+<param name="right_margin" value="5">
+<param name="bottom_margin" value="10">
+
+<param name="vertical_space" value="20">
+<param name="title_linespace" value="0">
+<param name="text_linespace" value="0">
+
+<param name=title1 value="Advanced News Scroll">
+<param name="text1" value="Advanced News Scroll is a highly configurable vertical text scroller and vertical news ticker.">
+<param name="link1" value="http://www.appletcollection.com/advnewsscroll.html">
+<param name="target_frame1" value="_self">
+
+<param name="title2" value="Applet Features">
+<param name="text2" value="This applet features smooth scrolling, highlighted URL links, optional border, configurable margins ,and background image.">
+<param name="link2" value="http://www.appletcollection.com/advnewsscroll.html">
+<param name="target_frame2" value="_self">
+
+<param name=title3 value="Input Text File">
+<param name="text3" value="The scroll content can be loaded from a separate text file or parameters.">
+<param name="link3" value="http://www.appletcollection.com/advnewsscroll.html">
+<param name="target_frame3" value="_self">
+
+<param name=title4 value="Example 2">
+<param name="text4" value="Example 2 shows how you can use separate text file to read scroll content.">
+<param name="link4" value="example2/default.html">
+<param name="target_frame4" value="_self">
+
+
+</applet>
+<br><br><br>
+<a href="example2/default.html"><font face="Arial" size="2" color="#555555">Example 2</font></a><img src="spacer.gif" width=20 height=1 alt="" border="0"><a href="example3/default.html"><font face="Arial" size="2" color="#555555">Example 3</font></a><img src="spacer.gif" width=20 height=1 alt="" border="0"><a href="example4/default.html"><font face="Arial" size="2" color="#555555">Example 4</font></a><img src="spacer.gif" width=20 height=1 alt="" border="0"><a href="example5/default.html"><font face="Arial" size="2" color="#555555">Example 5</font></a>
+
+<br><br>
+</center>
+
+<font face="Arial" size="2">
+Advanced News Scroll is a highly configurable vertical text scroller and vertical news ticker. This applet features smooth scrolling, highlighted URL links, the scroll content can be loaded from a separate text file or parameters, optional border, configurable margins ,and background image. 
+<br><br>
+<font face="Arial" size="2">The Advanced News Scroll Java applet is available as part of <a href="http://www.appletcollection.com/popular.html">Popular Applets Collection</a>.</font>
+
+<br><br>
+<font face="Arial" size="2"><b>Applet Features</b></font>
+<ul>
+<li>Background image</li>
+<li>The scroll content can be loaded from a separate text file or parameters</li>
+<li>Smooth scrolling</li>
+<li>Full customizable font characteristics</li>
+<li>Custom colored border</li>
+<li>Text underline</li>
+<li>Custom scroll delay</li>
+<li>Highlighted URL links</li>
+<li>Configurable margins</li>
+</ul>
+and more...
+</font>
+
+<br><br><br>
+<font face="Arial" size="2" color="#333333"><b>
+As an example here's the code I used for the applet on top : 
+</b></font>
+<br><br>
+<table border="1"><tr><td bgcolor="#EEEEEE">
+<p><font face="Arial" size="2" color="#000000">
+&lt;applet code=&quot;advnewsscroll.class&quot;
+width=&quot;170&quot; height=&quot;205&quot;&gt;<br>
+&lt;param name=&quot;info&quot; value=&quot;Applet by Gokhan
+Dagli,www.appletcollection.com&quot;&gt;<br>
+&lt;param name=&quot;regcode&quot; value=&quot;&quot;&gt;<br>
+<br>
+&lt;param name=&quot;input_text&quot;
+value=&quot;from_parameters&quot;&gt;<br>
+&lt;param name=&quot;text_file&quot; value=&quot;&quot;&gt;<br>
+<br>
+&lt;param name=&quot;scroll_mode&quot;
+value=&quot;scroll&quot;&gt;<br>
+<br>
+&lt;param name=&quot;bgimage&quot;
+value=&quot;text4.jpg&quot;&gt;<br>
+&lt;param name=&quot;image_xposition&quot;
+value=&quot;0&quot;&gt;<br>
+&lt;param name=&quot;image_yposition&quot;
+value=&quot;0&quot;&gt;<br>
+<br>
+&lt;param name=&quot;bgcolor&quot; value=&quot;000000&quot;&gt;<br>
+<br>
+&lt;param name=&quot;title_color&quot;
+value=&quot;ffcc00&quot;&gt;<br>
+&lt;param name=&quot;text_color&quot;
+value=&quot;dddddd&quot;&gt;<br>
+&lt;param name=&quot;highlight_title_color&quot;
+value=&quot;80a0d0&quot;&gt;<br>
+&lt;param name=&quot;highlight_text_color&quot;
+value=&quot;50b5f0&quot;&gt;<br>
+<br>
+&lt;param name=&quot;title_align&quot; value=&quot;left&quot;&gt;<br>
+&lt;param name=&quot;text_align&quot; value=&quot;left&quot;&gt;<br>
+<br>
+&lt;param name=&quot;title_font_type&quot;
+value=&quot;Helvetica&quot;&gt;<br>
+&lt;param name=&quot;title_font_size&quot;
+value=&quot;12&quot;&gt;<br>
+&lt;param name=&quot;title_font_style&quot;
+value=&quot;1&quot;&gt;<br>
+<br>
+&lt;param name=&quot;text_font_type&quot;
+value=&quot;Helvetica&quot;&gt;<br>
+&lt;param name=&quot;text_font_size&quot;
+value=&quot;11&quot;&gt;<br>
+&lt;param name=&quot;text_font_style&quot;
+value=&quot;0&quot;&gt;<br>
+<br>
+&lt;param name=&quot;title_underline&quot;
+value=&quot;no&quot;&gt;<br>
+&lt;param name=&quot;text_underline&quot;
+value=&quot;no&quot;&gt;<br>
+<br>
+&lt;param name=&quot;scroll_delay&quot; value=&quot;30&quot;&gt;<br>
+&lt;param name=&quot;pause&quot; value=&quot;3000&quot;&gt;<br>
+<br>
+&lt;param name=&quot;border_thickness&quot;
+value=&quot;1&quot;&gt;<br>
+&lt;param name=&quot;border_color&quot;
+value=&quot;000000&quot;&gt;<br>
+<br>
+&lt;param name=&quot;left_margin&quot; value=&quot;10&quot;&gt;<br>
+&lt;param name=&quot;top_margin&quot; value=&quot;10&quot;&gt;<br>
+&lt;param name=&quot;right_margin&quot; value=&quot;5&quot;&gt;<br>
+&lt;param name=&quot;bottom_margin&quot; value=&quot;10&quot;&gt;<br>
+<br>
+&lt;param name=&quot;vertical_space&quot;
+value=&quot;20&quot;&gt;<br>
+&lt;param name=&quot;title_linespace&quot;
+value=&quot;0&quot;&gt;<br>
+&lt;param name=&quot;text_linespace&quot; value=&quot;0&quot;&gt;<br>
+<br>
+&lt;param name=title1 value=&quot;Advanced News Scroll&quot;&gt;<br>
+&lt;param name=&quot;text1&quot; value=&quot;Advanced News Scroll
+is a highly configurable vertical text scroller and vertical news
+ticker.&quot;&gt;<br>
+&lt;param name=&quot;link1&quot;
+value=&quot;http://www.appletcollection.com/advnewsscroll.html&quot;&gt;<br>
+&lt;param name=&quot;target_frame1&quot;
+value=&quot;_self&quot;&gt;<br>
+<br>
+&lt;param name=&quot;title2&quot; value=&quot;Applet
+Features&quot;&gt;<br>
+&lt;param name=&quot;text2&quot; value=&quot;This applet features
+smooth scrolling, highlighted URL links, optional border,
+configurable margins ,and background image.&quot;&gt;<br>
+&lt;param name=&quot;link2&quot;
+value=&quot;http://www.appletcollection.com/advnewsscroll.html&quot;&gt;<br>
+&lt;param name=&quot;target_frame2&quot;
+value=&quot;_self&quot;&gt;<br>
+<br>
+&lt;param name=title3 value=&quot;Input Text File&quot;&gt;<br>
+&lt;param name=&quot;text3&quot; value=&quot;The scroll content
+can be loaded from a separate text file or parameters.&quot;&gt;<br>
+&lt;param name=&quot;link3&quot;
+value=&quot;http://www.appletcollection.com/advnewsscroll.html&quot;&gt;<br>
+&lt;param name=&quot;target_frame3&quot;
+value=&quot;_self&quot;&gt;<br>
+<br>
+&lt;param name=title4 value=&quot;Example 2&quot;&gt;<br>
+&lt;param name=&quot;text4&quot; value=&quot;Example 2 shows how
+you can use separate text file to read scroll content.&quot;&gt;<br>
+&lt;param name=&quot;link4&quot;
+value=&quot;example2/default.html&quot;&gt;<br>
+&lt;param name=&quot;target_frame4&quot;
+value=&quot;_self&quot;&gt;<br>
+<br>
+<br>
+&lt;/applet&gt;<br>
+</font>
+</p>
+</td></tr></table>
+<br><br>
+<font face="Arial" size="4" color="#000000">Information:</font>
+<br><br>
+<table>
+<font face="Arial" size="2">
+	<tr><td bgcolor="#F5F5F5"><font face="Arial" size="2">Author: Gokhan Dagli</font></td></tr>
+	<tr><td><font face="Arial" size="2">Site URL : <a href="http://www.appletcollection.com/"><b>http://www.appletcollection.com/</b></a></font></td></tr>
+	<tr><td bgcolor="#F5F5F5"><font face="Arial" size="2">Applet URL : <a href="http://www.appletcollection.com/advnewsscroll.html"><b>http://www.appletcollection.com/advnewsscroll.html</b></a></font></td></tr>
+	<tr><td><font face="Arial" size="2">Class File : advnewsscroll.class</font></td></tr>
+	<tr><td bgcolor="#F5F5F5"><font face="Arial" size="2">Mail : info@appletcollection.com</font></td></tr>
+	<tr><td><font face="Arial" size="2">This effect contains the code by Gokhan Dagli, used under a licence. Before using this applet you must read the <a href="license.txt"><b>license agreement</b></a>.</font></td></tr>
+<tr><td bgcolor="#F5F5F5"><font face="Arial" size="2">You can use the applet freely to enhance your web pages (commerical or non-commerical).
+However, I placed a status bar message that will appear when the applet is online on a site
+and regcode parameter isn't correct.</font></td></tr>
+<tr><td><font face="Arial" size="2"><a href="registration.html"><b>Registration</b></a> Fee : $39 .  You can buy it when finished testing (try before you buy). Buy it once, use same regcode for new versions! You have to pay small amount of money to receive your registration codes (regcodes). <a href="registration.html">You can buy the registration code using a credit card through Regnow secure servers. Click here!</a><br><br>The Advanced News Scroll Java applet is available as part of <a href="http://www.appletcollection.com/popular.html">Popular Applets Collection</a>.</font></td></tr>
+
+</font>
+</table>
+<br><br><br>
+<font face="Arial" size="4" color="#000000">Advanced News Scroll's parameters are explained below :</font>
+<font face="Arial" size="2">The following instructions describe the meaning of the available parameters for this applet:</font>
+<br><br><br>
+
+	</td>
+</tr>
+</table>
+
+<table width="760" cellspacing="3" cellpadding="8">
+	<tr><td  width="40%" bgcolor="#909090"><font face="Arial" size="2" color="#ffffff"><b>Parameters</b></font></td><td bgcolor="#909090"><font face="Arial" size="2" color="#ffffff"><b>Value</b></font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;applet code=&quot;advnewsscroll.class&quot; width=&quot;170&quot; height=&quot;200&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">The applet tag identifies the location, class file name, and size of a Java applet. The first part of the tag code=advnewsscroll.class, identifies the name of the Java applet. The second and third part of the applet tag identifies the width and height of the applet (usually measured in screen pixels). </font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;info&quot; value=&quot;Applet by Gokhan Dagli,www.appletcollection.com&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Information about the Advanced News Scroll Java applet. The info parameter must be included for the applet to run. It is case sensitive, and the number of spaces between words must be identical.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;regcode&quot; value=&quot;&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Registration code (if you have it). <a href="registration.html">In the "regcode" parameter, place the registration code you purchased from us</a>. You have to pay small amount of money and receive your registration code (regcode).<a href="registration.html"><b> Click here for buying regcode.</b></a> You can use the applet freely to enhance your web pages (commerical or non-commerical). However, I placed a status bar message that will appear when the applet is online on a site and regcode parameter isn't correct. <a href="registration.html">You can buy the registration code using a credit card through Regnow secure server. It also accepts Checks and Money Orders through postal mail.</a></font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;input_text&quot; value=&quot;from_parameters&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">&quot;<b>from_parameters</b>&quot; or &quot;<b>from_file</b>&quot;.<br><a href="example2/default.html">Example2</a> and <a href="example3/default.html">Example3</a> read text from file.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_file&quot; value=&quot;&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">The name of the text file that contains the text to be vertically scrolled. The file must reside in the same directory as the Java applet. <br><a href="example2/default.html">Example2</a> and <a href="example3/default.html">Example3</a> read text from file.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;scroll_mode&quot; value=&quot;scroll&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">&quot;<b>page</b>&quot; or &quot;<b>scroll</b>&quot;.<br><a href="example4/default.html">Example4</a> uses <b>page</b> mode. <a href="example4/default.html">Click here to see.</a></font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;bgimage&quot; value=&quot;b15.jpg&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">The file name of a GIF or JPEG image that will be drawn behind the scrolling text. The file path is based starting with the directory in which the Java applet is located. If you don't want to use backgroung image, please use this tag like this:<br>&lt;param name=&quot;bgimage&quot; value=&quot;&quot;&gt;<br><a href="example3/default.html">Example3</a> doesn't use background image. <a href="example3/default.html">Click here to see.</a></font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;image_xposition&quot; value=&quot;0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Horizontal position of the background image, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;image_yposition&quot; value=&quot;0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Vertical position of the background image, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;bgcolor&quot; value=&quot;000000&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Background color, in hexadecimal RGB format.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title_color&quot; value=&quot;ffcc00&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Color of the titles, in hexadecimal RGB format.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_color&quot; value=&quot;ffffcc&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Color of the text messages, in hexadecimal RGB format.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;highlight_title_color&quot; value=&quot;80a0d0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">This parameter will change the color of the titles to the specified color when your mouse moves over the applet. This will only occur if there's an associated URL for the current text. You must use hexadecimal RGB format.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;highlight_text_color&quot; value=&quot;50b5f0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">This parameter will change the color of the text message to the specified color when your mouse moves over the applet. This will only occur if there's an associated URL for the current text. You must use hexadecimal RGB format.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title_align&quot; value=&quot;left&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">&quot;<b>left</b>&quot;, &quot;<b>center</b>&quot;,or &quot;<b>right</b>&quot;.<br>This tag identifies alignment of the title messages. Can take one of these three values: &quot;left&quot;, &quot;center&quot; ,or &quot;right&quot;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_align&quot; value=&quot;left&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">&quot;<b>left</b>&quot;, &quot;<b>center</b>&quot;,or &quot;<b>right</b>&quot;.<br>This tag identifies alignment of the text messages. Can take one of these three values: &quot;left&quot;, &quot;center&quot; ,or &quot;right&quot;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title_font_type&quot; value=&quot;Helvetica&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Name of the title font. Valid values are: &quot;Helvetica&quot;, &quot;TimesRoman&quot;, &quot;Courier&quot; and &quot;Arial&quot;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title_font_size&quot; value=&quot;12&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Size of the title font.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title_font_style&quot; value=&quot;1&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Style of the title font (&quot;0&quot;=plain, &quot;1&quot;=bold, &quot;2&quot;=italic, &quot;3&quot;=1+2=bold+italic)..<br>Example:<br>&lt;param name=&quot;title_font_style&quot; value=&quot;1&quot;&gt;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_font_type&quot; value=&quot;Helvetica&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Name of the text font. Valid values are: &quot;Helvetica&quot;, &quot;TimesRoman&quot;, &quot;Courier&quot; and &quot;Arial&quot;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_font_size&quot; value=&quot;11&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Size of the text font.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_font_style&quot; value=&quot;0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Style of the text font (&quot;0&quot;=plain, &quot;1&quot;=bold, &quot;2&quot;=italic, &quot;3&quot;=1+2=bold+italic)..<br>Example:<br>&lt;param name=&quot;title_font_style&quot; value=&quot;0&quot;&gt;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title_underline&quot; value=&quot;no&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">&quot;<b>yes</b>&quot; or &quot;<b>no</b>&quot;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_underline&quot; value=&quot;no&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">&quot;<b>yes</b>&quot; or &quot;<b>no</b>&quot;.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;scroll_delay&quot; value=&quot;30&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">This is the delay in milliseconds between redraws. In other words it represents the speed of the scrolling. The lower the number, the faster it scrolls.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;pause&quot; value=&quot;3000&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">This is the time, in milliseconds, the text should be waiting before scroll again.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;border_thickness&quot; value=&quot;2&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Width of the applet border, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;border_color&quot; value=&quot;d0d0a0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Color of the applet border, in hexadecimal RGB format.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;left_margin&quot; value=&quot;10&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Margin at the left of the applet, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;top_margin&quot; value=&quot;10&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Margin at the top of the applet, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;right_margin&quot; value=&quot;10&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Margin at the right of the applet, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;bottom_margin&quot; value=&quot;10&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Margin at the bottom of the applet, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;vertical_space&quot; value=&quot;24&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">To create a blank space to separate paragraphs. This controls how much space is between each paragraphs.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title_linespace&quot; value=&quot;0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Space between lines of title texts, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text_linespace&quot; value=&quot;0&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Space between lines of text, in pixels.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;title<b>N</b>&quot; value=&quot;000000&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Title of the text message. (<b>N</b> =1,2,3...,number of message). You must start at 1 and increase by 1 at each time.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;text<b>N</b>&quot; value=&quot;	&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Message body. (<b>N</b> =1,2,3...,number of message). You must start at 1 and increase by 1 at each time.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;link<b>N</b>&quot; value=&quot;&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">The absolute and/or relative URLs.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;param name=&quot;target_frame<b>N</b>&quot; value=&quot;_self&quot;&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">Target frame. Sometimes you want the URL to be opened in a particular frame or in a completly different window. Use this parameter to specify the destination of the URL to open.</font></td></tr>
+	<tr><td width="40%" bgcolor="#F5F5F5"><font face="Arial" size="2">&lt;/applet&gt;</font></td><td bgcolor="#F5F5F5"><font face="Arial" size="2">The last part works like all other HTML tags and defines the end of the applet tag &lt;/applet&gt;.</font></td></tr>
+</table>
+<br><br>
+<table width="640">
+<tr><td><p><font face="Arial" size="+2">Text File Format</font></p></td></tr>
+<tr><td height=10>&nbsp;</td></tr>
+<tr><td>
+<font face="Arial">
+
+<b>Title</b>|<b>Text</b>|<b>Link URL</b>|<b>Target Frame</b>
+<br><br>
+Please do not forget putting &quot;|&quot; charecter between items. You have to use three &quot;|&quot; charecter each line.
+<br><br>
+<a href="example2/default.html">Example2</a> and <a href="example3/default.html">Example3</a> read text from file.
+
+</font>
+</td></tr>
+</table>
+<br><br>
+<table width="600">
+<table border=0 width=640><tr><td>
+<p><font face="Arial" size="+2">Getting Started</font></p>
+
+<ul>
+<font face="Arial" size="-1">
+<li>
+Place the class file (advnewsscroll.class) in the directory containing the HTML document into which you want to insert the applet (or into a different directory, and add the correct CODEBASE= attribute).
+</li>
+<li>
+Add the applet tag to your HTML document in the position you want Advanced News Scroll Text Java applet to appear.
+</li>
+<li>
+The info parameter must be included for the applet to run. It is case sensitive, and the number of spaces between words must be identical (entirely single-spaced). If you try to run the applet and you see the message "info parameter error", it denotes a problem with this parameter.
+</li>
+<li><b>Java is case sensitive.</b></li>
+</font>
+</ul>
+<br>
+<br>
+<p><font face="Arial" size="+2">Linking to My Web Site</font></p>
+<center>
+<table border=1 bgcolor="#666666" width="500" cellpadding="10" cellpadding="2">
+	<tr>
+		<td bgcolor="#ffffff">
+		<font face="Arial" size="2" color="#000000">
+If you use unregistered version of this applet in your own website and you want to include
+a link to my homepage, you can use the images &quot;sbn.gif&quot; or &quot;bbn.gif&quot; and type
+this HTML code in your pages:<br>
+	</font><br><br>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#ffffff">
+			<center>
+				<img src="sbn.gif" border="0" alt="java applets">
+				<p><font face="Arial" size="2" color="#000000">&lt;a href=&quot;http://www.appletcollection.com/&quot;&gt;&lt;img src=&quot;sbn.gif&quot; alt=&quot;java applets&quot;&gt;&lt;/a&gt;</font></p>
+			</center>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#000000">
+			<center>
+				<img src="bbn.gif" border="0" alt="java applets">
+				<p><font face="Arial" size="2" color="#dddddd">&lt;a href=&quot;http://www.appletcollection.com/&quot;&gt;&lt;img src=&quot;bbn.gif&quot; alt=&quot;java applets&quot;&gt;&lt;/a&gt;</font></p>
+			</center>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#ffffff">
+<font face="Arial" size="2" color="#000000">This is absolutely optional. I will be very happy if you do so.
+<br>
+Thanks.</font>
+		</td>
+	</tr>
+</table>
+</center>
+
+
+<p><font face="Arial" size="+2">Troubleshooting & Support</font></p>
+<ul>
+<font face="Arial" size="-1">
+<li>Please send me any questions, requests or remarks you might have to: quickshare@excite.com</li>
+<li>Usually the easiest way to customize the applet is cut and paste the applet tag information used in the sample and modify it to fit your web page.</li>
+</font>
+<font face="Arial" size="-1">
+<li>If you see a "class not found" message, this means what it says -- your browser can't find the .class files specified. You've forgotten to copy the .class file (advnewsscroll.class) to the necessary directory. </li>
+<li>Make sure that your &lt;APPLET&gt; tag, closing &lt;/APPLET&gt; tag, and all &lt;PARAM&gt; tags have &lt; and &gt; brackets. Check that the value for every parameter is enclosed between " signs. </li>
+<li>If you see a NullPointerException displayed in the browser status-bar, it's most likely to be caused by a mistake in an parameter. Check it.</li>
+<li>If the applet runs, but you can't make it do what you want it to do, please take another look at the documentation. </li>
+</font>
+</ul>
+</td></tr>
+</table>
+<br><br>
+<center><img src="black.gif" width=600 height=3 alt="" border="0"></center>
+<br><br>
+<center>Advanced News Scroll Java Applet- Copyright (C) by Gokhan Dagli 2000-2002</center>
+<br>
+</center>
+<br><br>
+<center>
+<table width="520">
+<tr>
+	<td  bgcolor="#427d43" colspan=4>
+		<a href="http://www.appletcollection.com/"><font face="Arial" color="#ffffff" size="-1"><center><b>Java Applets</b></center></font></a>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/amenu.html">Absolute Menu</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/magicscroll.html">Magic Text Scroll</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/newsticker.html">Newsticker</a>
+		</font></p>
+	</td>
+
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/colorfader.html">Colorfader</a>
+		</font></p>
+	</td>
+</tr>
+<tr>
+
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/billboard.html">Billboard</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/magicimage.html">Magic Image</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://coloringbook.tripod.com/">Colorbook</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/dissolveimage.html">DissolveImage</a>
+		</font></p>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/screw.html">Screw</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/finedots.html">FineDots</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center" colspan=2>
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/">Java Applets Home</a>
+		</font></p>
+	</td>
+
+</tr>
+</table>
+</center>
+<br><br>
+<center>
+<table width="520">
+<tr>
+	<td bgcolor="#427d43" colspan=4>
+		<center><b><a href="http://www.appletcollection.com/text.html"><font face="Arial" color="#ffffff" size="-1">Text Effects Collection Java Applets</font></a></b></center>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/announcer.html">Announcer</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/ascroll.html">A.H. Scrolling Text</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/mslider.html">Message Slider</a>
+		</font></p>
+	</td>
+
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/hlinetyper.html">Headline Typer</a>
+		</font></p>
+	</td>
+</tr>
+<tr>
+
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/fletters.html">Flying Letters</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/headlines.html">Headlines</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/typewriter.html">TypeWriter</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+		<a href="http://www.appletcollection.com/wiperight.html">Wipe Right</a>
+		</font></p>
+	</td>
+</tr>
+</table>
+</center>
+<br><br>
+
+<center>
+<table width="520">
+<tr>
+	<td  bgcolor="#427d43" colspan=4>
+		<center><b><a href="http://www.appletcollection.com/popular.html"><font face="Arial" color="#ffffff" size="-1">Popular Applets Collection Java Applets</font></a></b></center>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/hmenus.html">Horizontal Menu Scroll</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/advnewsticker.html">Advanced Newsticker</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/advnewsscroll.html">Advanced News Scroll</a>
+		</font></p>
+	</td>
+	<td bgcolor="#f0f0df" align="center">
+		<p><font face="Arial" size="-1">
+			<a href="http://www.appletcollection.com/advtypew.html">Advanced Typewriter Scroll</a>
+		</font></p>
+	</td>
+
+</tr>
+</table>
+<br><br>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.dev {
+	font: normal 8px/normal Verdana, Arial, Helvetica, sans-serif;
+	color: #999999;
+	padding: 2px;
+	white-space: normal;
+
+}
+.hed {
+	font: bold small-caps normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	padding: 1px 1px 0px;
+	text-align: left;
+	vertical-align: baseline;
+	white-space: normal;
+
+}

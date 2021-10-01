@@ -10,6 +10,9 @@
 
 /* Blog posts */
 @layer utilities {
+  body {
+    @apply font-semibold text-lg;
+  }
   .post h1 {
     @apply text-bronze-bronze12;
   }

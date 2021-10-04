@@ -17,9 +17,11 @@ export const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
     themeColor: "#4e2009",
   },
   btc: {
-    primary: "text-btc-500",
-    link: "text-btc-200",
-    hover: "hover:text-btc-100",
+    primary: "text-btc-900",
+    h1: "text-btc-600",
+    h2: "text-btc-500",
+    link: "text-btc-800",
+    hover: "hover:text-btc-700",
     themeColor: "#2c5c9d",
   },
   roll: {

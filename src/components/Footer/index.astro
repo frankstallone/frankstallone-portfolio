@@ -3,7 +3,7 @@ import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
 const { variant = "default" } = Astro.props;
 
 export interface Props {
-    variant: Variant;
+    variant?: Variant;
 }
 
 const year = new Date().getFullYear();

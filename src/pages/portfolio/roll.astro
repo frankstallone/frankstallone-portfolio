@@ -4,10 +4,10 @@ import { VARIANT_MAPS } from '../../utils/variants.ts'
 ---
 
 <PortfolioLayout title="Roll by ADP" variant="roll">
-    <div class="min-h-80 mb-10 lg:mb-20">
-        <h2 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Preface: Roll</h2>
-        <h3 class={`pb-4 text-xl xl:text-2xl font-bold ${VARIANT_MAPS["roll"].h2}`}>UX, UI, Design System</h3>
-        <div class="pb-8 grid gap-4 xs:grid-cols-2 lg:grid-cols-3">
+    <div class="min-h-80">
+        <h2 class={`mt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Preface: Roll</h2>
+        <h3 class={`mb-4 text-xl xl:text-2xl font-bold ${VARIANT_MAPS["roll"].h2}`}>UX, UI, Design System</h3>
+        <div class="mb-4 xs:mb-8 grid gap-4 xs:grid-cols-2 lg:grid-cols-3">
             <p class="lg:text-lg font-semibold">Before we get into the case study, let's give some context. Roll by ADP's ethos is to rethink how businesses run payroll & <abbr title="Human Capital Management">HCM</abbr>. At the heart of Roll is an event engine that captures state changes with an event object, stored in sequence and we apply this to a few interfaces on mobile devices and desktop.</p>
             <p class="lg:text-lg"> Roll at its core is a self service app that allows business owners to run payroll and manage <abbr title="Human Capital Management">HCM</abbr> through a chat bot with a sophisticated suite of <abbr title="Machine Learning">ML</abbr> algorithms and <abbr title="Artificial Intelligence">AI</abbr>. Business owners, our clients, need to run payroll on the go. In this case study I'll be walking you through how I overcame the business challenges to get a clear and concise design solution for a manager managing employee's hours.</p>
             <p class="lg:text-lg">There are a sea of attributes that can be applied to a manager or employee and they can be mixed and matched depending on the company, location and organization structure. What type of payment method are we using? What's the employees gross income this period? Did they get a mid-cycle rise? How many hours did they work? Did they have overtime or sick time?</p>
@@ -32,7 +32,7 @@ import { VARIANT_MAPS } from '../../utils/variants.ts'
     <h2 class={`pt-4 text-3xl xl:text-4xl font-bold ${VARIANT_MAPS["roll"].h1}`}>Case Study</h2>
     <h3 class={`pb-4 text-xl xl:text-2xl font-bold ${VARIANT_MAPS["roll"].h2}`}>Payroll Run</h3>
     <h4 class="hidden">Skills displayed</h4>
-    <div class="sm:space-x-4 space-y-2 sm:space-y-0 mb-20 lg:mb-10">
+    <div class="sm:space-x-4 space-y-2 xs:space-y-4 mb-10">
         <span class="text-xs font-extralight bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Product thinking</span>
         <span class="text-xs font-extralight bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Interaction design</span>
         <span class="text-xs font-extralight bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Visual design</span>
@@ -40,14 +40,14 @@ import { VARIANT_MAPS } from '../../utils/variants.ts'
         <span class="text-xs font-extralight bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Intentionality</span>
         <span class="text-xs font-extralight bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Self-awareness</span>
     </div>
-    <div class="pb-10 grid gap-4 xs:grid-cols-2 lg:grid-cols-3 place-items-start place-content-center">
+    <div class="mb-4 sm:mb-10 grid gap-4 xs:grid-cols-2 lg:grid-cols-3 place-items-start place-content-center">
         <p class="lg:text-lg">Our team assembles in our main meeting room. From our SVP of Innovation, product owners to our architect and backend developers we're sitting with 50+ years of payroll and HCM knowledge. Everyone has a valid voice at this table. I'm excited to see what we come up with. </p>
         <p class="lg:text-lg">The context is set, we begin with discovery. I start by asking a few questions about the vast array of attributes any one employee can have associated with them. This quickly gets out of hand as there are many, but we now know there needs to be a <abbr title="Minimum Viable Product">MVP</abbr> that we can ship first and that we should focus on that today.</p>
         <p class="lg:text-lg">The scope of this discussion and first flow will be for a manager who is managing his employee's hours. Focusing on this flow will set the stage for what the UX and UI will roughly look like, then we can circle back around to see how an employee might handle their own hours, timesheets, punching in and out, etc. with what we come up with.</p>
     </div>
-    <section class="grid gap-12 place-content-center place-items-center mb-10 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
+    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
         <div class="md:row-span-3">
-            <p class="lg:text-lg pb-4">Now we need to get together a collection of what a manager would expect to see in this view. I am writing down attributes on the whiteboard taking note of the discussions from our <abbr title="Subject Matter Expert">SME</abbr>s it's becoming clear some of these attributes are not needed. This will be a list of employees and a button for the manager to quickly scroll through, add some information and finally run payroll. We want minimal friction and the least amount of cognitive load on these managers as possible.</p>
+            <p class="lg:text-lg">Now we need to get together a collection of what a manager would expect to see in this view. I am writing down attributes on the whiteboard taking note of the discussions from our <abbr title="Subject Matter Expert">SME</abbr>s it's becoming clear some of these attributes are not needed. This will be a list of employees and a button for the manager to quickly scroll through, add some information and finally run payroll. We want minimal friction and the least amount of cognitive load on these managers as possible.</p>
         </div>
         <div class="xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
             <svg viewBox="0 0 723 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -124,7 +124,7 @@ import { VARIANT_MAPS } from '../../utils/variants.ts'
             </svg>
         </div>
     </section>
-    <section class="grid gap-12 place-content-center place-items-center mb-10 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
+    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
         <div class="row-start-2 xs:row-start-1 xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
             <img src="/assets/roll/whiteboard-sketches-800px.jpg" alt="Sketches post whiteboard session fleshing out panel and accordion variants">
         </div>
@@ -132,7 +132,7 @@ import { VARIANT_MAPS } from '../../utils/variants.ts'
             <p class="lg:text-lg b-4">I start to see how an accordion design pattern could solve this. I proceed to draw out an example on the whiteboard explaining how an accordion works, and how it can solve the business problem. This affords us the ability to hide attributes that are less common like overtime, payment type, etc.. Everyone is in agreement. Now, we sit and talk about the hierarchy of the main attributes. Marking the whiteboard I am articulating aloud font size, weight, color and placement. More than that, I'm educating the team so they can understand the importance of this visual hierarchy. I'm also pressing them on being judicious about what becomes a main attribute to keep down the potential for cognitive overload. Finally we have a wireframe everyone is happy with. Before I move to building high fidelity mockups we discuss a few more use business cases where we'll need to use this new design pattern. It passes the pressure test. Now I am tasked with coming up with some higher fidelity mockups with real data that we can use to discuss the visual hierarchy in more detail.</p>
         </div>
     </section>
-    <section class="grid gap-12 place-content-center place-items-center mb-10 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
+    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
         <div class="md:row-span-3">
             <p class="lg:text-lg">When designing high fidelity mockups I always work with real information. We need to consider edge cases and it helps to push the design limits with real names, numbers and data. Hopping into <code>&mdash; fill in design application of the week &mdash;</code> I layout the accordion panels, closed at first. I design an area to signal to users that there is 'more' they can do using a chevron and text, then I get to laying out the main attributes. As I make progress I am talking to the backend developers clarifying data structures and thinking about how I'll be able to make these panel layouts pliable with flexbox. Workin with the SME's I'm really looking for ways to break this design. How any decimal places will we encounter? What are the different pay cycles? What will we do when we're out of room when translated to German? I try a few layout variations that push the design out of the existing design system for exploration. I consider color, contrast ratios font size for readability and accessibility. Moving to the secound round of mockups I bring in the supplementary attributes on the expanded panel portion of the accordion. We strip out any unnecessary design elements that do not serve a purpose. This keeps the user on task, focused.</p>
         </div>
@@ -140,7 +140,7 @@ import { VARIANT_MAPS } from '../../utils/variants.ts'
             <img src="/assets/roll/payroll-run-hi-fidelity@2x.png" alt="High fidelity mock ups showing changes from feedback and discussion with product and development">
         </div>
     </section>
-    <section class="grid gap-12 place-content-center place-items-center mb-10 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
+    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
         <div class="row-start-2 xs:row-start-1 xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
             <video controls autoplay loop muted>
                 <source src="/assets/roll/payroll-run-video.mp4" type="video/mp4">
@@ -148,12 +148,12 @@ import { VARIANT_MAPS } from '../../utils/variants.ts'
             </video>
         </div>
         <div class="row-start-1 md:row-span-3">
-            <p class="lg:text-lg pb-4">Finally we have an approved suite of mockups. Time to move to our component library. I fire up Storybook, VSCode and start building out the composite React components. We're using flexbox to layout the panel rows and columns within. I'm creating the main accordion panel with the supplementary panels <em>only</em> if there information that necessitates a supplementary panel. I collaborate with the backend engineer about data structures to ensure the API is flexible. A lot of this is rebuilding the high fidelity mockups from our design application in Storybook form so we can see the parallel design come alive and also because we know it's a practical example data set.</p>
-            <p class="lg:text-lg pb-4">There are a couple pitfalls of using flexbox. The main one is that you have to be more manual about different rows and their column alignment. CSS grid would solve this but technically is not applicable to this situation. Another issue is how the layout breaks. When there is too much information and elements on the screen, on smaller devices, something is going to give. Instead of breaking to a new line causing more height in the overall UI I setup these components to push off to the right. We aim for this to never happen but were pleased with how graceful it fails. </p>
-            <p class="lg:text-lg pb-4">Once things are at 80% I ship a version of our component library with this <code>AccordionList</code> React component and it's children components. The backend developer consumes these and starts building out in our app on their local build environment. This is where we discuss what works and what needs to be modified or added. This gives me time to clean up imperative code that can be more declarative, finalize lower priority functionality and write proper JSDocs.</p>
+            <p class="lg:text-lg">Finally we have an approved suite of mockups. Time to move to our component library. I fire up Storybook, VSCode and start building out the composite React components. We're using flexbox to layout the panel rows and columns within. I'm creating the main accordion panel with the supplementary panels <em>only</em> if there information that necessitates a supplementary panel. I collaborate with the backend engineer about data structures to ensure the API is flexible. A lot of this is rebuilding the high fidelity mockups from our design application in Storybook form so we can see the parallel design come alive and also because we know it's a practical example data set.</p>
+            <p class="lg:text-lg">There are a couple pitfalls of using flexbox. The main one is that you have to be more manual about different rows and their column alignment. CSS grid would solve this but technically is not applicable to this situation. Another issue is how the layout breaks. When there is too much information and elements on the screen, on smaller devices, something is going to give. Instead of breaking to a new line causing more height in the overall UI I setup these components to push off to the right. We aim for this to never happen but were pleased with how graceful it fails. </p>
+            <p class="lg:text-lg">Once things are at 80% I ship a version of our component library with this <code>AccordionList</code> React component and it's children components. The backend developer consumes these and starts building out in our app on their local build environment. This is where we discuss what works and what needs to be modified or added. This gives me time to clean up imperative code that can be more declarative, finalize lower priority functionality and write proper JSDocs.</p>
         </div>
     </section>
-    <section class="grid gap-12 place-content-center place-items-start mb-10 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
-        <p class="lg:text-lg pb-4 md:col-span-2">There you have it. We've come full circle from discovery all the way to building out React components in a component library. This journey had it's ups and downs but this new functionality is now how every user runs payroll on Roll by ADP. From here, I can create any mock up in Storybook to fill in different scenerios. All of the fundamental elements are part of our design system and I can use them like symbols in Sketch or Illustrator or Figma components to layout all possibilities. This is in no way a replacement for UX and UI designers. Keep in mind I am one UX designer in a sea of back-of-the-front-end developers. 😄</p>
+    <section class="grid gap-12 place-content-center place-items-start xs:grid-cols-2 md:grid-cols-3">
+        <p class="lg:text-lg md:col-span-2">There you have it. We've come full circle from discovery all the way to building out React components in a component library. This journey had it's ups and downs but this new functionality is now how every user runs payroll on Roll by ADP. From here, I can create any mock up in Storybook to fill in different scenerios. All of the fundamental elements are part of our design system and I can use them like symbols in Sketch or Illustrator or Figma components to layout all possibilities. This is in no way a replacement for UX and UI designers. Keep in mind I am one UX designer in a sea of back-of-the-front-end developers. 😄</p>
     </section>
 </PortfolioLayout>

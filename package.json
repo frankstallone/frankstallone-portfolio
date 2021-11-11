@@ -7,8 +7,8 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.18.13",
-    "tailwindcss": "^2.2.7"
+    "astro": "^0.20.12",
+    "tailwindcss": "^2.2.19"
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.7"

@@ -1,5 +1,7 @@
 import { animate } from "motion";
 
+const dynamicThreshold = window.innerWidth >= 1024 ? "0.25" : "0.1";
+
 // Simple aninmation for the initial
 animate(
   ".intro",
@@ -17,7 +19,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting === true) animateSections(entry.target);
     });
   },
-  { threshold: [0.25] }
+  { threshold: [dynamicThreshold] }
 );
 
 // Grab all the sections we want to animate

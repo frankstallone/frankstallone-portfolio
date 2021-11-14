@@ -22,5 +22,6 @@ const textColor = VARIANT_MAPS[variant].primary;
       <slot />
     </article>
     <Footer variant={variant} />
+    <script type="module" src={Astro.resolve("../scripts/navigation.js")} />
   </body>
 </html>

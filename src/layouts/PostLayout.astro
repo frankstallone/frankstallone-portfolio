@@ -30,5 +30,6 @@ const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, {
       <slot />
     </article>
     <Footer variant={content.variant} />
+    <script type="module" src={Astro.resolve("../scripts/navigation.js")} />
   </body>
 </html>

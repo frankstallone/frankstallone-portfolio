@@ -1,5 +1,6 @@
 import { animate } from "motion";
 
+// Simple aninmation for the initial
 animate(
   ".intro",
   { transform: "translateY(0)", opacity: 1 },
@@ -29,5 +30,10 @@ sections.forEach((section) => {
 
 // Anitmation function
 function animateSections(section) {
-  animate(section, { opacity: 1 }, { duration: 1 }, { easing: "ease-in-out" });
+  animate(
+    section,
+    { transform: "scale(1)", opacity: 1 },
+    { duration: 1 },
+    { easing: "ease-in-out" }
+  );
 }

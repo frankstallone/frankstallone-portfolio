@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Facundo", "sans-serif"],
+      display: ["Cartridge", "sans-serif"],
     },
     screens: {
       xs: "540px",

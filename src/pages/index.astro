@@ -11,6 +11,10 @@ import Header from '../components/Header/index.astro';
   </head>
   <body class="min-h-screen overflow-x-hidden relative mx-auto max-w-7xl">
     <Header />
+    <noscript>
+    <div class="mx-auto max-w-7xl py-4 flex"></div>
+      <h1 class="mx-4 text-center font-bold text-4xl text-red-red12">⚠️ This website requires JavaScript to be enabled, for now</h1>
+    </noscript>
     <figure class="grid gap-8 p-4 place-items-center md:grid-cols-4 lg:grid-cols-6 lg:grid-rows-3 overflow-hidden">
       <img src="/assets/me.jpg" class="xs:square lg:row-span-2 lg:col-span-2 lg:col-start-1 lg:row-start-1 opacity-20 translate-y-5 scale-95 intro" alt="Photograph of me, Frank Stallone III">
       <figcaption class="h-full flex place-items-center md:col-span-3 lg:col-span-4 lg:row-span-2 lg:row-start-2 opacity-20 translate-y-5 scale-95 intro">
@@ -30,16 +34,16 @@ import Header from '../components/Header/index.astro';
           <a href="/portfolio/roll" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2"><img src="/assets/squared/roll-squared-02@2x.png" alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP"></a>
           <a href="/portfolio/roll" class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3"><img src="/assets/squared/roll-squared-03@2x.png" alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients"></a>
           <a href="/portfolio/roll" class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2"><img src="/assets/squared/roll-squared-04@2x.png" alt="Screenshots of the mobile app that would eventually be used circa 2018"></a>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-50 h-full w-full lg:col-start-3"><span class="sr-only">Color swatch 50 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden md:block bg-roll-100 rounded-lg h-full w-full lg:col-start-4"><span class="sr-only">Color swatch 100 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"><span class="sr-only">Color swatch 200 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"><span class="sr-only">Color swatch 300 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"><span class="sr-only">Color swatch 400 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"><span class="sr-only">Color swatch 500 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"><span class="sr-only">Color swatch 600 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"><span class="sr-only">Color swatch 700 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"><span class="sr-only">Color swatch 800 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-roll-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"><span class="sr-only">Color swatch 900 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-50 h-full w-full lg:col-start-3"><span class="sr-only">Color swatch 50 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden md:block bg-roll-100 rounded-lg h-full w-full lg:col-start-4"><span class="sr-only">Color swatch 100 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"><span class="sr-only">Color swatch 200 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"><span class="sr-only">Color swatch 300 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"><span class="sr-only">Color swatch 400 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"><span class="sr-only">Color swatch 500 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"><span class="sr-only">Color swatch 600 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"><span class="sr-only">Color swatch 700 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"><span class="sr-only">Color swatch 800 from Roll by ADP color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"><span class="sr-only">Color swatch 900 from Roll by ADP color palette</span></div>
         </article>
       </div>
       <div class="xs:my-8 md:mt-16 md:mb-32 opacity-20 scale-95 section">
@@ -53,16 +57,16 @@ import Header from '../components/Header/index.astro';
           <a href="/portfolio/btc" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2"><img src="/assets/squared/btc-squared-02@2x.png" alt="Screenshot of the home page design for Builders Trust Capital"></a>
           <a href="/portfolio/btc" class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3"><img src="/assets/squared/btc-squared-03@2x.png" alt="Screenshot of the presentation for the new Builders Trust Capital logo in context on a sign and business cards"></a>
           <a href="/portfolio/btc" class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2"><img src="/assets/squared/btc-squared-04@2x.png" alt="Logo presentation of the Builders Trust Capital mark and logo type"></a>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-50 rounded-lg h-full w-full lg:col-start-3"><span class="sr-only">Color swatch 50 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-100 rounded-lg h-full w-full lg:col-start-4"><span class="sr-only">Color swatch 100 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"><span class="sr-only">Color swatch 200 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden md:block bg-gold-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"><span class="sr-only">Color swatch 300 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"><span class="sr-only">Color swatch 400 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"><span class="sr-only">Color swatch 500 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"><span class="sr-only">Color swatch 600 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"><span class="sr-only">Color swatch 700 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"><span class="sr-only">Color swatch 800 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="square hidden lg:block bg-gold-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"><span class="sr-only">Color swatch 900 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-50 rounded-lg h-full w-full lg:col-start-3"><span class="sr-only">Color swatch 50 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-100 rounded-lg h-full w-full lg:col-start-4"><span class="sr-only">Color swatch 100 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"><span class="sr-only">Color swatch 200 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden md:block bg-gold-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"><span class="sr-only">Color swatch 300 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"><span class="sr-only">Color swatch 400 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"><span class="sr-only">Color swatch 500 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"><span class="sr-only">Color swatch 600 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"><span class="sr-only">Color swatch 700 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"><span class="sr-only">Color swatch 800 from Roll by Builders Trust Capital color palette</span></div>
+          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"><span class="sr-only">Color swatch 900 from Roll by Builders Trust Capital color palette</span></div>
         </article>
       </div>
       <h2 class="sr-only">Other logo and branding work</h2>

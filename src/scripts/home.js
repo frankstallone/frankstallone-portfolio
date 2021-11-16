@@ -26,7 +26,7 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
-function animateMainSection(section, tokens) {
+function animateMainSectionDesktop(section, tokens) {
   const sequence = [
     [
       section,
@@ -64,10 +64,10 @@ function animateSections(section) {
 
   // Main sections on desktop
   if (tokensAreVisible && tokens) {
-    animateMainSection(section, tokens);
+    animateMainSectionDesktop(section, tokens);
   }
-  // Secondary sections
-  if (!tokens) {
+  // Secondary sections or small screens
+  if (!tokens || !tokensAreVisible) {
     animateSecondarySection(section);
   }
 }

@@ -11,11 +11,14 @@ const observer = new IntersectionObserver(
   (entries) => {
     // When threshold is met IntersectionObserverEntry section is acted on
     entries.forEach((entry) => {
+      // console.log(`Before: ${entry.target.ranAlready}`);
       // Animate each section with animateSections() when intersecting
       if (entry.isIntersecting === true) {
         animateSections(entry.target);
-        observer.unobserve(entry.target);
+        entry.target.ranAlready = true;
+        // observer.unobserve(entry.target);
       }
+      // console.log(`After: ${entry.target.ranAlready}`);
     });
   },
   { threshold: [dynamicThreshold] }
@@ -30,9 +33,11 @@ sections.forEach((section) => {
 function animateSections(section) {
   // Grab all the token swatches we want to animate
   const tokens = section.querySelectorAll(".token-swatch");
+  const tokensAreVisible = window.innerWidth >= 768;
+  console.log(section.ranAlready);
 
   // If we have tokens showing and there are tokens in the section
-  if (window.innerWidth >= 768 && tokens) {
+  if (tokensAreVisible && tokens) {
     const sequence = [
       [
         section,

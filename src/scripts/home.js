@@ -11,10 +11,10 @@ const observer = new IntersectionObserver(
   (entries) => {
     // When threshold is met IntersectionObserverEntry section is acted on
     entries.forEach((entry) => {
-      // Animate each section with animateSections() when intersecting
       if (entry.isIntersecting === true) {
         animateSections(entry.target);
-        observer.unobserve(entry.target);
+        // In the future we can add a property to each section object to run animations post initial animations
+        // entry.target.ranAlready = true;
       }
     });
   },
@@ -26,35 +26,48 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
+function animateMainSection(section, tokens) {
+  const sequence = [
+    [
+      section,
+      { transform: "scale(1)", opacity: 1 },
+      { duration: 1 },
+      { easing: "ease-in-out" },
+    ],
+    [
+      tokens,
+      { transform: ["scale(.75)", "scale(1)"], opacity: [0, 1] },
+      { duration: 1, delay: stagger(0.5) },
+      { easing: "ease-in-out" },
+    ],
+  ];
+
+  timeline(sequence);
+  observer.unobserve(section);
+}
+
+function animateSecondarySection(section) {
+  animate(
+    section,
+    { transform: "scale(1)", opacity: 1 },
+    { duration: 1 },
+    { easing: "ease-in-out" }
+  );
+  observer.unobserve(section);
+}
+
 // Anitmation function
 function animateSections(section) {
   // Grab all the token swatches we want to animate
   const tokens = section.querySelectorAll(".token-swatch");
+  const tokensAreVisible = window.innerWidth >= 768;
 
-  // If we have tokens showing and there are tokens in the section
-  if (window.innerWidth >= 768 && tokens) {
-    const sequence = [
-      [
-        section,
-        { transform: "scale(1)", opacity: 1 },
-        { duration: 1 },
-        { easing: "ease-in-out" },
-      ],
-      [
-        tokens,
-        { transform: ["scale(.75)", "scale(1)"], opacity: [0, 1] },
-        { duration: 1, delay: stagger(0.5) },
-        { easing: "ease-in-out" },
-      ],
-    ];
-
-    timeline(sequence);
-  } else {
-    animate(
-      section,
-      { transform: "scale(1)", opacity: 1 },
-      { duration: 1 },
-      { easing: "ease-in-out" }
-    );
+  // Main sections on desktop
+  if (tokensAreVisible && tokens) {
+    animateMainSection(section, tokens);
+  }
+  // Secondary sections
+  if (!tokens) {
+    animateSecondarySection(section);
   }
 }

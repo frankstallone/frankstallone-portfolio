@@ -12,7 +12,10 @@ const observer = new IntersectionObserver(
     // When threshold is met IntersectionObserverEntry section is acted on
     entries.forEach((entry) => {
       // Animate each section with animateSections() when intersecting
-      if (entry.isIntersecting === true) animateSections(entry.target);
+      if (entry.isIntersecting === true) {
+        animateSections(entry.target);
+        observer.unobserve(entry.target);
+      }
     });
   },
   { threshold: [dynamicThreshold] }

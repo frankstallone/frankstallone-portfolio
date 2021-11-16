@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer utilities {
+  .font-variants-01 {
+    font-feature-settings: "ss01" on;
+    /* font-feature-settings: "ss02" on; */
+  }
+  .font-variants-02 {
+    font-feature-settings: "ss02" on;
+  }
+}
+@layer utilities {
   .hover {
     display: inline-block;
     position: relative;

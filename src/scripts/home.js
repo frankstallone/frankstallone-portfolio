@@ -6,6 +6,9 @@ const dynamicThreshold = window.innerWidth >= 1024 ? "0.25" : "0.1";
 // Grab all the sections we want to animate
 const sections = document.querySelectorAll(".section");
 
+// Whether or not the user prefers less motion
+// const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
 // Creating a InteractionObserver interface for animations
 const observer = new IntersectionObserver(
   (entries) => {

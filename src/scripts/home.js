@@ -1,13 +1,16 @@
 import { animate, stagger, timeline } from "motion";
+import {
+  getSections,
+  getThreshold,
+  getTokens,
+  getCurrentBreakpointBoundries,
+} from "./utils";
 
 // Breakpoint for large screens for thresholds on InteractionObserver
-const dynamicThreshold = window.innerWidth >= 1024 ? "0.25" : "0.1";
+const dynamicThreshold = getThreshold(1024);
 
 // Grab all the sections we want to animate
-const sections = document.querySelectorAll(".section");
-
-// Whether or not the user prefers less motion
-// const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+const sections = getSections();
 
 // Creating a InteractionObserver interface for animations
 const observer = new IntersectionObserver(
@@ -62,8 +65,8 @@ function animateSecondarySection(section) {
 // Anitmation function
 function animateSections(section) {
   // Grab all the token swatches we want to animate
-  const tokens = section.querySelectorAll(".token-swatch");
-  const tokensAreVisible = window.innerWidth >= 768;
+  const tokens = getTokens(section);
+  const tokensAreVisible = getCurrentBreakpointBoundries(768);
 
   // Main sections on desktop
   if (tokensAreVisible && tokens) {

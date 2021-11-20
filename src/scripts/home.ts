@@ -51,7 +51,7 @@ function animateSecondarySection(section) {
   observer.unobserve(section);
 }
 
-// Anitmation function
+// Animation function 🧨
 function animateSections(section) {
   // Grab all the token swatches we want to animate
   const tokens = getDOMElements(".token-swatch", section);

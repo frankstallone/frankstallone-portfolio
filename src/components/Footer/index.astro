@@ -1,10 +1,9 @@
 ---
-import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
-const { variant = "default" } = Astro.props;
-
 export interface Props {
     variant?: Variant;
 }
+import { Variant, VARIANT_MAPS } from '../../utils/variants.ts'
+const { variant = "default" } = Astro.props;
 
 const year = new Date().getFullYear();
 ---

@@ -1,18 +1,10 @@
 import { animate, stagger, timeline } from "motion";
 import {
   getThreshold,
-  getInnerDOMElements,
   getCurrentBreakpointBoundries,
   getDOMElements,
 } from "./utils";
 import { standardOptions } from "./navigation";
-
-// Breakpoint for large screens for thresholds on InteractionObserver
-const dynamicThreshold = getThreshold(1024);
-
-// Grab all the sections we want to animate
-const sections = getDOMElements(".section");
-console.log(sections);
 
 // Creating a InteractionObserver interface for animations
 const observer = new IntersectionObserver(
@@ -26,11 +18,12 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: [dynamicThreshold] }
+  // Breakpoint for large screens for thresholds on InteractionObserver
+  { threshold: [getThreshold(1024)] }
 );
 
 // Giving IntersectionObserver targets to watch
-sections.forEach((section) => {
+getDOMElements(".section").forEach((section) => {
   observer.observe(section);
 });
 

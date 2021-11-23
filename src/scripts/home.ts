@@ -1,16 +1,10 @@
 import { animate, stagger, timeline } from "motion";
 import {
-  getSections,
   getThreshold,
-  getTokens,
   getCurrentBreakpointBoundries,
+  getDOMElements,
 } from "./utils";
-
-// Breakpoint for large screens for thresholds on InteractionObserver
-const dynamicThreshold = getThreshold(1024);
-
-// Grab all the sections we want to animate
-const sections = getSections();
+import { standardOptions } from "./navigation";
 
 // Creating a InteractionObserver interface for animations
 const observer = new IntersectionObserver(
@@ -24,48 +18,36 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: [dynamicThreshold] }
+  // Breakpoint for large screens for thresholds on InteractionObserver
+  { threshold: [getThreshold(1024)] }
 );
 
 // Giving IntersectionObserver targets to watch
-sections.forEach((section) => {
+getDOMElements(".section").forEach((section) => {
   observer.observe(section);
 });
 
 function animateMainSectionDesktop(section, tokens) {
-  const sequence = [
-    [
-      section,
-      { transform: "scale(1)", opacity: 1 },
-      { duration: 1 },
-      { easing: "ease-in-out" },
-    ],
+  timeline([
+    [section, { transform: "scale(1)", opacity: 1 }, standardOptions],
     [
       tokens,
       { transform: ["scale(.75)", "scale(1)"], opacity: [0, 1] },
-      { duration: 1, delay: stagger(0.5) },
-      { easing: "ease-in-out" },
+      { duration: 1, delay: stagger(0.5), easing: "ease-in-out" },
     ],
-  ];
-
-  timeline(sequence);
+  ]);
   observer.unobserve(section);
 }
 
 function animateSecondarySection(section) {
-  animate(
-    section,
-    { transform: "scale(1)", opacity: 1 },
-    { duration: 1 },
-    { easing: "ease-in-out" }
-  );
+  animate(section, { transform: "scale(1)", opacity: 1 }, standardOptions);
   observer.unobserve(section);
 }
 
-// Anitmation function
+// Animation function 🧨
 function animateSections(section) {
   // Grab all the token swatches we want to animate
-  const tokens = getTokens(section);
+  const tokens = getDOMElements(".token-swatch", section);
   const tokensAreVisible = getCurrentBreakpointBoundries(768);
 
   // Main sections on desktop

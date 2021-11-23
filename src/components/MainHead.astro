@@ -1,9 +1,11 @@
 ---
-const { title = 'The portfolio of', desc = 'The UX/UI, logo, branding and front-end development portfolio of Frank Stallone', variant = "default" } = Astro.props;
-import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
 export interface Props {
     variant?: Variant;
+    title?: string;
+    desc?: string;
 }
+import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
+const { title = 'The portfolio of', desc = 'The UX/UI, logo, branding and front-end development portfolio of Frank Stallone', variant = "default" } = Astro.props;
 ---
 
 <meta charset="UTF-8">

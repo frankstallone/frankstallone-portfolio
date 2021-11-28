@@ -3,7 +3,7 @@ import {
   getThreshold,
   getCurrentBreakpointBoundries,
   getDOMElements,
-} from "./utils";
+} from "../utils/general";
 import { standardOptions } from "./navigation";
 
 // Creating a InteractionObserver interface for animations

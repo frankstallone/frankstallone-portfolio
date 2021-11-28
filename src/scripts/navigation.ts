@@ -5,7 +5,7 @@ import {
   MotionKeyframesDefinition,
   AcceptedElements,
 } from "motion";
-import { getDOMElements } from "./utils";
+import { getDOMElements } from "../utils/general";
 
 export const standardOptions: AnimationListOptions = {
   duration: 1,

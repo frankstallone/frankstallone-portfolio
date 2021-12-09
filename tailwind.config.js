@@ -2,9 +2,7 @@
 const defautTheme = require("tailwindcss/defaultTheme");
 const { amber, red, indigo, gold, bronze } = require("@radix-ui/colors");
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
       sans: ["Facundo", "sans-serif"],
@@ -74,9 +72,6 @@ module.exports = {
         80: "80vh",
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };

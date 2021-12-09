@@ -1,6 +1,6 @@
 {
   "name": "frankstallone-portfolio",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "start": "astro dev",
@@ -8,8 +8,9 @@
   },
   "devDependencies": {
     "astro": "^0.21.4",
-    "postcss": "^8.4.1",
-    "tailwindcss": "^2.2.19"
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.0"
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.7",

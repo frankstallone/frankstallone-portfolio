@@ -13,6 +13,7 @@ module.exports = {
       ...defautTheme.screens,
     },
     colors: {
+      current: 'currentColor',
       bronze: bronze,
       golden: gold,
       indigo: indigo,

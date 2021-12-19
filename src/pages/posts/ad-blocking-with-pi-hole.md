@@ -3,6 +3,8 @@ layout: ../../layouts/PostLayout.astro
 date: 2019-09-02
 title: "🙅‍♂️ Whole network ad blocking"
 desc: "Advertisers are nosey, keep them out of your business."
+hero: "/assets/posts/ad-blocking-with-pi-hole/wojtek-witkowski-h7rOzTmGxWE-unsplash.jpg"
+alt: "Photograph of Time Square in NYC by Wojtek Witkowski via Unsplash"
 ---
 
 ![Photograph of Time Square in NYC by Wojtek Witkowski via Unsplash](/assets/posts/ad-blocking-with-pi-hole/wojtek-witkowski-h7rOzTmGxWE-unsplash.jpg)

@@ -6,21 +6,23 @@ const data = Astro.fetchContent('../posts/*.md');
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
-    <MainHead title="Blog: Frank Stallone III" desc="The amusing musements of Frank Stallone III" />
+    <MainHead title="Blog: Frank Stallone III" desc="The amusing muses of Frank Stallone III" />
   </head>
   <body class="min-h-screen overflow-x-hidden relative" role="main">
     <Header />
-    <article class="px-4 mb-12 text-bronze-bronze12 max-w-3xl mx-auto leading-relaxed">
-        {data.map(post => (
-                <div class="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-                  <div>
-                    <a href={post.url} class="">
+    <article class="px-4 mb-12 text-bronze-bronze12 max-w-7xl mx-auto leading-relaxed">
+        <h2 class="pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase">Blog</h2>
+        <h3 class="pb-4 text-xl xl:text-2xl font-display text-amber-amber11">The asumsing muses of Frank Stallone III</h3>
+        <div class="mt-6 pt-10 grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {data.map(post => (
+                <div>
+                    <a href={post.url}>
                         <img src={post.hero} alt={post.alt} class="aspect-video">
                     </a>
                     <a href={post.url} class="mt-4 block">
-                        <h2 class="font-display text-2xl text-amber-amber12 underline underline-offset-4 decoration-4 decoration-transparent hover:decoration-amber-amber12 hover:ease-in duration-300">
+                        <h3 class="font-display text-2xl text-amber-amber12 underline underline-offset-4 decoration-4 decoration-transparent hover:decoration-amber-amber12 hover:ease-in duration-300">
                             {post.title.toUpperCase()}
-                        </h2>
+                        </h3>
                     <p class="text-sm text-golden-gold9 mt-2 text-right uppercase">
                         <time datetime={post.date}>{new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</time>
                     </p>
@@ -34,8 +36,8 @@ const data = Astro.fetchContent('../posts/*.md');
                     </a>
                     </div>
                 </div>
-            </div>
-        ))}
+            ))}
+        </div>
     </article>
     <Footer />
     <script type="module" src={Astro.resolve("../../scripts/navigation.ts")} />

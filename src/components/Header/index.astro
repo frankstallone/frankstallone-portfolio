@@ -5,15 +5,14 @@ export interface Props {
 import { Variant, VARIANT_MAPS } from "../../utils/variants.ts"
 const { variant = "default" } = Astro.props;
 
-
 const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover} font-bold text-xs tracking-wider xs:tracking-widest hover uppercase`;
 ---
   <header class="main-header -translate-y-9 opacity-0 mx-auto max-w-7xl py-4 flex z-10 relative">
     <h1 class="grow ml-4"><a class={linkClasses} href="/"><span class="hidden xs:inline-block">F<span class="font-variants-01">ra</span>nk</span> St<span class="font-variants-01">a</span>llone</a></h1>
-    <ul class="list-none flex flex-row-reverse space-x-2 sm:space-x-4 space-x-reverse mr-4">
+    <ul class="list-none flex space-x-2 sm:space-x-4 mr-4">
       <li><a class={linkClasses} href="https://changelog.stallone.dev">Ch<span class="font-variants-01">a</span>ngelog</a></li>
       <li><a class={linkClasses} href="/posts/">Blog</a></li>
-      <li><a class={linkClasses} href="https://linkedin.com/in/frankstallone">LINKEDIN</a></li>
-      <li><a class={linkClasses} href="https://twitter.com/frankstallone">TWITTE<span class="font-variants-01">R</span></a></li>
+      <li><a class={linkClasses} href="https://linkedin.com/in/frankstallone">LinkedIn</a></li>
+      <li><a class={linkClasses} href="https://twitter.com/frankstallone">Twitte<span class="font-variants-01">r</span></a></li>
     </ul>
   </header>

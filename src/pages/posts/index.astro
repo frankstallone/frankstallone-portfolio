@@ -11,7 +11,7 @@ const data = Astro.fetchContent('../posts/*.md');
   <body class="min-h-screen overflow-x-hidden relative" role="main">
     <Header />
     <article class="px-4 mb-12 text-bronze-bronze12 max-w-7xl mx-auto leading-relaxed">
-        <h2 class="pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase">Blog</h2>
+        <h2 class="pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 uppercase">Blog</h2>
         <h3 class="pb-4 text-xl xl:text-2xl font-display text-amber-amber11">The asumsing muses of Frank Stallone III</h3>
         <div class="mt-6 pt-10 grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {data.map(post => (

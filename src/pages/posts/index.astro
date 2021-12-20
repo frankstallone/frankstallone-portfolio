@@ -2,7 +2,8 @@
 import MainHead from '../../components/MainHead.astro';
 import Footer from '../../components/Footer/index.astro';
 import Header from '../../components/Header/index.astro';
-const data = Astro.fetchContent('../posts/*.md');
+// Get all posts and sort by date, descending order newest to oldest 
+const data = Astro.fetchContent('../posts/*.md').sort((a, b) => new Date(a.date) - new Date(b.date)).reverse();
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>

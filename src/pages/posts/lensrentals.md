@@ -4,8 +4,11 @@ date: 2019-05-17
 title: "📸 Try that expensive camera before you buy it"
 desc: "Before spending thousands of dollars, try out that camera and lens first"
 hero: "/assets/posts/lensrentals/mattews-di-nelson-1134148-unsplash.jpg"
+alt: "Photograph of Photographer by Matthews Di Nelson via Unsplash"
 draft: false
 ---
+
+![Photograph of Photographer by Matthews Di Nelson via Unsplash](/assets/posts/lensrentals/mattews-di-nelson-1134148-unsplash.jpg)
 
 A friend of mine reached out recently asking about a potential camera body and lens for his partner for her birthday. He had a pretty good idea of what he wanted, but there was at least a thousand dollar difference between his options.
 

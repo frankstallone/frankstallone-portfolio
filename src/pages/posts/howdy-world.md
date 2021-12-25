@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 date: 2021-12-24
 title: "👋🏼 Howdy world!"
-desc: "It's time to get thoughts out of my head"
+desc: "It's time to get thoughts out of my head. This time without the bloat and baggage."
 hero: "/assets/posts/howdy-world/mick-haupt-tzaitgjkJ5o-unsplash.jpg"
 alt: "Photograph of meditating figure with sign that reads Howdy by Mick Haupt via Unsplash"
 draft: false

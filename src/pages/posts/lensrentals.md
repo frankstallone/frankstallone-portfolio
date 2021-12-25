@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 date: 2019-05-17
 title: "📸 Try that expensive camera before you buy it"
-desc: "Before spending thousands of dollars, try out that camera and lens first"
+desc: "Before spending thousands of dollars, try out that camera and lens first."
 hero: "/assets/posts/lensrentals/mattews-di-nelson-1134148-unsplash.jpg"
 alt: "Photograph of Photographer by Matthews Di Nelson via Unsplash"
 draft: false

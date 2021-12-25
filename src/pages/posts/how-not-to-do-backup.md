@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 date: 2019-06-04
 title: "👨🏻‍💻 Biggest tech blunder in a decade"
-desc: "What I learned from the biggest tech blunder in a decade"
+desc: "What I learned from the biggest tech blunder in a decade."
 hero: "/assets/posts/how-not-to-do-backup/logo-lines.png"
 alt: "Lines in Affinity Designer from a logo mark by Frank Stallone III"
 draft: false

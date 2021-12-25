@@ -15,6 +15,7 @@ module.exports = {
     colors: {
       current: 'currentColor',
       transparent: 'transparent',
+      white: 'white',
       bronze: bronze,
       golden: gold,
       indigo: indigo,

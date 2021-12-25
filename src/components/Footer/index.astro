@@ -8,9 +8,10 @@ const { variant = "default" } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
-<footer class={`flex flex-col text-center mx-4 pb-4 ${VARIANT_MAPS[variant].primary}`}>
+<footer class={`flex flex-col text-center mx-4 pb-4 ${VARIANT_MAPS[variant].primary} font-bold text-xs tracking-wider uppercase`}>
   &copy; {year} Frank Stallone III
-  <small class={`block ${VARIANT_MAPS[variant].primary}`}>
+  <p class="pt-2">
     ⚠️ Portfolio in perpetual beta. 🚀 Happily built by Astro, also in beta. 🧗🏼 Living on the edge of the web since 1998.
-  </small>
+  </p>
+  <a href="#main-navigation" class={`sr-only focus:not-sr-only focus:outline-none focus:absolute rounded font-bold text-xs tracking-wider uppercase ring-offset-4 px-2 py-1 bg-white ring-2 ${VARIANT_MAPS[variant].link} text-bronze-bronze12 absolute bottom-5 left-4 z-10`}>Skip to main navigation</a>
 </footer>

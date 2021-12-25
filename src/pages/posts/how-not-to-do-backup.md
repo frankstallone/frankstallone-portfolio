@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/PostLayout.astro
 date: 2019-06-04
-title: '👨🏻‍💻 Biggest tech blunder in a decade'
-desc: 'What I learned from the biggest tech blunder in a decade'
-hero: '/assets/posts/how-not-to-do-backup/logo-lines.png'
+title: "👨🏻‍💻 Biggest tech blunder in a decade"
+desc: "What I learned from the biggest tech blunder in a decade"
+hero: "/assets/posts/how-not-to-do-backup/logo-lines.png"
+draft: false
 ---
 
 Recently I have been on working on a logo design for myself using my last name. I iterate on a sketch in my sketch book then bring it into the computer once I feel it's right. After years of working with Adobe products I have switched to [Affinity Designer](https://affinity.serif.com/en-us/). I enjoy it's layout and features. It seems to declutter my mind.

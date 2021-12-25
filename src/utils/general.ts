@@ -1,3 +1,12 @@
+interface Post {
+  layout: "string";
+  date: "string";
+  title: "string";
+  desc: "string";
+  hero: "string";
+  draft: boolean;
+}
+
 // Return specified DOM elements
 export function getDOMElements(DOMString, parent?): NodeListOf<Element> | null {
   return parent
@@ -18,4 +27,14 @@ export function getReducedMotion(): boolean {
 // Returns a boolean based on whether we meet or are below a breakpoint
 export function getCurrentBreakpointBoundries(breakpoint: number): boolean {
   return window.innerWidth >= breakpoint;
+}
+
+// Returns true if post is not in draft
+export function isPublished(post: Post) {
+  return !post.draft;
+}
+
+// Sorts the posts by date newest first
+export function sortPosts(a: Post, b: Post) {
+  return new Date(a.date).getTime() - new Date(b.date).getTime();
 }

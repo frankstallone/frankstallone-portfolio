@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/PostLayout.astro
 date: 2019-04-25
-title: '👋 Hello World Again'
-desc: 'The first blog post of the new blog. You will see many more, soon.'
-hero: '/assets/posts/hello-world-again/pablo-gentile-587380-unsplash.jpg'
+title: "👋 Hello World Again"
+desc: "The first blog post of the new blog. You will see many more, soon."
+hero: "/assets/posts/hello-world-again/pablo-gentile-587380-unsplash.jpg"
+draft: false
 ---
 
 There is a time and place for everything. In the past I have created blogs and written with some frequency. The process was fun, it was great to engage. Then my career took hold. I bought a house, a fixer upper and priorities change.

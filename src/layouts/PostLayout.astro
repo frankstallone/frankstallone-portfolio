@@ -20,9 +20,9 @@ const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, {
   <head>
     <MainHead title={content.title} desc={content.desc} variant={content.variant} />
   </head>
-  <body class="min-h-screen overflow-x-hidden relative" role="main">
+  <body class="min-h-screen overflow-x-hidden relative">
     <Header variant={content.variant} />
-    <article class="post px-4 mb-12 text-bronze-bronze12 max-w-3xl mx-auto leading-relaxed lg:text-lg">
+    <article class="post px-4 mb-12 text-bronze-bronze12 max-w-3xl mx-auto leading-relaxed lg:text-lg" role="main article" id="main-content">
       <h1>{content.title}</h1>
       <p class="text-center">
         <time datetime={dateTime} class="font-extralight text-golden-gold9">{humanReadableDate}</time>

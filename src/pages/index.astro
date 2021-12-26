@@ -9,7 +9,7 @@ import Header from '../components/Header/index.astro';
   <head>
     <MainHead title="Frank Stallone Portfolio" desc="The portfolio, blog and chronicles of misadventures for Frank Stallone III" />
   </head>
-  <body class="min-h-screen overflow-x-hidden relative mx-auto" role="main">
+  <body class="min-h-screen overflow-x-hidden relative mx-auto">
     <Header />
     <noscript>
       <div class="mx-auto max-w-7xl py-4 flex">
@@ -22,7 +22,7 @@ import Header from '../components/Header/index.astro';
         <h2 class="text-amber-amber12 md:leading-snug py-8 text-4xl lg:text-6xl xl:text-8xl font-display">👋🏼 Hiya! I love <span class="font-black text-red-red11 font-variants-01">TECHNOLOGY</span>, <span class="font-black text-red-red11">MINDFULNESS</span>, <span class="italic mr-1">and</span> <span class="font-black text-red-red11">CRE<span class="font-variants-02 -mr-0.5 lg:-mr-1.5 xl:-mr-3">A</span><span class="font-variants-01 -ml-1.5">T</span>ING</span> compelling user experiences.</h2>
       </figcaption>
     </figure>
-    <main class="mb-12" id="main-content">
+    <main class="mb-12" role="main" id="main-content">
       <h2 class="sr-only">Featured work</h2>
       <div class="xs:my-8 md:mt-16 md:mb-32 opacity-20 scale-95 section">
         <a href="/portfolio/roll">

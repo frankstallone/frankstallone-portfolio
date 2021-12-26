@@ -16,12 +16,12 @@ const firstTwo = data.splice(0, 2);
   </head>
   <body class="min-h-screen overflow-x-hidden relative" role="main">
     <Header />
-    <article class="px-4 mb-12 text-bronze-bronze12 max-w-7xl mx-auto leading-relaxed">
+    <article class="px-4 mb-12 text-bronze-bronze12 max-w-7xl mx-auto leading-relaxed" role="main" id="main-content">
         <h2 class="pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 uppercase">Blog</h2>
         <h3 class="pb-4 text-xl xl:text-2xl font-display text-amber-amber11">The asumsing muses of Frank Stallone III</h3>
-        <div class="mt-6 pt-10 grid gap-16 sm:grid-cols-2">
+        <div class="mt-4 xs:mt-8 md:mb-32 grid gap-16 sm:grid-cols-2">
             {firstTwo.map(post => (
-                <div>
+                <section class="relative">
                     <a href={post.url}>
                         <img src={post.hero} alt={post.alt} class="aspect-video object-contain">
                     </a>
@@ -32,21 +32,21 @@ const firstTwo = data.splice(0, 2);
                     <p class="text-sm text-golden-gold9 mt-2 text-right uppercase">
                         <time datetime={post.date}>{new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</time>
                     </p>
-                    <p class="mt-3 lg:text-lg text-gray-500">
+                    <p class="mt-3 lg:text-lg text-gray-500 mb-8 lg:mb-10">
                         {post.desc}
                     </p>
                     </a>
-                    <div class="mt-3">
-                        <a href={post.url} class="lg:text-lg font-semibold text-amber-amber11 hover:text-amber-amber12 hover:ease-in duration-300">
+                    <div class="mt-3 absolute bottom-0 w-full">
+                        <a href={post.url} class="lg:text-lg font-semibold text-amber-amber12 underline underline-offset-2 decoration-2 decoration-transparent hover:decoration-amber-amber12 hover:ease-in duration-300">
                             Read more &hellip;
                         </a>
                     </div>
-                </div>
+                </section>
             ))}
         </div>
-        <div class="mt-6 pt-10 grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="mt-6 md:mt-16 md:mb-32 grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {data.map(post => (
-                    <div>
+                    <section class="relative">
                         <a href={post.url}>
                             <img src={post.hero} alt={post.alt} class="aspect-video object-contain">
                         </a>
@@ -57,16 +57,16 @@ const firstTwo = data.splice(0, 2);
                         <p class="text-sm text-golden-gold9 mt-2 text-right uppercase">
                             <time datetime={post.date}>{new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</time>
                         </p>
-                        <p class="mt-3 lg:text-lg text-gray-500">
+                        <p class="mt-3 lg:text-lg text-gray-500 mb-8 lg:mb-10">
                             {post.desc}
                         </p>
                         </a>
-                        <div class="mt-3">
-                            <a href={post.url} class="lg:text-lg font-semibold text-amber-amber11 hover:text-amber-amber12 hover:ease-in duration-300">
+                        <div class="mt-3 absolute bottom-0 w-full">
+                            <a href={post.url} class="lg:text-lg font-semibold text-amber-amber12 underline underline-offset-2 decoration-2 decoration-transparent hover:decoration-amber-amber12 hover:ease-in duration-300">
                                 Read more &hellip;
                             </a>
                         </div>
-                    </div>
+                    </section>
                 ))}
         </div>
     </article>

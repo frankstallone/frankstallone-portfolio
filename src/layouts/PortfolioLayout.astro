@@ -18,7 +18,7 @@ const textColor = VARIANT_MAPS[variant].primary;
   <body class="min-h-screen overflow-x-hidden relative" role="main">
     <Header variant={variant} />
     <!-- slot: your page content will be injected here. -->
-    <article class={`px-4 mb-12 ${textColor} max-w-7xl mx-auto leading-relaxed`}>
+    <article class={`px-4 mb-12 ${textColor} max-w-7xl mx-auto leading-relaxed`} role="main" id="main-content">
       <slot />
     </article>
     <Footer variant={variant} />

@@ -68,7 +68,7 @@
     @apply mb-8;
   }
   .post p > img {
-    @apply max-w-full h-auto lg:right-1/4 lg:left-1/4 lg:-mx-[25vw] lg:max-w-[75vw] lg:relative;
+    @apply max-w-full h-auto lg:max-w-3xl xl:max-w-5xl xl:-mx-32 lg:relative;
   }
   .post a,
   .post a:visited {

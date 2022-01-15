@@ -1,15 +1,21 @@
 ---
-// Component Imports
+export interface Props {
+    variant: Variant;
+}
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
+import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
+const { variant = 'default' } = Astro.props;
 
+const textColor = VARIANT_MAPS[variant].primary;
+const selectionBg = VARIANT_MAPS[variant].selection;
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
     <MainHead title="Frank Stallone Portfolio" desc="The portfolio, blog and chronicles of misadventures for Frank Stallone III" />
   </head>
-  <body class="min-h-screen overflow-x-hidden relative mx-auto">
+  <body class={`min-h-screen overflow-x-hidden relative mx-auto ${textColor} ${selectionBg}`}>
     <Header />
     <noscript>
       <div class="mx-auto max-w-7xl py-4 flex">

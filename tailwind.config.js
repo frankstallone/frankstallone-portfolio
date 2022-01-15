@@ -1,6 +1,6 @@
 // https://www.radix-ui.com/docs/colors/palette-composition/the-scales
 const defautTheme = require("tailwindcss/defaultTheme");
-const { amber, red, indigo, gold, bronze, bronzeDark } = require("@radix-ui/colors");
+const { amber, red, indigo, gold, goldDark, bronze, bronzeDark } = require("@radix-ui/colors");
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
   theme: {
@@ -19,6 +19,7 @@ module.exports = {
       bronze: bronze,
       bronzeDark: bronzeDark,
       golden: gold,
+      goldenDark: goldDark,
       indigo: indigo,
       amber: amber,
       red: red,

@@ -2,6 +2,7 @@ export type Variant = "default" | "btc" | "roll";
 
 export interface VariantAttributes {
   primary: string;
+  selection: string;
   link: string;
   hover: string;
   themeColor: string;
@@ -15,6 +16,7 @@ export const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
     link: "text-amber-amber12",
     hover: "hover:text-red-red11",
     themeColor: "#4e2009",
+    selection: "selection:bg-amber-amber3",
   },
   btc: {
     primary: "text-btc-900",
@@ -23,6 +25,7 @@ export const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
     link: "text-btc-800",
     hover: "hover:text-btc-700",
     themeColor: "#2c5c9d",
+    selection: "selection:bg-btc-100",
   },
   roll: {
     primary: "text-roll-1000",
@@ -31,5 +34,6 @@ export const VARIANT_MAPS: Record<Variant, VariantAttributes> = {
     link: "text-roll-1000",
     hover: "hover:text-roll-700",
     themeColor: "#2e66d8",
+    selection: "selection:bg-roll-100",
   },
 };

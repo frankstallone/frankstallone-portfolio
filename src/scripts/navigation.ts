@@ -1,26 +1,30 @@
 import {
   animate,
   timeline,
-  AnimationListOptions,
-  MotionKeyframesDefinition,
-  AcceptedElements,
 } from "motion";
+import {
+  StyleKeyframesDefinition
+} from "@motionone/dom/types/animate/types";
+import {
+  CustomAnimationSettings
+} from "@motionone/types";
 import { getDOMElements } from "../utils/general";
 
-export const standardOptions: AnimationListOptions = {
+export const standardOptions: CustomAnimationSettings = {
   duration: 1,
   easing: "ease-in-out",
 };
 
-const navigationKeyframes: MotionKeyframesDefinition = {
+const navigationKeyframes: StyleKeyframesDefinition = {
   transform: "translateY(0)",
   opacity: 1,
 };
 
 const sequence: [
-  AcceptedElements,
-  MotionKeyframesDefinition,
-  AnimationListOptions
+  string,
+  StyleKeyframesDefinition,
+  CustomAnimationSettings
+
 ][] = [
   [".intro", navigationKeyframes, standardOptions],
   [".main-header", navigationKeyframes, standardOptions],

@@ -20,13 +20,18 @@ const navigationKeyframes: StyleKeyframesDefinition = {
   opacity: 1,
 };
 
+const introKeyframes: StyleKeyframesDefinition = {
+  transform: "translateX(0)",
+  opacity: 1,
+};
+
 const sequence: [
   string,
   StyleKeyframesDefinition,
   CustomAnimationSettings
 
 ][] = [
-  [".intro", navigationKeyframes, standardOptions],
+  [".intro", introKeyframes, standardOptions],
   [".main-header", navigationKeyframes, standardOptions],
 ];
 

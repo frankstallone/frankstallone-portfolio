@@ -4,7 +4,7 @@ import {
   getCurrentBreakpointBoundries,
   getDOMElements,
 } from "../utils/general";
-import { standardOptions } from "./navigation";
+import { standardOptions } from "./navHeroAnimations";
 
 // Creating a InteractionObserver interface for animations
 const observer = new IntersectionObserver(

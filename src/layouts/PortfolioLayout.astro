@@ -23,6 +23,6 @@ const selectionBg = VARIANT_MAPS[variant].selection;
       <slot />
     </article>
     <Footer variant={variant} />
-    <script type="module" src={Astro.resolve("../scripts/navHeroAnimations.ts")} />
+    <script type="module" src={(await import("../scripts/navHeroAnimations.ts?url")).default}></script>
   </body>
 </html>

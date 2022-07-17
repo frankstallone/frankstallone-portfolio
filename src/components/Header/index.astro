@@ -2,7 +2,7 @@
 export interface Props {
   variant?: Variant;
 }
-import { Variant, VARIANT_MAPS } from "../../utils/variants.ts"
+import { Variant, VARIANT_MAPS } from "../../utils/variants"
 const { variant = "default" } = Astro.props;
 
 const linkClasses = `${VARIANT_MAPS[variant].link} ${VARIANT_MAPS[variant].hover} font-bold text-xs tracking-wider xs:tracking-widest hover uppercase`;

@@ -30,6 +30,6 @@ const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, {
       <slot />
     </article>
     <Footer variant={content.variant} />
-    <script type="module" src={(await import("../scripts/navHeroAnimations.ts?url")).default}></script>
+    <script type="module" src={(await import("../scripts/navHeroAnimations?url")).default}></script>
   </body>
 </html>

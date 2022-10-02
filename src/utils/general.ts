@@ -16,7 +16,7 @@ export function getDOMElements(DOMString, parent?): NodeListOf<Element> | null {
 
 // Returns a threshold based on breakpoint
 export function getThreshold(breakpoint: number): number {
-  return getCurrentBreakpointBoundries(breakpoint) ? 0.25 : 0.1;
+  return getCurrentBreakpointBoundries(breakpoint) ? 0.05 : 0.025;
 }
 
 // Returns a boolean as to whether a user has reduced motion on

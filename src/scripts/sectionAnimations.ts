@@ -23,9 +23,12 @@ const observer = new IntersectionObserver(
 );
 
 // Giving IntersectionObserver targets to watch
-getDOMElements(".section").forEach((section) => {
-  observer.observe(section);
-});
+const sections = getDOMElements(".section");
+if (sections) {
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+}
 
 function animateMainSectionDesktop(section, tokens) {
   timeline([

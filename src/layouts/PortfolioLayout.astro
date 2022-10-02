@@ -6,7 +6,7 @@ export interface Props {
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
-import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
+import { Variant, VARIANT_MAPS } from '../utils/variants'
 const { title, variant = 'default' } = Astro.props;
 
 const textColor = VARIANT_MAPS[variant].primary;
@@ -23,6 +23,6 @@ const selectionBg = VARIANT_MAPS[variant].selection;
       <slot />
     </article>
     <Footer variant={variant} />
-    <script type="module" src={Astro.resolve("../scripts/navHeroAnimations.ts")} />
+    <script type="module" src={(await import("../scripts/navHeroAnimations?url")).default}></script>
   </body>
 </html>

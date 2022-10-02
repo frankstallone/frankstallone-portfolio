@@ -10,7 +10,7 @@ export interface Props {
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
-import { Variant } from '../utils/variants.ts'
+import { Variant } from '../utils/variants'
 const { content } = Astro.props;
 
 const dateTime = new Date(content.date).toISOString();
@@ -30,6 +30,6 @@ const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, {
       <slot />
     </article>
     <Footer variant={content.variant} />
-    <script type="module" src={Astro.resolve("../scripts/navHeroAnimations.ts")} />
+    <script type="module" src={(await import("../scripts/navHeroAnimations?url")).default}></script>
   </body>
 </html>

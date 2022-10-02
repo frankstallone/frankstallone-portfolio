@@ -5,7 +5,7 @@ export interface Props {
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.astro';
 import Header from '../components/Header/index.astro';
-import { Variant, VARIANT_MAPS } from '../utils/variants.ts'
+import { Variant, VARIANT_MAPS } from '../utils/variants'
 const { variant = 'default' } = Astro.props;
 
 const textColor = VARIANT_MAPS[variant].primary;
@@ -131,7 +131,7 @@ const selectionBg = VARIANT_MAPS[variant].selection;
       ga('create', 'UA-140380476-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
-    <script type="module" src={Astro.resolve("../scripts/sectionAnimations.ts")} />
-    <script type="module" src={Astro.resolve("../scripts/navHeroAnimations.ts")} />
+    <script src="../scripts/sectionAnimations.ts"></script>
+    <script src="../scripts/navHeroAnimations.ts"></script>
   </body>
 </html>

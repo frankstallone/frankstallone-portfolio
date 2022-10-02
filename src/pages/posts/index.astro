@@ -2,13 +2,13 @@
 import MainHead from '../../components/MainHead.astro';
 import Footer from '../../components/Footer/index.astro';
 import Header from '../../components/Header/index.astro';
-import { isPublished, sortPosts } from '../../utils/general.ts';
+import { isPublished, sortPosts } from '../../utils/general';
 
-const data = Astro.fetchContent('../posts/*.md')
-    .filter(isPublished)
+const data = await Astro.glob('../posts/*.md');
+const filteredResults = data.filter(res => isPublished)
     .sort(sortPosts)
     .reverse();
-const firstTwo = data.splice(0, 2);
+const filterOutFirstTwo = filteredResults.splice(0, 2);
 ---
 <html lang="en" class="overflow-x-hidden">
   <head>
@@ -20,20 +20,20 @@ const firstTwo = data.splice(0, 2);
         <h2 class="pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 uppercase">Blog</h2>
         <h3 class="pb-4 text-xl xl:text-2xl font-display text-amber-amber11">The asumsing muses of Frank Stallone III</h3>
         <div class="mt-4 xs:mt-8 md:mb-32 grid gap-16 sm:grid-cols-2">
-            {firstTwo.map(post => (
+            {filterOutFirstTwo.map(post => (
                 <section class="relative">
                     <a href={post.url}>
-                        <img src={post.hero} alt={post.alt} class="aspect-video object-contain">
+                        <img src={post.frontmatter.hero} alt={post.frontmatter.alt} class="aspect-video object-contain">
                     </a>
                     <a href={post.url} class="mt-4 block">
                         <h3 class="font-display text-2xl text-amber-amber12 underline underline-offset-4 decoration-4 decoration-transparent hover:decoration-amber-amber12 hover:ease-in duration-300">
-                            {post.title.toUpperCase()}
+                            {post.frontmatter.title.toUpperCase()}
                         </h3>
                     <p class="text-sm text-golden-gold9 mt-2 text-right uppercase">
-                        <time datetime={post.date}>{new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</time>
+                        <time datetime={post.frontmatter.date}>{new Date(post.frontmatter.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</time>
                     </p>
                     <p class="mt-3 lg:text-lg text-gray-500 mb-8 lg:mb-10">
-                        {post.desc}
+                        {post.frontmatter.desc}
                     </p>
                     </a>
                     <div class="mt-3 absolute bottom-0 w-full">
@@ -45,20 +45,20 @@ const firstTwo = data.splice(0, 2);
             ))}
         </div>
         <div class="mt-6 md:mt-16 md:mb-32 grid gap-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {data.map(post => (
+            {filteredResults.map(post => (
                     <section class="relative">
                         <a href={post.url}>
-                            <img src={post.hero} alt={post.alt} class="aspect-video object-contain">
+                            <img src={post.frontmatter.hero} alt={post.frontmatter.alt} class="aspect-video object-contain">
                         </a>
                         <a href={post.url} class="mt-4 block">
                             <h3 class="font-display text-2xl text-amber-amber12 underline underline-offset-4 decoration-4 decoration-transparent hover:decoration-amber-amber12 hover:ease-in duration-300">
-                                {post.title.toUpperCase()}
+                                {post.frontmatter.title.toUpperCase()}
                             </h3>
                         <p class="text-sm text-golden-gold9 mt-2 text-right uppercase">
-                            <time datetime={post.date}>{new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</time>
+                            <time datetime={post.frontmatter.date}>{new Date(post.frontmatter.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</time>
                         </p>
                         <p class="mt-3 lg:text-lg text-gray-500 mb-8 lg:mb-10">
-                            {post.desc}
+                            {post.frontmatter.desc}
                         </p>
                         </a>
                         <div class="mt-3 absolute bottom-0 w-full">
@@ -71,6 +71,6 @@ const firstTwo = data.splice(0, 2);
         </div>
     </article>
     <Footer />
-    <script type="module" src={Astro.resolve("../../scripts/navHeroAnimations.ts")} />
+    <script type="module" src={(await import("../../scripts/navHeroAnimations?url")).default}></script>
   </body>
 </html>

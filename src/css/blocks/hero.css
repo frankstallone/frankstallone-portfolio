@@ -1,0 +1,30 @@
+/* Cover */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+  padding: var(--gutter);
+  overflow: hidden;
+}
+
+.hero h2 {
+  letter-spacing: 0.025ch;
+  font-size: var(--step-6);
+}
+
+.hero > * {
+  margin-block: 1rem;
+}
+
+.hero > :first-child:not(div) {
+  margin-block-start: 0;
+}
+
+.hero > :last-child:not(div) {
+  margin-block-end: 0;
+}
+
+.hero > div {
+  margin-block: auto;
+}

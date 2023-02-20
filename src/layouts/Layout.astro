@@ -1,0 +1,23 @@
+---
+import Head from "../components/Head.astro";
+
+export interface Props {
+  title: string;
+  desc: string;
+}
+
+const {
+  title = "The portfolio of",
+  desc = "The UX/UI, logo, branding and front-end development portfolio of Frank Stallone",
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <Head title={title} desc={desc} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

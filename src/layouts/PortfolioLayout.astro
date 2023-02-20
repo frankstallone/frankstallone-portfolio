@@ -1,28 +1,25 @@
 ---
-export interface Props {
-    title: string;
-    variant: Variant;
-}
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.astro';
-import Header from '../components/Header/index.astro';
-import { Variant, VARIANT_MAPS } from '../utils/variants'
-const { title, variant = 'default' } = Astro.props;
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
 
-const textColor = VARIANT_MAPS[variant].primary;
-const selectionBg = VARIANT_MAPS[variant].selection;
+export interface Props {
+  title: string;
+  desc: string;
+}
+
+const { title = "default", desc = "default" } = Astro.props;
 ---
-<html lang="en" class="overflow-x-hidden">
+
+<html lang="en">
   <head>
-    <MainHead title={title} variant={variant} />
+    <Head title={title} desc={desc} />
   </head>
-  <body class="min-h-screen overflow-x-hidden relative" role="main">
-    <Header variant={variant} />
-    <!-- slot: your page content will be injected here. -->
-    <article class={`px-4 mb-48 ${textColor} ${selectionBg} max-w-7xl mx-auto leading-relaxed`} role="main" id="main-content">
+  <body>
+    <div class="wrapper top-pad">
+      <Header />
+    </div>
+    <article class="wrapper flow prose" role="main" id="main-content">
       <slot />
     </article>
-    <Footer variant={variant} />
-    <script type="module" src={(await import("../scripts/navHeroAnimations?url")).default}></script>
   </body>
 </html>

@@ -3,33 +3,39 @@ export interface Props {
   content: {
     title: string;
     desc: string;
-    date:string;
-    variant?: Variant;
-  }
+    date: string;
+  };
 }
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.astro';
-import Header from '../components/Header/index.astro';
-import { Variant } from '../utils/variants'
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
 const { content } = Astro.props;
 
 const dateTime = new Date(content.date).toISOString();
-const humanReadableDate = new Date(content.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" }).toUpperCase();
+const humanReadableDate = new Date(content.date)
+  .toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  })
+  .toUpperCase();
 ---
-<html lang="en" class="overflow-x-hidden">
+
+<html lang="en">
   <head>
-    <MainHead title={content.title} desc={content.desc} variant={content.variant} />
+    <Head title={content.title} desc={content.desc} />
   </head>
-  <body class="min-h-screen overflow-x-hidden relative">
-    <Header variant={content.variant} />
-    <article class="post px-4 mb-48 text-bronze-bronze12 max-w-3xl mx-auto leading-relaxed lg:text-lg" role="main article" id="main-content">
+  <body>
+    <div class="wrapper top-pad">
+      <Header />
+    </div>
+    <article class="wrapper flow region prose" role="main" id="main-content">
       <h1>{content.title}</h1>
       <p class="text-center">
-        <time datetime={dateTime} class="font-extralight text-golden-gold9">{humanReadableDate}</time>
+        <time datetime={dateTime} class="font-extralight text-golden-gold9"
+          >{humanReadableDate}</time
+        >
       </p>
       <slot />
     </article>
-    <Footer variant={content.variant} />
-    <script type="module" src={(await import("../scripts/navHeroAnimations?url")).default}></script>
   </body>
 </html>

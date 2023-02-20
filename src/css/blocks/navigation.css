@@ -1,0 +1,23 @@
+/* Main navigation */
+
+#main-navigation {
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#main-navigation ul {
+  justify-content: flex-start;
+  list-style: none;
+  display: flex;
+  padding-inline-start: 0;
+}
+
+#main-navigation ul,
+#main-navigation h1 {
+  font-size: var(--space-xs);
+}
+
+#main-navigation ul li {
+  margin-inline: 0;
+}

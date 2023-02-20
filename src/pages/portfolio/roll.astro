@@ -1,166 +1,451 @@
 ---
-import PortfolioLayout from '../../layouts/PortfolioLayout.astro'
-import { VARIANT_MAPS } from '../../utils/variants'
+import PortfolioLayout from "../../layouts/PortfolioLayout.astro";
+import { VARIANT_MAPS } from "../../utils/variants";
 ---
 
-<PortfolioLayout title="Roll by ADP" variant="roll">
-    <div class="min-h-80">
-        <h2 class={`mt-4 text-3xl xl:text-4xl font-display uppercase ${VARIANT_MAPS["roll"].h1}`}>Pref<span class="font-variants-01 -ml-1.5">a</span>ce: <span class="font-variants-01">R</span>oll</h2>
-        <h3 class={`mb-4 text-xl xl:text-2xl font-display ${VARIANT_MAPS["roll"].h2}`}>UX, UI, Design Sys<span class="font-variants-01">t</span>em</h3>
-        <div class="mb-4 xs:mb-8 grid gap-4 xs:grid-cols-2 lg:grid-cols-3">
-            <p class="lg:text-xl font-semibold">Combined business ideas with small business owner needs to create a new way to run payroll and manage <abbr title="Human Capital Management">HCM</abbr> on the go with a mobile first approach from concept to component library.</p>
-            <p class="lg:text-lg">Roll by ADP is a self service app that allows business owners to run payroll and manage <abbr title="Human Capital Management">HCM</abbr> through a chat bot with a sophisticated suite of <abbr title="Machine Learning">ML</abbr> algorithms and <abbr title="Artificial Intelligence">AI</abbr>. Our workflow engine is based on event sourcing which  captures actions and stores it in sequence. We apply this to a few user interfaces on mobile devices and desktop.</p>
-            <p class="lg:text-lg">There are a wide array of attributes that can be applied to a manager or employee. They can be mixed and matched depending on the company, location and organization structure. What payment method do we use for our employees? Did they get a mid-cycle rise? How many hours did they work? Did they have overtime or sick time?</p>
-        </div>
-        <section class="grid gap-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 mb-4">
-            <img src="/assets/squared/roll-squared-01@2x.png" alt="Mock up of the original logo design for Roll by ADP" class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2">
-            <img src="/assets/squared/roll-squared-02@2x.png" alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2">
-            <img src="/assets/squared/roll-squared-03@2x.png" alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients" class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3">
-            <img src="/assets/squared/roll-squared-04@2x.png" alt="Screenshots of the mobile app that would eventually be used circa 2018" class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2">
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-50 h-full w-full lg:col-start-3"></div>
-            <div aria-hidden="true" class="token-swatch square hidden md:block bg-roll-100 rounded-lg h-full w-full lg:col-start-4"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"></div>
-            <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"></div>
-        </section>
+<PortfolioLayout
+  title="Roll by ADP"
+  desc="Chat bot with AI as your HCM personal assistant"
+>
+  <div class="min-h-80">
+    <h2
+      class={`mt-4 text-3xl xl:text-4xl font-display uppercase ${VARIANT_MAPS["roll"].h1}`}
+    >
+      Pre<span class="font-variants-01-ls">f</span><span
+        class="font-variants-01">a</span
+      >ce: <span class="font-variants-01">R</span>oll
+    </h2>
+    <h3
+      class={`mb-4 text-xl xl:text-2xl font-display ${VARIANT_MAPS["roll"].h2}`}
+    >
+      UX, UI, Design Sys<span class="font-variants-01">t</span>em
+    </h3>
+    <div class="mb-4 xs:mb-8 grid gap-4 xs:grid-cols-2 lg:grid-cols-3">
+      <p class="lg:text-xl font-semibold">
+        Combined business ideas with small business owner needs to create a new
+        way to run payroll and manage <abbr title="Human Capital Management"
+          >HCM</abbr
+        > on the go with a mobile first approach from concept to component library.
+      </p>
+      <p class="lg:text-lg">
+        Roll by ADP is a self service app that allows business owners to run
+        payroll and manage <abbr title="Human Capital Management">HCM</abbr> through
+        a chat bot with a sophisticated suite of <abbr title="Machine Learning"
+          >ML</abbr
+        > algorithms and <abbr title="Artificial Intelligence">AI</abbr>. Our
+        workflow engine is based on event sourcing which captures actions and
+        stores it in sequence. We apply this to a few user interfaces on mobile
+        devices and desktop.
+      </p>
+      <p class="lg:text-lg">
+        There are a wide array of attributes that can be applied to a manager or
+        employee. They can be mixed and matched depending on the company,
+        location and organization structure. What payment method do we use for
+        our employees? Did they get a mid-cycle rise? How many hours did they
+        work? Did they have overtime or sick time?
+      </p>
     </div>
-    <h2 class={`pt-4 text-3xl xl:text-4xl font-display uppercase ${VARIANT_MAPS["roll"].h1}`}>C<span class="font-variants-01 -ml-0.5">a</span>se S<span class="font-variants-01">t</span>udy</h2>
-    <h3 class={`pb-4 text-xl xl:text-2xl font-display ${VARIANT_MAPS["roll"].h2}`}>Payroll <span class="font-variants-01">R</span>un</h3>
-    <h4 class="hidden">Skills displayed</h4>
-    <div class="sm:space-x-4 space-y-2 xs:space-y-4 mb-10">
-        <span class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Product thinking</span>
-        <span class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Interaction design</span>
-        <span class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Visual design</span>
-        <span class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Proactivity and drive</span>
-        <span class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Intentionality</span>
-        <span class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block">Self-awareness</span>
+    <section
+      class="grid gap-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 mb-4"
+    >
+      <img
+        src="/assets/squared/roll-squared-01@2x.png"
+        alt="Mock up of the original logo design for Roll by ADP"
+        class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2"
+      />
+      <img
+        src="/assets/squared/roll-squared-02@2x.png"
+        alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP"
+        class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2"
+      />
+      <img
+        src="/assets/squared/roll-squared-03@2x.png"
+        alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients"
+        class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3"
+      />
+      <img
+        src="/assets/squared/roll-squared-04@2x.png"
+        alt="Screenshots of the mobile app that would eventually be used circa 2018"
+        class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2"
+      />
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-50 h-full w-full lg:col-start-3"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden md:block bg-roll-100 rounded-lg h-full w-full lg:col-start-4"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"
+      >
+      </div>
+      <div
+        aria-hidden="true"
+        class="token-swatch square hidden lg:block bg-roll-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"
+      >
+      </div>
+    </section>
+  </div>
+  <h2
+    class={`pt-4 text-3xl xl:text-4xl font-display uppercase ${VARIANT_MAPS["roll"].h1}`}
+  >
+    C<span class="font-variants-01 -ml-0.5">a</span>se S<span
+      class="font-variants-01">t</span
+    >udy
+  </h2>
+  <h3
+    class={`pb-4 text-xl xl:text-2xl font-display ${VARIANT_MAPS["roll"].h2}`}
+  >
+    Payroll <span class="font-variants-01">R</span>un
+  </h3>
+  <h4 class="hidden">Skills displayed</h4>
+  <div class="sm:space-x-4 space-y-2 xs:space-y-4 mb-10">
+    <span
+      class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block"
+      >Product thinking</span
+    >
+    <span
+      class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block"
+      >Interaction design</span
+    >
+    <span
+      class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block"
+      >Visual design</span
+    >
+    <span
+      class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block"
+      >Proactivity and drive</span
+    >
+    <span
+      class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block"
+      >Intentionality</span
+    >
+    <span
+      class="text-sm font-semibold bg-roll-800 px-4 py-1 rounded-lg text-roll-100 break-normal block sm:inline-block"
+      >Self-awareness</span
+    >
+  </div>
+  <div
+    class="mb-4 sm:mb-10 grid gap-4 xs:grid-cols-2 lg:grid-cols-3 place-items-start place-content-center"
+  >
+    <p class="lg:text-lg">
+      <span class="font-semibold"
+        >In this case study I'll be walking you through how I overcame the
+        business challenges to get a clear and concise design solution for a
+        manager managing employee's hours.</span
+      > Our team gathers in our main meeting room. From our SVP of Innovation, product
+      owners to our architect and backend developers we are sitting with 50+ years
+      of payroll and <abbr title="Human Capital Management">HCM</abbr> knowledge.
+      Everyone has a valid voice at this table.
+    </p>
+    <p class="lg:text-lg">
+      We begin with discovery. I start by asking a few questions about the vast
+      array of attributes any one employee can have associated with them. This
+      quickly gets out of hand as there are many. We now know there needs to be
+      a <abbr title="Minimum Viable Product">MVP</abbr> that we can ship first and
+      that we should focus on that today. To figure this out we write down all of
+      the payroll workflows we have to design for and pick one.
+    </p>
+    <p class="lg:text-lg">
+      We have decided to scope this discussion to a single payroll flow, a
+      manager whose managing his employee's hours. Focusing on this flow will
+      set the stage for what the UX and UI will look like, then we can come back
+      and pressure test the design to see if it will solve our other payroll
+      flows.
+    </p>
+  </div>
+  <section
+    class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3"
+  >
+    <div class="md:row-span-3">
+      <p class="lg:text-lg">
+        What would a manager expect to see in this view? I am writing down
+        attributes on the whiteboard taking note of the discussions from our <abbr
+          title="Subject Matter Expert">SME</abbr
+        >s. It's becoming clear some of these attributes are not needed. This
+        will be a list of employees for the manager to quickly scroll through,
+        add hours in an input field and submit payroll. We want minimal friction
+        and the least amount of cognitive load on these managers as possible.
+      </p>
     </div>
-    <div class="mb-4 sm:mb-10 grid gap-4 xs:grid-cols-2 lg:grid-cols-3 place-items-start place-content-center">
-        <p class="lg:text-lg"><span class="font-semibold">In this case study I'll be walking you through how I overcame the business challenges to get a clear and concise design solution for a manager managing employee's hours.</span> Our team gathers in our main meeting room. From our SVP of Innovation, product owners to our architect and backend developers we are sitting with 50+ years of payroll and <abbr title="Human Capital Management">HCM</abbr> knowledge. Everyone has a valid voice at this table.</p>
-        <p class="lg:text-lg">We begin with discovery. I start by asking a few questions about the vast array of attributes any one employee can have associated with them. This quickly gets out of hand as there are many. We now know there needs to be a <abbr title="Minimum Viable Product">MVP</abbr> that we can ship first and that we should focus on that today. To figure this out we write down all of the payroll workflows we have to design for and pick one.</p>
-        <p class="lg:text-lg">We have decided to scope this discussion to a single payroll flow, a manager whose managing his employee's hours. Focusing on this flow will set the stage for what the UX and UI will look like, then we can come back and pressure test the design to see if it will solve our other payroll flows.</p>
+    <div
+      class="xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center"
+    >
+      <svg
+        viewBox="0 0 723 600"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:space="preserve"
+        class="w-3/4 h-3/4 currentColor"
+      >
+        <g id="hierarchy-together">
+          <g id="blob" class="opacity-60">
+            <g id="blob-shape" class="fill-current text-roll-100">
+              <path
+                d="M264.276,392.11c-34.268,-122.128 -184.259,-116.128 -184.259,-224.122c-0,-92.717 75.274,-167.991 167.99,-167.991c65.588,0 431.976,29.932 431.976,299.984c0,251.986 -306.882,479.973 -415.707,92.129Z"
+                style="fill:url(#gradient);"></path>
+            </g>
+          </g>
+          <g id="rectangles">
+            <path
+              id="top"
+              class="fill-current text-roll-200"
+              d="M545.602,77c24.84,14.747 47.947,32.248 67.751,53l-149.353,0c-0.53,0 -1.039,-0.211 -1.414,-0.586c-0.375,-0.375 -0.586,-0.884 -0.586,-1.414c0,-8.38 0,-40.62 0,-49c-0,-0.53 0.211,-1.039 0.586,-1.414c0.375,-0.375 0.884,-0.586 1.414,-0.586l81.602,0Z"
+            ></path>
+            <path
+              id="middle"
+              class="fill-current text-roll-300"
+              d="M643.149,167.857c10.258,16.095 18.716,33.714 24.93,53l-204.079,0c-0.53,0 -1.039,-0.211 -1.414,-0.586c-0.375,-0.375 -0.586,-0.883 -0.586,-1.414c0,-8.38 0,-40.62 0,-49c-0,-0.53 0.211,-1.039 0.586,-1.414c0.375,-0.375 0.884,-0.586 1.414,-0.586l179.149,0Z"
+            ></path>
+            <path
+              id="bottom"
+              class="fill-current text-roll-400"
+              d="M676.946,258.714c1.992,13.11 3.037,26.846 3.037,41.267c0,3.905 -0.073,7.805 -0.22,11.733l-215.763,0c-0.53,0 -1.039,-0.21 -1.414,-0.585c-0.375,-0.376 -0.586,-0.884 -0.586,-1.415c0,-8.38 0,-40.62 0,-49c-0,-0.53 0.211,-1.039 0.586,-1.414c0.375,-0.375 0.884,-0.586 1.414,-0.586l212.946,0Z"
+            ></path>
+          </g>
+          <g id="weight">
+            <g id="letters" class="opacity-90">
+              <path
+                id="bold"
+                class="fill-current text-orange-300"
+                d="M571.318,458.011c5.372,0 8.689,1.58 12.323,4.74l8.216,-15.641c-6.952,-4.898 -13.113,-7.11 -22.909,-7.11c-18.012,0 -30.967,11.218 -30.967,30.493l-0,3.16l-15.168,-0l0,17.695l15.168,0l-0,62.25l20.697,0l0,-62.25l24.489,0l0,-17.695l-24.489,-0l0,-3.002c0,-8.374 5.53,-12.64 12.64,-12.64Z"
+              ></path>
+              <path
+                id="regular"
+                class="fill-current text-orange-500"
+                d="M648.351,464.772c4.746,-0 8.679,1.492 11.663,3.797l4.204,-7.73c-4.611,-3.119 -9.086,-4.611 -16.003,-4.611c-13.697,0 -23.054,9.086 -23.054,23.461l0,5.289l-13.019,0l0,8.679l13.155,0l-0,59.941l9.493,0l-0,-59.941l22.647,0l-0,-8.679l-22.647,0l-0,-5.289c-0,-10.035 5.424,-14.917 13.561,-14.917Z"
+              ></path>
+              <path
+                id="thin"
+                class="fill-current text-orange-900"
+                d="M711.286,474.491c5.199,-0 8.137,2.26 10.058,4.181l1.469,-1.921c-1.808,-1.921 -5.311,-4.294 -11.753,-4.294c-8.023,-0 -15.369,6.102 -15.369,16.386l-0,7.572l-11.188,-0l-0,2.034l11.188,-0l-0,55.149l2.147,0l0,-55.149l21.585,-0l0,-2.034l-21.585,-0l0,-7.572c0,-9.493 6.781,-14.352 13.448,-14.352Z"
+              ></path>
+            </g>
+          </g>
+          <g id="accordion" class="opacity-90">
+            <g id="more-panel">
+              <path
+                id="bottom-panel"
+                d="M351,362.6l-207,0l-0,121.37c-0,1.334 0.53,2.613 1.473,3.557c0.944,0.943 2.223,1.473 3.557,1.473c28.41,0 168.53,0 196.94,0c1.334,0 2.613,-0.53 3.557,-1.473c0.943,-0.944 1.473,-2.223 1.473,-3.557c-0,-23.503 -0,-121.37 -0,-121.37Zm-5,5l-0,116.37c0,0.008 -0.003,0.016 -0.009,0.021c-0.005,0.006 -0.013,0.009 -0.021,0.009c-28.41,0 -168.53,0 -196.94,0c-0.008,0 -0.016,-0.003 -0.021,-0.009c-0.006,-0.005 -0.009,-0.013 -0.009,-0.021l-0,-116.37l197,0Z"
+              ></path>
+            </g>
+            <g id="main-panel">
+              <path
+                id="top-panel"
+                d="M351,336.987c-0,-4.411 -3.576,-7.987 -7.987,-7.987c-27.301,0 -163.725,0 -191.026,0c-4.411,0 -7.987,3.576 -7.987,7.987c-0,12.352 -0,34.68 -0,34.68l207,-0l0,-34.68Zm-32.469,21.015c-0.624,0.625 -1.638,0.625 -2.262,-0c-2.743,-2.743 -9.811,-9.811 -13.738,-13.737c-0.457,-0.458 -0.594,-1.146 -0.346,-1.744c0.247,-0.598 0.831,-0.988 1.478,-0.988c6.77,0 20.704,0 27.474,0c0.647,0 1.231,0.39 1.478,0.988c0.248,0.598 0.111,1.286 -0.346,1.744c-3.927,3.926 -10.995,10.994 -13.738,13.737Z"
+              ></path>
+            </g>
+            <path
+              id="close-button"
+              d="M386.379,342.707c0.187,-0.187 0.442,-0.293 0.707,-0.293c0.265,0 0.519,0.106 0.707,0.293c2.553,2.554 11.345,11.345 15.086,15.086c0.286,0.286 0.371,0.716 0.216,1.09c-0.154,0.373 -0.519,0.617 -0.923,0.617c-6.404,0 -23.768,0 -30.172,0c-0.404,-0 -0.769,-0.244 -0.924,-0.617c-0.155,-0.374 -0.069,-0.804 0.217,-1.09c3.741,-3.741 12.532,-12.532 15.086,-15.086Z"
+            ></path>
+          </g>
+          <g id="placement">
+            <circle id="bottom-right" cx="155" cy="175" r="45"></circle>
+            <path
+              class="fill-current text-roll-300"
+              d="M155,130c24.836,0 45,20.164 45,45c0,24.836 -20.164,45 -45,45c-24.836,0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm0,5c22.077,0 40,17.923 40,40c0,22.077 -17.923,40 -40,40c-22.077,0 -40,-17.923 -40,-40c-0,-22.077 17.923,-40 40,-40Z"
+            ></path>
+            <circle id="bottom-left" cx="45" cy="175" r="45"></circle>
+            <path
+              class="fill-current text-roll-400"
+              d="M45,130c24.836,0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm0,5c22.077,0 40,17.923 40,40c-0,22.077 -17.923,40 -40,40c-22.077,0 -40,-17.923 -40,-40c0,-22.077 17.923,-40 40,-40Z"
+            ></path>
+            <g class="opacity-40">
+              <circle id="top-left" cx="155" cy="65.808" r="45"></circle>
+              <path
+                class="fill-current text-roll-300"
+                d="M155,20.808c24.836,-0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,-0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm-0,5c22.077,-0 40,17.923 40,40c0,22.076 -17.923,40 -40,40c-22.077,-0 -40,-17.924 -40,-40c-0,-22.077 17.923,-40 40,-40Z"
+              ></path>
+            </g>
+            <g class="opacity-60">
+              <circle id="top-middle" cx="100" cy="65.808" r="45"></circle>
+              <path
+                class="fill-current text-roll-400"
+                d="M100,20.808c24.836,-0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,-0 -45,-20.164 -45,-45c-0,-24.836 20.164,-45 45,-45Zm-0,5c22.077,-0 40,17.923 40,40c-0,22.076 -17.923,40 -40,40c-22.077,-0 -40,-17.924 -40,-40c-0,-22.077 17.923,-40 40,-40Z"
+              ></path>
+            </g>
+            <circle id="top-right" cx="45" cy="65" r="45"></circle>
+            <path
+              class="fill-current text-roll-700"
+              d="M45,20c24.836,0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,-0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm0,5c22.077,0 40,17.923 40,40c-0,22.077 -17.923,40 -40,40c-22.077,-0 -40,-17.923 -40,-40c0,-22.077 17.923,-40 40,-40Z"
+            ></path>
+            <path
+              id="arrow"
+              class="fill-current text-roll-800"
+              d="M220.553,65.894c-0.339,-0.169 -0.553,-0.515 -0.553,-0.894c0,-0.379 0.214,-0.725 0.553,-0.894c9.894,-4.948 57.798,-28.9 66.764,-33.382c0.31,-0.155 0.678,-0.139 0.973,0.043c0.294,0.183 0.474,0.504 0.474,0.851c-0,9.441 -0,57.323 -0,66.764c-0,0.347 -0.18,0.668 -0.474,0.851c-0.295,0.182 -0.663,0.198 -0.973,0.043c-8.966,-4.482 -56.87,-28.434 -66.764,-33.382Z"
+            ></path>
+          </g>
+        </g>
+        <defs>
+          <linearGradient
+            id="gradient"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="0"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(2.10639e-14,344,-344,2.10639e-14,388,251)"
+          >
+            <stop offset="0" style="stop-color:#d3f6fe;stop-opacity:1"></stop>
+            <stop offset="1" style="stop-color:#fff;stop-opacity:0"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
-    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
-        <div class="md:row-span-3">
-            <p class="lg:text-lg">What would a manager expect to see in this view? I am writing down attributes on the whiteboard taking note of the discussions from our <abbr title="Subject Matter Expert">SME</abbr>s. It's becoming clear some of these attributes are not needed. This will be a list of employees for the manager to quickly scroll through, add hours in an input field and submit payroll. We want minimal friction and the least amount of cognitive load on these managers as possible.</p>
-        </div>
-        <div class="xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
-            <svg viewBox="0 0 723 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                xml:space="preserve" class="fill-current w-full h-full lg:w-3/4 lg:3/4">
-                <g id="hierarchy-together">
-                    <g id="blob" class="opacity-60">
-                        <g id="blob-shape" class="fill-current text-roll-100">
-                            <path
-                                d="M264.276,392.11c-34.268,-122.128 -184.259,-116.128 -184.259,-224.122c-0,-92.717 75.274,-167.991 167.99,-167.991c65.588,0 431.976,29.932 431.976,299.984c0,251.986 -306.882,479.973 -415.707,92.129Z" style="fill:url(#gradient);" />
-                        </g>
-                    </g>
-                    <g id="rectangles">
-                        <path id="top" class="fill-current text-roll-200"
-                            d="M545.602,77c24.84,14.747 47.947,32.248 67.751,53l-149.353,0c-0.53,0 -1.039,-0.211 -1.414,-0.586c-0.375,-0.375 -0.586,-0.884 -0.586,-1.414c0,-8.38 0,-40.62 0,-49c-0,-0.53 0.211,-1.039 0.586,-1.414c0.375,-0.375 0.884,-0.586 1.414,-0.586l81.602,0Z" />
-                        <path id="middle" class="fill-current text-roll-300"
-                            d="M643.149,167.857c10.258,16.095 18.716,33.714 24.93,53l-204.079,0c-0.53,0 -1.039,-0.211 -1.414,-0.586c-0.375,-0.375 -0.586,-0.883 -0.586,-1.414c0,-8.38 0,-40.62 0,-49c-0,-0.53 0.211,-1.039 0.586,-1.414c0.375,-0.375 0.884,-0.586 1.414,-0.586l179.149,0Z" />
-                        <path id="bottom" class="fill-current text-roll-400"
-                            d="M676.946,258.714c1.992,13.11 3.037,26.846 3.037,41.267c0,3.905 -0.073,7.805 -0.22,11.733l-215.763,0c-0.53,0 -1.039,-0.21 -1.414,-0.585c-0.375,-0.376 -0.586,-0.884 -0.586,-1.415c0,-8.38 0,-40.62 0,-49c-0,-0.53 0.211,-1.039 0.586,-1.414c0.375,-0.375 0.884,-0.586 1.414,-0.586l212.946,0Z" />
-                    </g>
-                    <g id="weight">
-                        <g id="letters" class="opacity-90">
-                            <path id="bold" class="fill-current text-orange-300"
-                                d="M571.318,458.011c5.372,0 8.689,1.58 12.323,4.74l8.216,-15.641c-6.952,-4.898 -13.113,-7.11 -22.909,-7.11c-18.012,0 -30.967,11.218 -30.967,30.493l-0,3.16l-15.168,-0l0,17.695l15.168,0l-0,62.25l20.697,0l0,-62.25l24.489,0l0,-17.695l-24.489,-0l0,-3.002c0,-8.374 5.53,-12.64 12.64,-12.64Z" />
-                            <path id="regular" class="fill-current text-orange-500"
-                                d="M648.351,464.772c4.746,-0 8.679,1.492 11.663,3.797l4.204,-7.73c-4.611,-3.119 -9.086,-4.611 -16.003,-4.611c-13.697,0 -23.054,9.086 -23.054,23.461l0,5.289l-13.019,0l0,8.679l13.155,0l-0,59.941l9.493,0l-0,-59.941l22.647,0l-0,-8.679l-22.647,0l-0,-5.289c-0,-10.035 5.424,-14.917 13.561,-14.917Z" />
-                            <path id="thin" class="fill-current text-orange-900"
-                                d="M711.286,474.491c5.199,-0 8.137,2.26 10.058,4.181l1.469,-1.921c-1.808,-1.921 -5.311,-4.294 -11.753,-4.294c-8.023,-0 -15.369,6.102 -15.369,16.386l-0,7.572l-11.188,-0l-0,2.034l11.188,-0l-0,55.149l2.147,0l0,-55.149l21.585,-0l0,-2.034l-21.585,-0l0,-7.572c0,-9.493 6.781,-14.352 13.448,-14.352Z" />
-                        </g>
-                    </g>
-                    <g id="accordion" class="opacity-90">
-                        <g id="more-panel">
-                            <path id="bottom-panel"
-                                d="M351,362.6l-207,0l-0,121.37c-0,1.334 0.53,2.613 1.473,3.557c0.944,0.943 2.223,1.473 3.557,1.473c28.41,0 168.53,0 196.94,0c1.334,0 2.613,-0.53 3.557,-1.473c0.943,-0.944 1.473,-2.223 1.473,-3.557c-0,-23.503 -0,-121.37 -0,-121.37Zm-5,5l-0,116.37c0,0.008 -0.003,0.016 -0.009,0.021c-0.005,0.006 -0.013,0.009 -0.021,0.009c-28.41,0 -168.53,0 -196.94,0c-0.008,0 -0.016,-0.003 -0.021,-0.009c-0.006,-0.005 -0.009,-0.013 -0.009,-0.021l-0,-116.37l197,0Z" />
-                        </g>
-                        <g id="main-panel">
-                            <path id="top-panel"
-                                d="M351,336.987c-0,-4.411 -3.576,-7.987 -7.987,-7.987c-27.301,0 -163.725,0 -191.026,0c-4.411,0 -7.987,3.576 -7.987,7.987c-0,12.352 -0,34.68 -0,34.68l207,-0l0,-34.68Zm-32.469,21.015c-0.624,0.625 -1.638,0.625 -2.262,-0c-2.743,-2.743 -9.811,-9.811 -13.738,-13.737c-0.457,-0.458 -0.594,-1.146 -0.346,-1.744c0.247,-0.598 0.831,-0.988 1.478,-0.988c6.77,0 20.704,0 27.474,0c0.647,0 1.231,0.39 1.478,0.988c0.248,0.598 0.111,1.286 -0.346,1.744c-3.927,3.926 -10.995,10.994 -13.738,13.737Z" />
-                        </g>
-                        <path id="close-button"
-                            d="M386.379,342.707c0.187,-0.187 0.442,-0.293 0.707,-0.293c0.265,0 0.519,0.106 0.707,0.293c2.553,2.554 11.345,11.345 15.086,15.086c0.286,0.286 0.371,0.716 0.216,1.09c-0.154,0.373 -0.519,0.617 -0.923,0.617c-6.404,0 -23.768,0 -30.172,0c-0.404,-0 -0.769,-0.244 -0.924,-0.617c-0.155,-0.374 -0.069,-0.804 0.217,-1.09c3.741,-3.741 12.532,-12.532 15.086,-15.086Z" />
-                    </g>
-                    <g id="placement">
-                        <circle id="bottom-right" cx="155" cy="175" r="45" />
-                        <path
-                            class="fill-current text-roll-300"
-                            d="M155,130c24.836,0 45,20.164 45,45c0,24.836 -20.164,45 -45,45c-24.836,0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm0,5c22.077,0 40,17.923 40,40c0,22.077 -17.923,40 -40,40c-22.077,0 -40,-17.923 -40,-40c-0,-22.077 17.923,-40 40,-40Z" />
-                        <circle id="bottom-left" cx="45" cy="175" r="45" />
-                        <path
-                            class="fill-current text-roll-400"
-                            d="M45,130c24.836,0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm0,5c22.077,0 40,17.923 40,40c-0,22.077 -17.923,40 -40,40c-22.077,0 -40,-17.923 -40,-40c0,-22.077 17.923,-40 40,-40Z" />
-                        <g class="opacity-40">
-                            <circle id="top-left" cx="155" cy="65.808" r="45" />
-                            <path
-                                class="fill-current text-roll-300"
-                                d="M155,20.808c24.836,-0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,-0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm-0,5c22.077,-0 40,17.923 40,40c0,22.076 -17.923,40 -40,40c-22.077,-0 -40,-17.924 -40,-40c-0,-22.077 17.923,-40 40,-40Z" />
-                        </g>
-                        <g class="opacity-60">
-                            <circle id="top-middle" cx="100" cy="65.808" r="45" />
-                            <path
-                                class="fill-current text-roll-400"
-                                d="M100,20.808c24.836,-0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,-0 -45,-20.164 -45,-45c-0,-24.836 20.164,-45 45,-45Zm-0,5c22.077,-0 40,17.923 40,40c-0,22.076 -17.923,40 -40,40c-22.077,-0 -40,-17.924 -40,-40c-0,-22.077 17.923,-40 40,-40Z" />
-                        </g>
-                        <circle id="top-right" cx="45" cy="65" r="45" />
-                        <path
-                            class="fill-current text-roll-700"
-                            d="M45,20c24.836,0 45,20.164 45,45c-0,24.836 -20.164,45 -45,45c-24.836,-0 -45,-20.164 -45,-45c0,-24.836 20.164,-45 45,-45Zm0,5c22.077,0 40,17.923 40,40c-0,22.077 -17.923,40 -40,40c-22.077,-0 -40,-17.923 -40,-40c0,-22.077 17.923,-40 40,-40Z" />
-                        <path id="arrow"
-                            class="fill-current text-roll-800"
-                            d="M220.553,65.894c-0.339,-0.169 -0.553,-0.515 -0.553,-0.894c0,-0.379 0.214,-0.725 0.553,-0.894c9.894,-4.948 57.798,-28.9 66.764,-33.382c0.31,-0.155 0.678,-0.139 0.973,0.043c0.294,0.183 0.474,0.504 0.474,0.851c-0,9.441 -0,57.323 -0,66.764c-0,0.347 -0.18,0.668 -0.474,0.851c-0.295,0.182 -0.663,0.198 -0.973,0.043c-8.966,-4.482 -56.87,-28.434 -66.764,-33.382Z" />
-                    </g>
-                </g>
-                    <defs>
-                        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
-                            gradientTransform="matrix(2.10639e-14,344,-344,2.10639e-14,388,251)">
-                            <stop offset="0" style="stop-color:#d3f6fe;stop-opacity:1" />
-                            <stop offset="1" style="stop-color:#fff;stop-opacity:0" />
-                        </linearGradient>
-                    </defs>
-            </svg>
-        </div>
-    </section>
-    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
-        <div class="row-start-2 xs:row-start-1 xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
-            <img src="/assets/roll/whiteboard-sketches-800px.jpg" alt="Sketches post whiteboard session fleshing out panel and accordion variants">
-        </div>
-        <div class="row-start-1 md:row-span-3">
-            <p class="lg:text-lg mb-4">I start to see how an accordion design pattern could solve this. I know this design pattern can also be highly accessible. I proceed to draw out an example on the whiteboard explaining how an accordion works and how it can solve the business problem. This affords us the ability to hide attributes that are less common like overtime, bonus and payment type.</p>
-            <p class="lg:text-lg">Everyone is in agreement. Now, we sit and talk about the hierarchy of the main attributes. Marking the whiteboard I'm educating the team on the importance of visual hierarchy. I'm also pressing them on being judicious about what becomes a main attribute to keep down the potential for cognitive overload. Finally we have a wireframe everyone is happy with. Before I move to building high fidelity mockups we discuss a few more use payroll flows. It passes the pressure test. Now I move to higher fidelity mockups with real data that we can use to discuss the visual hierarchy in more detail.</p>
-        </div>
-    </section>
-    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
-        <div class="md:row-span-3">
-            <p class="lg:text-lg">We need to consider edge cases and it helps to push the design limits with real names, numbers and data. Hopping into Affinity Designer at the time but Figma today I layout the accordion panels. I design an area to signal to users that there is 'more' they can do lay out the main attributes. I am talking to the backend developers clarifying data structures and thinking about how I'll be able to make these panel layouts pliable with flexbox. Working with the SME's I'm looking for ways to break this design with graceful fallbacks. How any decimal places will we encounter? What are the different pay cycles? What will we do when we're out of room when translated to German? I consider color, contrast ratios font size for readability and accessibility. Next, I bring in the supplementary attributes on the expanded panel portion of the accordion. We strip out any unnecessary design elements that do not serve a purpose. This keeps the user on task, focused.</p>
-        </div>
-        <div class="xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
-            <img src="/assets/roll/payroll-run-hi-fidelity@2x.png" alt="High fidelity mock ups showing changes from feedback and discussion with product and development">
-        </div>
-    </section>
-    <section class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3">
-        <div class="row-start-2 xs:row-start-1 xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center">
-            <video controls autoplay loop muted>
-                <source src="/assets/roll/payroll-run-video.mp4" type="video/mp4">
-                Sorry, your browser doesn't support embedded videos. <a href="/assets/roll/payroll-run-video.mp4">Here is a link to the video</a> intead.
-            </video>
-        </div>
-        <div class="row-start-1 md:row-span-3">
-            <p class="lg:text-lg mb-4">Finally, we have an approved suite of mockups. Time to move to our component library. I fire up Storybook and start building out the compound React components. We're using flexbox to layout the panel rows and columns within. I collaborate with the backend engineer about data structures to ensure the API is flexible. </p>
-            <p class="lg:text-lg mb-4">There are a couple pitfalls of using flexbox and compound React components. The main one is that the backend engineer has more control over layout of the rows and their column alignment. CSS grid would solve this but technically is not applicable to this situation. Restricting the layout to only props for the front-end to style would stifle progress.</p>
-            <p class="lg:text-lg mb-4">Instead of content breaking to a new line causing more height in the overall UI I setup these components to push off to the right. We aim for this to never happen but were pleased with how graceful it fails.</p>
-            <p class="lg:text-lg">Once things are 80% complete I ship a beta version of our component library with this AccordionList component. The backend developer starts building out in our app on their local build environment. This is where we discuss what works and what needs to be modified. This gives me time to clean up imperative code that can be more declarative, finalize lower priority functionality and write proper documentation.</p>
-        </div>
-    </section>
-    <section class="grid gap-12 place-content-center place-items-start xs:grid-cols-2 md:grid-cols-3">
-        <p class="lg:text-lg md:col-span-2">We've come full circle from discovery all the way to building out visually compelling, accessible React components in a component library. All of the fundamental elements are part of our design system and I can use Storybook or Figma components to layout all possibilities. Most importantly, we have a solid foundation for how employees and managers can manage their time and run payroll. 😄</p>
-    </section>
+  </section>
+  <section
+    class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3"
+  >
+    <div
+      class="row-start-2 xs:row-start-1 xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center"
+    >
+      <img
+        src="/assets/roll/whiteboard-sketches-800px.jpg"
+        alt="Sketches post whiteboard session fleshing out panel and accordion variants"
+      />
+    </div>
+    <div class="row-start-1 md:row-span-3">
+      <p class="lg:text-lg mb-4">
+        I start to see how an accordion design pattern could solve this. I know
+        this design pattern can also be highly accessible. I proceed to draw out
+        an example on the whiteboard explaining how an accordion works and how
+        it can solve the business problem. This affords us the ability to hide
+        attributes that are less common like overtime, bonus and payment type.
+      </p>
+      <p class="lg:text-lg">
+        Everyone is in agreement. Now, we sit and talk about the hierarchy of
+        the main attributes. Marking the whiteboard I'm educating the team on
+        the importance of visual hierarchy. I'm also pressing them on being
+        judicious about what becomes a main attribute to keep down the potential
+        for cognitive overload. Finally we have a wireframe everyone is happy
+        with. Before I move to building high fidelity mockups we discuss a few
+        more use payroll flows. It passes the pressure test. Now I move to
+        higher fidelity mockups with real data that we can use to discuss the
+        visual hierarchy in more detail.
+      </p>
+    </div>
+  </section>
+  <section
+    class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3"
+  >
+    <div class="md:row-span-3">
+      <p class="lg:text-lg">
+        We need to consider edge cases and it helps to push the design limits
+        with real names, numbers and data. Hopping into Affinity Designer at the
+        time but Figma today I layout the accordion panels. I design an area to
+        signal to users that there is 'more' they can do lay out the main
+        attributes. I am talking to the backend developers clarifying data
+        structures and thinking about how I'll be able to make these panel
+        layouts pliable with flexbox. Working with the SME's I'm looking for
+        ways to break this design with graceful fallbacks. How any decimal
+        places will we encounter? What are the different pay cycles? What will
+        we do when we're out of room when translated to German? I consider
+        color, contrast ratios font size for readability and accessibility.
+        Next, I bring in the supplementary attributes on the expanded panel
+        portion of the accordion. We strip out any unnecessary design elements
+        that do not serve a purpose. This keeps the user on task, focused.
+      </p>
+    </div>
+    <div
+      class="xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center"
+    >
+      <img
+        src="/assets/roll/payroll-run-hi-fidelity@2x.png"
+        alt="High fidelity mock ups showing changes from feedback and discussion with product and development"
+      />
+    </div>
+  </section>
+  <section
+    class="grid gap-12 place-content-center place-items-center mb-4 lg:mb-20 xs:grid-cols-2 md:grid-cols-3 md:grid-rows-3"
+  >
+    <div
+      class="row-start-2 xs:row-start-1 xs:grid-cols-2 md:col-span-2 md:row-span-3 w-full h-full flex justify-center items-center"
+    >
+      <video controls autoplay loop muted>
+        <source src="/assets/roll/payroll-run-video.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos. <a
+          href="/assets/roll/payroll-run-video.mp4"
+          >Here is a link to the video</a
+        > intead.
+      </video>
+    </div>
+    <div class="row-start-1 md:row-span-3">
+      <p class="lg:text-lg mb-4">
+        Finally, we have an approved suite of mockups. Time to move to our
+        component library. I fire up Storybook and start building out the
+        compound React components. We're using flexbox to layout the panel rows
+        and columns within. I collaborate with the backend engineer about data
+        structures to ensure the API is flexible.
+      </p>
+      <p class="lg:text-lg mb-4">
+        There are a couple pitfalls of using flexbox and compound React
+        components. The main one is that the backend engineer has more control
+        over layout of the rows and their column alignment. CSS grid would solve
+        this but technically is not applicable to this situation. Restricting
+        the layout to only props for the front-end to style would stifle
+        progress.
+      </p>
+      <p class="lg:text-lg mb-4">
+        Instead of content breaking to a new line causing more height in the
+        overall UI I setup these components to push off to the right. We aim for
+        this to never happen but were pleased with how graceful it fails.
+      </p>
+      <p class="lg:text-lg">
+        Once things are 80% complete I ship a beta version of our component
+        library with this AccordionList component. The backend developer starts
+        building out in our app on their local build environment. This is where
+        we discuss what works and what needs to be modified. This gives me time
+        to clean up imperative code that can be more declarative, finalize lower
+        priority functionality and write proper documentation.
+      </p>
+    </div>
+  </section>
+  <section
+    class="grid gap-12 place-content-center place-items-start xs:grid-cols-2 md:grid-cols-3"
+  >
+    <p class="lg:text-lg md:col-span-2">
+      We've come full circle from discovery all the way to building out visually
+      compelling, accessible React components in a component library. All of the
+      fundamental elements are part of our design system and I can use Storybook
+      or Figma components to layout all possibilities. Most importantly, we have
+      a solid foundation for how employees and managers can manage their time
+      and run payroll. 😄
+    </p>
+  </section>
 </PortfolioLayout>

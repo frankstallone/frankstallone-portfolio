@@ -1,10 +1,12 @@
 interface Post {
-  layout: "string";
-  date: "string";
-  title: "string";
-  desc: "string";
-  hero: "string";
-  draft: boolean;
+  frontmatter: {
+    layout: "string";
+    date: "string";
+    title: "string";
+    desc: "string";
+    hero: "string";
+    draft: boolean;
+  };
 }
 
 // Return specified DOM elements
@@ -31,10 +33,13 @@ export function getCurrentBreakpointBoundries(breakpoint: number): boolean {
 
 // Returns true if post is not in draft
 export function isPublished(post: Post) {
-  return !post.draft;
+  return !post.frontmatter.draft;
 }
 
 // Sorts the posts by date newest first
 export function sortPosts(a: Post, b: Post) {
-  return new Date(a.date).getTime() - new Date(b.date).getTime();
+  return (
+    new Date(a.frontmatter.date).getTime() -
+    new Date(b.frontmatter.date).getTime()
+  );
 }

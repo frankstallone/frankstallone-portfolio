@@ -1,0 +1,85 @@
+/* Utility classes */
+
+/* Width */
+
+.max-inline-size\:measure-lg {
+  max-inline-size: calc(var(--measure) * 1.25) !important;
+}
+
+.max-inline-size\:measure {
+  max-inline-size: var(--measure) !important;
+}
+
+.max-inline-size\:measure\/2 {
+  max-inline-size: calc(var(--measure) / 1.25) !important;
+}
+
+/* Media */
+
+.object-contain {
+  object-fit: contain;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+/* Font */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-variants-01 {
+  font-feature-settings: "ss01" on;
+}
+
+.font-variants-02 {
+  font-feature-settings: "ss02" on;
+}
+
+/* Use on the letter before the variant 01 is being used */
+.font-variants-01-ls {
+  letter-spacing: -0.2em;
+}
+
+/* General */
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.top-pad {
+  padding-block-start: var(--gutter);
+}
+
+.block {
+  display: block;
+}
+
+.font-display-alt {
+  font-family: var(--font-display-alt);
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+.h-3\/4 {
+  height: 75%;
+}
+
+.currentColor {
+  fill: currentColor;
+}

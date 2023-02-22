@@ -28,13 +28,13 @@ const humanReadableDate = new Date(content.date)
     <div class="wrapper top-pad">
       <Header />
     </div>
-    <article class="wrapper flow region prose" role="main" id="main-content">
+    <article
+      class="wrapper flow region prose blog-post"
+      role="main"
+      id="main-content"
+    >
       <h1>{content.title}</h1>
-      <p class="text-center">
-        <time datetime={dateTime} class="font-extralight text-golden-gold9"
-          >{humanReadableDate}</time
-        >
-      </p>
+      <time datetime={dateTime}>{humanReadableDate}</time>
       <slot />
     </article>
   </body>

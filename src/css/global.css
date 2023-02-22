@@ -99,3 +99,9 @@ main:focus {
   background: var(--color-dark);
   color: var(--color-light);
 }
+
+/* Blog posts */
+
+.blog-post time {
+  font-size: var(--step--1);
+}

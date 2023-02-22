@@ -3,9 +3,9 @@
   --measure: 70ch;
   --color-light: #fff;
   --color-dark: #0c0c0c;
-  --ratio: 1.4;
+  --ratio: 1.6;
   --line-height: var(--ratio);
-  --line-height-small: calc(var(--ratio) * 0.8);
+  --line-height-small: calc(var(--ratio) * 0.7);
   --font-base: "Facundo", "sans-serif";
   --font-display: "Cartridge", "sans-serif";
   --font-display-alt: "Cartridge Rough Bold", "sans-serif";

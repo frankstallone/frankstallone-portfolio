@@ -1,12 +1,13 @@
 /* breakout content elements to wrapper based on full bleed image solution by josh cumeau. https://www.joshwcomeau.com/css/full-bleed/ */
 
 .content {
-  --wrapper-max-width: 75rem;
+  --wrapper-max-width: 55rem;
   display: grid;
   grid-template-columns:
     1fr
     min(48ch, 100%)
     1fr;
+  grid-column-gap: var(--gutter);
 }
 
 .content > * {

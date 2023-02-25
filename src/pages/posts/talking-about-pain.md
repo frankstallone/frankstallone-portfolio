@@ -8,7 +8,8 @@ alt: "Photograph of my hand with a badly inflamed knucle"
 draft: false
 ---
 
-![Photograph of my hand with a badly inflamed knucle](/assets/posts/talking-about-pain/finger.jpg)
+<!-- ![Photograph of my hand with a badly inflamed knucle](/assets/posts/talking-about-pain/finger.jpg) -->
+<img class="breakout" src="/assets/posts/talking-about-pain/finger.jpg" alt="Photograph of my hand with a badly inflamed knucle">
 
 I never particularly cared to talk about pain. There are many maxims about pain, and I am not macho guy, but I simply felt there were better things to talk about. I didn’t want to worry people, and frankly there are people out there in much worse pain. I realized recently, I don’t know how to talk about pain. Worse, I have been ignoring it lately, and living with it unnecessarily for too long.
 

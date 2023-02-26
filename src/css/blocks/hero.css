@@ -21,7 +21,8 @@
 }
 
 .hero h2 {
-  letter-spacing: 0.025ch;
+  --tracking: -0.05ch;
+  letter-spacing: var(--tracking);
   font-size: var(--step-6);
 }
 

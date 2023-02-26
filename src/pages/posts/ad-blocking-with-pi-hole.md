@@ -8,7 +8,7 @@ alt: "Photograph of Time Square in NYC by Wojtek Witkowski via Unsplash"
 draft: false
 ---
 
-![Photograph of Time Square in NYC by Wojtek Witkowski via Unsplash](/assets/posts/ad-blocking-with-pi-hole/wojtek-witkowski-h7rOzTmGxWE-unsplash.jpg)
+<img class="breakout" src="/assets/posts/ad-blocking-with-pi-hole/wojtek-witkowski-h7rOzTmGxWE-unsplash.jpg" alt="Photograph of Time Square in NYC by Wojtek Witkowski via Unsplash">
 
 Article after article I read about how insidious online advertisers are. We are being tracked everywhere we go on the Internet, and off to a certain extent. I don't mind paying for services. I have been a YouTube Premium member for years. It brings me value. I pay for it. I have said I would pay for Facebook not to track every little thing I do. It's creepy, nobody likes it.
 

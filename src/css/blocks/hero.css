@@ -1,6 +1,18 @@
-/* Cover */
+/* Homepage Cover */
+
+.hero-bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(149, 116, 82, 1)
+    ),
+    url("/assets/doors.jpg");
+  background-position: center;
+  background-size: cover;
+}
 
 .hero {
+  color: #1a130c;
   display: flex;
   flex-direction: column;
   min-block-size: 100vh;

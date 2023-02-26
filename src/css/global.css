@@ -100,8 +100,14 @@ main:focus {
   color: var(--color-light);
 }
 
-/* Blog posts */
+/* Blog */
 
-.blog-post time {
+time {
+  --tracking: 0.015ch;
+  --color-dark: var(--olive-11);
   font-size: var(--step--1);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--color-dark);
+  letter-spacing: var(--tracking);
 }

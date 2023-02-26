@@ -1,8 +1,23 @@
 /* Global variables */
 :root {
+  /* Color - Olive */
+
+  --olive-1: hsl(110, 20%, 99%);
+  --olive-2: hsl(120, 16.7%, 97.6%);
+  --olive-3: hsl(119, 10.1%, 95.2%);
+  --olive-4: hsl(118, 8.1%, 93%);
+  --olive-5: hsl(117, 7.1%, 90.8%);
+  --olive-6: hsl(115, 6.4%, 88.5%);
+  --olive-7: hsl(114, 5.9%, 85.4%);
+  --olive-8: hsl(110, 5.2%, 77.3%);
+  --olive-9: hsl(110, 3.5%, 55.5%);
+  --olive-10: hsl(111, 2.8%, 51.7%);
+  --olive-11: hsl(110, 3%, 43%);
+  --olive-12: hsl(110, 25%, 9.5%);
+
   --measure: 70ch;
-  --color-light: #fff;
-  --color-dark: #0c0c0c;
+  --color-light: var(--olive-1);
+  --color-dark: var(--olive-12);
   --ratio: 1.6;
   --line-height: var(--ratio);
   --line-height-small: calc(var(--ratio) * 0.7);

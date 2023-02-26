@@ -8,7 +8,7 @@ alt: "Photograph of Photographer by Matthews Di Nelson via Unsplash"
 draft: false
 ---
 
-![Photograph of Photographer by Matthews Di Nelson via Unsplash](/assets/posts/lensrentals/mattews-di-nelson-1134148-unsplash.jpg)
+<img class="breakout" src="/assets/posts/lensrentals/mattews-di-nelson-1134148-unsplash.jpg" alt="Photograph of Photographer by Matthews Di Nelson via Unsplash">
 
 A friend of mine reached out recently asking about a potential camera body and lens for his partner for her birthday. He had a pretty good idea of what he wanted, but there was at least a thousand dollar difference between his options.
 

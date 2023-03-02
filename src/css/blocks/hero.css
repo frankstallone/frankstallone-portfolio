@@ -1,10 +1,16 @@
 /* Homepage Cover */
 
 .hero-bg {
+  /* background-image: linear-gradient(
+      to bottom,
+      rgba(247, 242, 225, 0.5),
+      rgb(96, 71, 45)
+    ),
+    url("/assets/doors.jpg"); */
   background-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.5),
-      rgba(149, 116, 82, 1)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
     ),
     url("/assets/doors.jpg");
   background-position: center;
@@ -12,7 +18,7 @@
 }
 
 .hero {
-  color: #1a130c;
+  color: var(--olive-1);
   display: flex;
   flex-direction: column;
   min-block-size: 100vh;

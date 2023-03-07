@@ -4,9 +4,10 @@
   Low-specificity, global styles that apply to the whole 
   project: https://cube.fyi/css.html
 */
+
 body {
   color: var(--color-dark);
-  background: var(--color-light);
+  background: linear-gradient(to bottom, var(--olive-2), var(--olive-4));
   font-size: var(--step-1);
   font-family: var(--font-base);
   line-height: var(--line-height);

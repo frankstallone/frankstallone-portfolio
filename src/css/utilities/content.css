@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns:
     1fr
-    min(48ch, 100%)
+    min(48ch, calc(100% - var(--gutter) * 2))
     1fr;
   grid-column-gap: var(--gutter);
 }

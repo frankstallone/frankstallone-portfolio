@@ -1,0 +1,40 @@
+a:link {color: #663300; text-decoration: none}
+a:visited {color: #663300; text-decoration: none}
+a:active {color: #663300;text-decoration: none}
+a:hover {color: #FFCC33; text-decoration: none}
+.linx {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+BODY{
+scrollbar-face-color:#655335;
+scrollbar-arrow-color:#847D63;
+scrollbar-track-color:#847D63;
+scrollbar-shadow-color:#000000;
+scrollbar-highlight-color:#847D63;
+scrollbar-3dlight-color:#655335;
+scrollbar-darkshadow-Color:#000000;
+}
+.normal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.bld {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+}

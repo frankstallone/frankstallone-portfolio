@@ -1,0 +1,24 @@
+
+<head><script language="JavaScript1.2">
+
+function OpenBrWindow(theURL,winName,features, myWidth, myHeight, isCenter) { //v3.0
+  if(window.screen)if(isCenter)if(isCenter=="true"){
+    var myLeft = (screen.width-myWidth)/2;
+    var myTop = (screen.height-myHeight)/2;
+    features+=(features!='')?',':'';
+    features+=',left='+myLeft+',top='+myTop;
+  }
+  window.open(theURL,winName,features+((features!='')?',':'')+'width='+myWidth+',height='+myHeight);
+}
+
+</script>
+
+
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<A href="javascript:;" onClick="OpenBrWindow('insert your pic page here','Test','','insert width','insert height','true')">button image here</a>
+</body>
+</html>

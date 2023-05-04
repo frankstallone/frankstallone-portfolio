@@ -1,0 +1,27 @@
+<html>
+<head>
+<STYLE TYPE="text/css">
+BODY {scrollbar-face-color:#655335;
+scrollbar-arrow-color:#847D63;
+scrollbar-track-color:#847D63;
+scrollbar-shadow-color:#000000;
+scrollbar-highlight-color:#847D63;
+scrollbar-3dlight-color:#655335;
+scrollbar-darkshadow-Color:#000000;}
+</style>
+<style>
+a:link {color: #663300; text-decoration: none}
+a:visited {color: #663300; text-decoration: none}
+a:active {color: #663300;text-decoration: none}
+a:hover {color: #FFCC33; text-decoration: underline}
+</style>
+
+<meta http-equiv="refresh" content="100">
+
+</head>
+<body bgcolor=#FFFFFF topmargin="0" leftmargin="0" onload="window.scrollTo(0,99999);">
+<span style="font-family:verdana; font-size:10">
+<!--#include file="tags.txt" -->
+</body>
+
+</html>

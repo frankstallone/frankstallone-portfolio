@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #006633;
+	text-align: center;
+}
+
+#container {
+float: left;
+background-color: #006633;
+width: 800px;
+height: 1500px;
+top: 0;
+left; 0;
+}
+
+#header {
+background-image: url(header.gif);
+height: 300px;
+width: 800px;
+}
+
+#body {
+background-image: url(pool-table.gif);
+width: 800px;
+height: 1200px;
+}
+
+#body li {
+background-image: url(images/accept.png);
+background-repeat: no-repeat;
+background-position: 0 5px;
+list-style-image: none;
+list-style-type: none;
+padding-left: 20px;
+line-height: 1.5em;
+}
+
+#filler {
+height: auto;
+width: 800px;
+overflow: hidden;
+padding: 250px 0px 0px 110px;
+text-align: left;
+}
+
+#filler-2 {
+height: auto;
+width: 800px;
+overflow: hidden;
+padding: 0px 0px 0px 110px;
+text-align: left;
+}
+
+#filler-3 {
+height: auto;
+width: 800px;
+overflow: hidden;
+padding: 0px 0px 0px 110px;
+text-align: left;
+}
+
+#services {
+background-image: url(images/services.gif);
+background-repeat: no-repeat;
+float: left;
+width: 272px;
+height: 100px;
+}
+
+#services-2 {
+float: left;
+width: 272px;
+height: auto;
+padding: 100px 0px 0px 20px;
+font-family: Tahoma, Verdana, Arial, Georgia, sans-serif;
+line-height: 1em;
+font-variant: small-caps;
+font-size: 16px;
+color: #000000;
+}
+
+#about {
+background-image: url(images/about.gif);
+background-repeat: no-repeat;
+float: left;
+width: 272px;
+height: 103px;
+}
+
+#about-2 {
+float: left;
+width: 272px;
+height: auto;
+padding: 100px 0px 0px 20px;
+font-family: Tahoma, Verdana, Arial, Georgia, sans-serif;
+line-height: 1em;
+font-variant: small-caps;
+font-size: 16px;
+color: #000000;
+}
+
+#contact {
+background-image: url(images/contact.gif);
+background-repeat: no-repeat;
+float: left;
+width: 272px;
+height: 105px;
+}
+
+#contact-2 {
+float: left;
+width: 272px;
+height: auto;
+padding: 100px 0px 0px 20px;
+font-family: Tahoma, Verdana, Arial, Georgia, sans-serif;
+font-variant: small-caps;
+line-height: 1em;
+font-size: 16px;
+color: #000000;
+}

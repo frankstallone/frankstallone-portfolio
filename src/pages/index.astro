@@ -1,126 +1,497 @@
 ---
 export interface Props {
-    variant: Variant;
+  variant: Variant;
 }
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer/index.astro';
-import Header from '../components/Header/index.astro';
-import { Variant, VARIANT_MAPS } from '../utils/variants'
-const { variant = 'default' } = Astro.props;
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer/index.astro";
+import Header from "../components/Header/index.astro";
+import { Variant, VARIANT_MAPS } from "../utils/variants";
+const { variant = "default" } = Astro.props;
 
 const textColor = VARIANT_MAPS[variant].primary;
 const selectionBg = VARIANT_MAPS[variant].selection;
 ---
+
 <html lang="en" class="overflow-x-hidden">
   <head>
-    <MainHead title="Frank Stallone Portfolio" desc="The portfolio, blog and chronicles of misadventures for Frank Stallone III" />
+    <MainHead
+      title="Frank Stallone Portfolio"
+      desc="The portfolio, blog and chronicles of misadventures for Frank Stallone III"
+    />
   </head>
-  <body class={`min-h-screen overflow-x-hidden relative mx-auto ${textColor} ${selectionBg}`}>
+  <body
+    class={`min-h-screen overflow-x-hidden relative mx-auto ${textColor} ${selectionBg}`}
+  >
     <Header />
     <noscript>
       <div class="mx-auto max-w-7xl py-4 flex">
-        <h1 class="mx-4 text-center font-bold text-4xl text-red-red12">⚠️ This website requires JavaScript to be enabled, for now</h1>
+        <h1 class="mx-4 text-center font-bold text-4xl text-red-red12">
+          ⚠️ This website requires JavaScript to be enabled, for now
+        </h1>
       </div>
     </noscript>
     <div class="relative">
-      <figure class="grid gap-8 p-4 md:px-0 md:py-4 place-items-center md:grid-cols-4 lg:grid-cols-6 lg:grid-rows-3 overflow-hidden relative z-20">
-        <img src="/assets/me.jpg" class="xs:square lg:row-span-2 lg:col-span-2 lg:col-start-1 lg:row-start-1 opacity-20 -translate-x-10 scale-95 intro" alt="Photograph of me, Frank Stallone III" loading="eager">
-        <figcaption class="h-full flex place-items-center md:col-span-3 lg:col-span-4 lg:row-span-2 lg:row-start-2 opacity-5 translate-x-40 scale-75 intro">
-          <h2 class="text-amber-amber12 md:leading-snug py-8 text-4xl lg:text-6xl xl:text-8xl font-display">👋🏼 Hiya! I love <span class="font-black text-red-red11 font-variants-01">TECHNOLOGY</span>, <span class="font-black text-red-red11">MINDFULNESS</span>, <span class="italic mr-1">and</span> <span class="font-black text-red-red11">CRE<span class="font-variants-02 -mr-0.5 lg:-mr-1.5 xl:-mr-3">A</span><span class="font-variants-01 -ml-1.5">T</span>ING</span> compelling user experiences.</h2>
+      <figure
+        class="grid gap-8 p-4 md:px-0 md:py-4 place-items-center md:grid-cols-4 lg:grid-cols-6 lg:grid-rows-3 overflow-hidden relative z-20"
+      >
+        <img
+          src="/assets/me.jpg"
+          class="xs:square lg:row-span-2 lg:col-span-2 lg:col-start-1 lg:row-start-1 opacity-20 -translate-x-10 scale-95 intro"
+          alt="Photograph of me, Frank Stallone III"
+          loading="eager"
+        />
+        <figcaption
+          class="h-full flex place-items-center md:col-span-3 lg:col-span-4 lg:row-span-2 lg:row-start-2 opacity-5 translate-x-40 scale-75 intro"
+        >
+          <h2
+            class="text-amber-amber12 md:leading-snug py-8 text-4xl lg:text-6xl xl:text-8xl font-display"
+          >
+            👋🏼 Hiya! I love <span
+              class="font-black text-red-red11 font-variants-01"
+              >TECHNOLOGY</span
+            >, <span class="font-black text-red-red11">MINDFULNESS</span>, <span
+              class="italic mr-1">and</span
+            >
+            <span class="font-black text-red-red11"
+              >CRE<span class="font-variants-02 -mr-0.5 lg:-mr-1.5 xl:-mr-3"
+                >A</span
+              ><span class="font-variants-01 -ml-1.5">T</span>ING</span
+            > compelling user experiences.
+          </h2>
         </figcaption>
       </figure>
     </div>
     <main class="mb-48" role="main" id="main-content">
       <h2 class="sr-only">Featured work</h2>
       <div class="xs:my-8 md:mt-16 md:mb-32 opacity-20 scale-95 section">
-        <a href="/portfolio/roll">
-          <h3 class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase"><span class="font-variants-01">R</span>oll</h3>
-          <h4 class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11">UX, UI, Design Sys<span class="font-variants-01">t</span>em</h4>
+        <a href=`${import.meta.env.BASE_URL}/portfolio/roll`>
+          <h3
+            class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase"
+          >
+            <span class="font-variants-01">R</span>oll
+          </h3>
+          <h4
+            class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11"
+          >
+            UX, UI, Design Sys<span class="font-variants-01">t</span>em
+          </h4>
         </a>
-        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">Combined business ideas with small business owner needs to create a new way to run payroll and manage <abbr title="Human Capital Management">HCM</abbr> on the go with a mobile first approach from concept to component library.</p>
-        <article class="grid gap-4 px-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 pb-4">
-          <a href="/portfolio/roll" class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2"><img loading="lazy" src="/assets/squared/roll-squared-01@2x.png" alt="Mock up of the original logo design for Roll by ADP"></a>
-          <a href="/portfolio/roll" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2"><img loading="lazy" src="/assets/squared/roll-squared-02@2x.png" alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP"></a>
-          <a href="/portfolio/roll" class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3"><img loading="lazy" src="/assets/squared/roll-squared-03@2x.png" alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients"></a>
-          <a href="/portfolio/roll" class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2"><img loading="lazy" src="/assets/squared/roll-squared-04@2x.png" alt="Screenshots of the mobile app that would eventually be used circa 2018"></a>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-50 h-full w-full lg:col-start-3"><span class="sr-only">Color swatch 50 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden md:block bg-roll-100 rounded-lg h-full w-full lg:col-start-4"><span class="sr-only">Color swatch 100 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"><span class="sr-only">Color swatch 200 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"><span class="sr-only">Color swatch 300 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"><span class="sr-only">Color swatch 400 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"><span class="sr-only">Color swatch 500 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"><span class="sr-only">Color swatch 600 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"><span class="sr-only">Color swatch 700 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"><span class="sr-only">Color swatch 800 from Roll by ADP color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-roll-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"><span class="sr-only">Color swatch 900 from Roll by ADP color palette</span></div>
+        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">
+          Combined business ideas with small business owner needs to create a
+          new way to run payroll and manage <abbr
+            title="Human Capital Management">HCM</abbr
+          > on the go with a mobile first approach from concept to component library.
+        </p>
+        <article
+          class="grid gap-4 px-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 pb-4"
+        >
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/roll`
+            class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2"
+            ><img
+              loading="lazy"
+              src="/assets/squared/roll-squared-01@2x.png"
+              alt="Mock up of the original logo design for Roll by ADP"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/roll`
+            class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2"
+            ><img
+              loading="lazy"
+              src="/assets/squared/roll-squared-02@2x.png"
+              alt="Screenshot of VSCode showing the design tokens repository for Roll by ADP"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/roll`
+            class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3"
+            ><img
+              loading="lazy"
+              src="/assets/squared/roll-squared-03@2x.png"
+              alt="Screenshot of the payroll run conversation UI showcasing the components design and created for our clients"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/roll`
+            class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2"
+            ><img
+              loading="lazy"
+              src="/assets/squared/roll-squared-04@2x.png"
+              alt="Screenshots of the mobile app that would eventually be used circa 2018"
+            />
+          </a>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-50 h-full w-full lg:col-start-3"
+          >
+            <span class="sr-only"
+              >Color swatch 50 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden md:block bg-roll-100 rounded-lg h-full w-full lg:col-start-4"
+          >
+            <span class="sr-only"
+              >Color swatch 100 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"
+          >
+            <span class="sr-only"
+              >Color swatch 200 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"
+          >
+            <span class="sr-only"
+              >Color swatch 300 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"
+          >
+            <span class="sr-only"
+              >Color swatch 400 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 500 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 600 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 700 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 800 from Roll by ADP color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-roll-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 900 from Roll by ADP color palette</span>
+          </div>
         </article>
       </div>
       <div class="xs:my-8 md:mt-16 md:mb-32 opacity-20 scale-95 section">
-        <a href="/portfolio/btc">
-          <h3 class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase">Builde<span class="font-variants-01">r</span>s <span class="font-variants-01">T</span>rus<span class="font-variants-02">t</span> Capital</h3>
-          <h4 class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11 md:w-1/2 lg:w-1/3">Logo, Branding, UX, UI, S<span class="font-variants-01">t</span>yleguide, WordPress <span class="font-variants-01">T</span>heme &amp; Hos<span class="font-variants-02">t</span>ing</h4>
+        <a href=`${import.meta.env.BASE_URL}/portfolio/btc`>
+          <h3
+            class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase"
+          >
+            Builde<span class="font-variants-01">r</span>s <span
+              class="font-variants-01">T</span
+            >rus<span class="font-variants-02">t</span> Capital
+          </h3>
+          <h4
+            class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11 md:w-1/2 lg:w-1/3"
+          >
+            Logo, Branding, UX, UI, S<span class="font-variants-01">t</span
+            >yleguide, WordPress <span class="font-variants-01">T</span>heme
+            &amp; Hos<span class="font-variants-02">t</span>ing
+          </h4>
         </a>
-        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">Created a sophisticated brand that appealed to their entrepreneur clientele and resonated with their core values of trust, stability and transparency. </p>
-        <article class="grid gap-4 px-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 pb-4">
-          <a href="/portfolio/btc" class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2"><img loading="lazy" src="/assets/squared/btc-squared-01@2x.png" alt="Photo of initial sketches of the chosen logo for Builders Trust Capital showing the intentions for the three pilars"></a>
-          <a href="/portfolio/btc" class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2"><img loading="lazy" src="/assets/squared/btc-squared-02@2x.png" alt="Screenshot of the home page design for Builders Trust Capital"></a>
-          <a href="/portfolio/btc" class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3"><img loading="lazy" src="/assets/squared/btc-squared-03@2x.png" alt="Screenshot of the presentation for the new Builders Trust Capital logo in context on a sign and business cards"></a>
-          <a href="/portfolio/btc" class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2"><img loading="lazy" src="/assets/squared/btc-squared-04@2x.png" alt="Logo presentation of the Builders Trust Capital mark and logo type"></a>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-50 rounded-lg h-full w-full lg:col-start-3"><span class="sr-only">Color swatch 50 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-100 rounded-lg h-full w-full lg:col-start-4"><span class="sr-only">Color swatch 100 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"><span class="sr-only">Color swatch 200 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden md:block bg-gold-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"><span class="sr-only">Color swatch 300 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"><span class="sr-only">Color swatch 400 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"><span class="sr-only">Color swatch 500 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"><span class="sr-only">Color swatch 600 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"><span class="sr-only">Color swatch 700 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"><span class="sr-only">Color swatch 800 from Roll by Builders Trust Capital color palette</span></div>
-          <div aria-hidden="true" class="token-swatch square hidden lg:block bg-gold-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"><span class="sr-only">Color swatch 900 from Roll by Builders Trust Capital color palette</span></div>
+        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">
+          Created a sophisticated brand that appealed to their entrepreneur
+          clientele and resonated with their core values of trust, stability and
+          transparency.
+        </p>
+        <article
+          class="grid gap-4 px-4 place-items-center xs:grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-8 lg:grid-rows-8 pb-4"
+        >
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/btc`
+            class="xs:square md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-4 lg:row-start-2"
+            ><img
+              loading="lazy"
+              src="/assets/squared/btc-squared-01@2x.png"
+              alt="Photo of initial sketches of the chosen logo for Builders Trust Capital showing the intentions for the three pilars"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/btc`
+            class="xs:square lg:row-start-2 lg:col-start-7 lg:col-span-2 lg:row-span-2"
+            ><img
+              loading="lazy"
+              src="/assets/squared/btc-squared-02@2x.png"
+              alt="Screenshot of the home page design for Builders Trust Capital"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/btc`
+            class="xs:square lg:row-start-5 lg:col-start-6 lg:col-span-3 lg:row-span-3"
+            ><img
+              loading="lazy"
+              src="/assets/squared/btc-squared-03@2x.png"
+              alt="Screenshot of the presentation for the new Builders Trust Capital logo in context on a sign and business cards"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/portfolio/btc`
+            class="xs:square lg:row-start-1 lg:col-start-5 lg:row-span-2 lg:col-span-2"
+            ><img
+              loading="lazy"
+              src="/assets/squared/btc-squared-04@2x.png"
+              alt="Logo presentation of the Builders Trust Capital mark and logo type"
+            />
+          </a>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-50 rounded-lg h-full w-full lg:col-start-3"
+          >
+            <span class="sr-only"
+              >Color swatch 50 from Roll by Builders Trust Capital color palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-100 rounded-lg h-full w-full lg:col-start-4"
+          >
+            <span class="sr-only"
+              >Color swatch 100 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-200 rounded-lg h-full w-full lg:col-start-5 lg:row-start-3"
+          >
+            <span class="sr-only"
+              >Color swatch 200 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden md:block bg-gold-300 rounded-lg h-full w-full lg:col-start-5 lg:row-start-4"
+          >
+            <span class="sr-only"
+              >Color swatch 300 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-400 rounded-lg h-full w-full lg:col-start-5 lg:row-start-5"
+          >
+            <span class="sr-only"
+              >Color swatch 400 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-500 rounded-lg h-full w-full lg:col-start-5 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 500 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-600 rounded-lg h-full w-full lg:col-start-4 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 600 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-700 rounded-lg h-full w-full lg:col-start-3 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 700 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-800 rounded-lg h-full w-full lg:col-start-2 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 800 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
+          <div
+            aria-hidden="true"
+            class="token-swatch square hidden lg:block bg-gold-900 rounded-lg h-full w-full lg:col-start-1 lg:row-start-6"
+          >
+            <span class="sr-only"
+              >Color swatch 900 from Roll by Builders Trust Capital color
+              palette</span>
+          </div>
         </article>
       </div>
       <h2 class="sr-only">Other logo and branding work</h2>
       <div class="xs:my-8 md:mt-16 md:mb-32 opacity-20 scale-95 section">
         <a href="/assets/NJC-Stone-Supply-Logo-Branding-2021.pdf">
-          <h3 class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase">NJC Stone Supply</h3>
-          <h4 class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11">Logo</h4>
+          <h3
+            class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 hover:underline uppercase"
+          >
+            NJC Stone Supply
+          </h3>
+          <h4
+            class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11"
+          >
+            Logo
+          </h4>
         </a>
-        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">Designed a logo mark and logo type that speaks equally to Noah's audience as it does Noah's work.</p>
-        <article class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4">
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/njc-squared-01@2x.png" alt="The logo mark for Noah James Curtis Stone Supply &amp; Tree Service"></a>
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/njc-squared-02@2x.png" alt="The typeface and colors chosen for the branding of Noah James Curtis Stone Supply &amp; Tree Service"></a>
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/njc-squared-03@2x.png" alt="Screenshot of the grid used for one of the Noah James Curtis Stone Supply logos with type"></a>
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/njc-squared-04@2x.png" alt="One of the variations of the NJC Stone Supply &amp; Tree Service with logo mark and type logo"></a>
+        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">
+          Designed a logo mark and logo type that speaks equally to Noah's
+          audience as it does Noah's work.
+        </p>
+        <article
+          class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4"
+        >
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/njc-squared-01@2x.png"
+              alt="The logo mark for Noah James Curtis Stone Supply & Tree Service"
+            />
+          </a>
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/njc-squared-02@2x.png"
+              alt="The typeface and colors chosen for the branding of Noah James Curtis Stone Supply & Tree Service"
+            />
+          </a>
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/njc-squared-03@2x.png"
+              alt="Screenshot of the grid used for one of the Noah James Curtis Stone Supply logos with type"
+            />
+          </a>
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/njc-squared-04@2x.png"
+              alt="One of the variations of the NJC Stone Supply & Tree Service with logo mark and type logo"
+            />
+          </a>
         </article>
       </div>
       <div class="xs:my-8 md:mt-16 md:mb-32 opacity-20 scale-95 section">
-        <h3 class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 uppercase">Bracke<span class="font-variants-02">t</span>s Podcast</h3>
-        <h4 class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11">Co-host, Logo, Branding</h4>
-        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">Co-create a technology podcast that serves as the pulse of tech within ADP.</p>
-        <article class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4">
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/brackets-squared-01@2x.png" alt="The original logo mark and type logo for ADP's Developer Community Brackets Podcast"></a>
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/brackets-squared-02@2x.png" alt="The original logo mark for ADP's Developer Community Brackets Podcast"></a>
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/brackets-squared-03@2x.png" alt="Play on the ADP's Developer Community Brackets Podcast logo"></a>
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/brackets-squared-04@2x.png" alt="Another spin of the design of the ADP's Developer Community Brackets Podcast logo"></a>
+        <h3
+          class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 uppercase"
+        >
+          Bracke<span class="font-variants-02">t</span>s Podcast
+        </h3>
+        <h4
+          class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11"
+        >
+          Co-host, Logo, Branding
+        </h4>
+        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">
+          Co-create a technology podcast that serves as the pulse of tech within
+          ADP.
+        </p>
+        <article
+          class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4"
+        >
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/brackets-squared-01@2x.png"
+              alt="The original logo mark and type logo for ADP's Developer Community Brackets Podcast"
+            />
+          </a>
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/brackets-squared-02@2x.png"
+              alt="The original logo mark for ADP's Developer Community Brackets Podcast"
+            />
+          </a>
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/brackets-squared-03@2x.png"
+              alt="Play on the ADP's Developer Community Brackets Podcast logo"
+            />
+          </a>
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/brackets-squared-04@2x.png"
+              alt="Another spin of the design of the ADP's Developer Community Brackets Podcast logo"
+            />
+          </a>
         </article>
       </div>
       <div class="xs:my-8 md:mt-16 md:mb-32 opacity-20 scale-95 section">
-        <h3 class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 uppercase">S<span class="font-variants-02">a</span><span class="font-variants-02 -ml-3">v</span>ani</h3>
-        <h4 class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11">Logo, Branding</h4>
-        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">Brought a niche Volkswagen parts company closer to it's audience with new branding.</p>
-        <article class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4">
-          <a href="#/" class="xs:square"><img loading="lazy" src="/assets/squared/savani-squared-01@2x.png" alt="The original logo mark for Savani Auto Parts"></a>
-          <a href="/assets/btc/builders-trust-capital-design-system-3.1.pdf" class="xs:square"><img loading="lazy" src="/assets/squared/savani-squared-02@2x.png" alt="The type logo for Savani Auto Parts"></a>
-          <a href="/assets/roll/roll-ui-kit-foundiation--design-system-2021.pdf" class="xs:square"><img loading="lazy" src="/assets/squared/savani-squared-03@2x.png" alt="The logo mark and type logo for Savani Auto Parts"></a>
-          <a href="/assets/prezzp/prezzo.it-design-system-2.1.pdf" class="xs:square"><img loading="lazy" src="/assets/squared/savani-squared-04@2x.png" alt="A t-shirt with the Savani Auto Parts logo mark and type logo"></a>
+        <h3
+          class="px-4 pt-4 text-3xl xl:text-4xl font-display text-amber-amber12 uppercase"
+        >
+          S<span class="font-variants-02">a</span><span
+            class="font-variants-02 -ml-3">v</span
+          >ani
+        </h3>
+        <h4
+          class="px-4 pb-4 text-xl xl:text-2xl font-display text-amber-amber11"
+        >
+          Logo, Branding
+        </h4>
+        <p class="px-4 pb-8 md:w-1/2 lg:w-1/3 font-bold">
+          Brought a niche Volkswagen parts company closer to it's audience with
+          new branding.
+        </p>
+        <article
+          class="grid gap-4 px-4 place-items-center xs:grid-cols-2 lg:grid-cols-4 pb-4"
+        >
+          <a href="#/" class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/savani-squared-01@2x.png"
+              alt="The original logo mark for Savani Auto Parts"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/assets/btc/builders-trust-capital-design-system-3.1.pdf`
+            class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/savani-squared-02@2x.png"
+              alt="The type logo for Savani Auto Parts"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/assets/roll/roll-ui-kit-foundiation--design-system-2021.pdf`
+            class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/savani-squared-03@2x.png"
+              alt="The logo mark and type logo for Savani Auto Parts"
+            />
+          </a>
+          <a
+            href=`${import.meta.env.BASE_URL}/assets/prezzp/prezzo.it-design-system-2.1.pdf`
+            class="xs:square"
+            ><img
+              loading="lazy"
+              src="/assets/squared/savani-squared-04@2x.png"
+              alt="A t-shirt with the Savani Auto Parts logo mark and type logo"
+            />
+          </a>
         </article>
       </div>
     </main>
     <Footer />
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-140380476-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
     <script src="../scripts/sectionAnimations.ts"></script>
     <script src="../scripts/navHeroAnimations.ts"></script>
   </body>

@@ -1,6 +1,7 @@
 ---
 import Head from "../../components/Head.astro";
 import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
 import { isPublished, sortPosts } from "../../utils/general";
 
 const data = await Astro.glob("../posts/*.md");
@@ -11,80 +12,79 @@ const filteredResults = data
 const filterOutFirstTwo = filteredResults.splice(0, 2);
 ---
 
-<html lang="en">
-  <Head
-    title="Blog: Frank Stallone III"
-    desc="The amusing muses of Frank Stallone III"
-  />
-  <body>
-    <div class="wrapper top-pad">
-      <Header />
-    </div>
-    <article role="main" id="main-content" class="wrapper flow region">
-      <hgroup>
-        <h2>Blog</h2>
-        <h3>The asumsing muses of Frank Stallone III</h3>
-      </hgroup>
-      <section class="grid region">
-        {
-          filterOutFirstTwo.map((post) => (
-            <section class="flow">
-              <a href={post.url}>
-                <img
-                  src={post.frontmatter.hero}
-                  alt={post.frontmatter.alt}
-                  class="aspect-video object-contain"
-                />
-              </a>
-              <a href={post.url} class="block">
-                <h3>{post.frontmatter.title.toUpperCase()}</h3>
-              </a>
-              <small>
-                <time datetime={post.frontmatter.date}>
-                  {new Date(post.frontmatter.date).toLocaleDateString(
-                    undefined,
-                    { year: "numeric", month: "long", day: "numeric" }
-                  )}
-                </time>
-              </small>
-              <p>{post.frontmatter.desc}</p>
-              <div>
-                <a href={post.url}>Read more &hellip;</a>
-              </div>
-            </section>
-          ))
-        }
-      </section>
-      <section class="grid region">
-        {
-          filteredResults.map((post) => (
-            <section class="flow">
-              <a href={post.url}>
-                <img
-                  src={post.frontmatter.hero}
-                  alt={post.frontmatter.alt}
-                  class="aspect-video object-contain"
-                />
-              </a>
-              <a href={post.url} class="block">
-                <h3>{post.frontmatter.title.toUpperCase()}</h3>
-              </a>
-              <small>
-                <time datetime={post.frontmatter.date}>
-                  {new Date(post.frontmatter.date).toLocaleDateString(
-                    undefined,
-                    { year: "numeric", month: "long", day: "numeric" }
-                  )}
-                </time>
-              </small>
-              <p>{post.frontmatter.desc}</p>
-              <div>
-                <a href={post.url}>Read more &hellip;</a>
-              </div>
-            </section>
-          ))
-        }
-      </section>
-    </article>
-  </body>
-</html>
+<Layout
+  title="Home"
+  desc="The portfolio, blog and chronicles of misadventures for Frank Stallone III"
+>
+  <div class="wrapper top-pad">
+    <Header />
+  </div>
+  <article role="main" id="main-content" class="wrapper flow region">
+    <hgroup>
+      <h2>Blog</h2>
+      <h3>The asumsing muses of Frank Stallone III</h3>
+    </hgroup>
+    <section class="grid region">
+      {
+        filterOutFirstTwo.map((post) => (
+          <section class="flow">
+            <a href={post.url}>
+              <img
+                src={post.frontmatter.hero}
+                alt={post.frontmatter.alt}
+                class="aspect-video object-contain"
+              />
+            </a>
+            <a href={post.url} class="block">
+              <h3>{post.frontmatter.title.toUpperCase()}</h3>
+            </a>
+            <small>
+              <time datetime={post.frontmatter.date}>
+                {new Date(post.frontmatter.date).toLocaleDateString(undefined, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+            </small>
+            <p>{post.frontmatter.desc}</p>
+            <div>
+              <a href={post.url}>Read more &hellip;</a>
+            </div>
+          </section>
+        ))
+      }
+    </section>
+    <section class="grid region">
+      {
+        filteredResults.map((post) => (
+          <section class="flow">
+            <a href={post.url}>
+              <img
+                src={post.frontmatter.hero}
+                alt={post.frontmatter.alt}
+                class="aspect-video object-contain"
+              />
+            </a>
+            <a href={post.url} class="block">
+              <h3>{post.frontmatter.title.toUpperCase()}</h3>
+            </a>
+            <small>
+              <time datetime={post.frontmatter.date}>
+                {new Date(post.frontmatter.date).toLocaleDateString(undefined, {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+            </small>
+            <p>{post.frontmatter.desc}</p>
+            <div>
+              <a href={post.url}>Read more &hellip;</a>
+            </div>
+          </section>
+        ))
+      }
+    </section>
+  </article>
+</Layout>

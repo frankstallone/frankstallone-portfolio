@@ -29,154 +29,156 @@ const {
 } = Astro.props;
 ---
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content={desc} />
-<title>{title}: Frank Stallone</title>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/cartridge/Cartridge-Regular.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/cartridge/Cartridge-Regular.woff"
-  type="font/woff"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/cartridge/Cartridge-Rough.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/cartridge/Cartridge-Rough.woff"
-  type="font/woff"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/cartridge/Cartridge-BoldRough.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/cartridge/Cartridge-BoldRough.woff"
-  type="font/woff"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-thin.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-thin-italic.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-extralight.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-extralight-italic.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-light.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-light-italic.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-regular.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-italic.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-medium.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-medium.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-bold.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-bold-italic.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-black.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link
-  rel="preload"
-  as="font"
-  href="/fonts/future/the-future-black-italic.woff2"
-  type="font/woff2"
-  crossorigin="anonymous"
-/>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4e2009" />
-<meta name="msapplication-TileColor" content="#ffffff" />
-<meta name="generator" content={Astro.generator} />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={desc} />
+  <title>{title} — Frank Stallone</title>
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/cartridge/Cartridge-Regular.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/cartridge/Cartridge-Regular.woff"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/cartridge/Cartridge-Rough.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/cartridge/Cartridge-Rough.woff"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/cartridge/Cartridge-BoldRough.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/cartridge/Cartridge-BoldRough.woff"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-thin.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-thin-italic.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-extralight.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-extralight-italic.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-light.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-light-italic.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-regular.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-italic.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-medium.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-medium.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-bold.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-bold-italic.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-black.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    as="font"
+    href="/fonts/future/the-future-black-italic.woff2"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4e2009" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="generator" content={Astro.generator} />
+</head>

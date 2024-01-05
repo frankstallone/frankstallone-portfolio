@@ -12,11 +12,9 @@ const {
 } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <Head title={title} desc={desc} />
-  </head>
+  <Head title={title} desc={desc} />
   <body>
     <a href="#main" class="sr-only sr-only-focusable">Skip to content</a>
     <slot />

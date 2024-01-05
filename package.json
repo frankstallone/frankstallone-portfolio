@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.0.4",
-    "astro": "^4.1.0"
+    "astro": "^4.1.0",
+    "astro-purgecss": "^4.0.0",
+    "purgecss": "^5.0.0"
   },
   "engines": {
     "node": ">=18.17.0"

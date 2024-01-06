@@ -51,7 +51,7 @@ picture {
   /* Use case: Low res images */
   background-repeat: no-repeat;
   background-size: cover;
-  sharpe-margin: 1rem;
+  shape-margin: 1rem;
   max-width: 100%;
   height: auto;
   vertical-align: middle;

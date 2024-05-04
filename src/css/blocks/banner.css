@@ -1,0 +1,14 @@
+banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #6ae8d5;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+banner a {
+  text-decoration: underline;
+}

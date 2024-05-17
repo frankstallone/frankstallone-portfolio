@@ -5,7 +5,7 @@ title: "💊 Talking about pain"
 desc: "I need to get better at talking about pain, honestly, calmly, and with a positive attitude."
 hero: "/assets/posts/talking-about-pain/finger-meta.jpg"
 alt: "Photograph of my hand with a badly inflamed knucle"
-draft: false
+draft: true
 ---
 
 <img class="breakout" src="/assets/posts/talking-about-pain/finger.jpg" alt="Photograph of my hand with a badly inflamed knucle">

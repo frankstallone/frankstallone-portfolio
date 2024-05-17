@@ -1,12 +1,11 @@
 ---
-import Head from "../../components/Head.astro";
 import Header from "../../components/Header.astro";
 import Layout from "../../layouts/Layout.astro";
 import { isPublished, sortPosts } from "../../utils/general";
 
 const data = await Astro.glob("../posts/*.md");
 const filteredResults = data
-  .filter((res) => isPublished)
+  .filter((res) => isPublished(res))
   .sort(sortPosts)
   .reverse();
 const filterOutFirstTwo = filteredResults.splice(0, 2);
